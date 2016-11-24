@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Author</key>
+	<string>Elaborapp Co., Ltd.</string>
+	<key>Builder Version</key>
+	<string>11601.6.17</string>
+	<key>CFBundleDisplayName</key>
+	<string>Blahker</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.elaborapp.Blahker-Mac</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleShortVersionString</key>
+	<string>0.1</string>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>Content</key>
+	<dict>
+		<key>Content Blocker</key>
+		<string>blockerList.json</string>
+	</dict>
+	<key>Description</key>
+	<string>台灣網站蓋版廣告去除器 Safari Extension</string>
+	<key>DeveloperIdentifier</key>
+	<string>SE9N6X5V7C</string>
+	<key>ExtensionInfoDictionaryVersion</key>
+	<string>1.0</string>
+	<key>Permissions</key>
+	<dict>
+		<key>Website Access</key>
+		<dict>
+			<key>Include Secure Pages</key>
+			<true/>
+			<key>Level</key>
+			<string>None</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

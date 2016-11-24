@@ -1,0 +1,5 @@
+[
+{
+ "action": {"type": "block"},"trigger": {"url-filter": ".*/fb_mask.js"}
+}
+]
