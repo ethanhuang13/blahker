@@ -1,5 +1,46 @@
 [
-{
- "action": {"type": "block"},"trigger": {"url-filter": ".*/fb_mask.js"}
-}
+  {
+    "trigger": {
+      "url-filter": "fb_mask.js"
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*"
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": ".splash"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*"
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": ".fb_mask"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*"
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "#gwd-ad"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*"
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": ".google-image-div"
+    }
+  }
 ]
