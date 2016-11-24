@@ -42,5 +42,25 @@
     "type": "css-display-none",
     "selector": ".google-image-div"
     }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*.appledaily.com.tw"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "#panelShade"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*.appledaily.com.tw"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "#panelContainerDiv"
+    }
   }
 ]
