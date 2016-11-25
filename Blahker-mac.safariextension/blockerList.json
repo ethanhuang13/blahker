@@ -112,5 +112,15 @@
     "type": "css-display-none",
     "selector": "#simplemodal-overlay"
     }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*chinatimes.com"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "#pagead_divBG"
+    }
   }
 ]
