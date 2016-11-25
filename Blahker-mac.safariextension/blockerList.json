@@ -137,5 +137,25 @@
     "type": "css-display-none",
     "selector": "#pagead_divBG"
     }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*cna.com.tw"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": ".fancybox-wrap.fancybox-mobile.fancybox-type-iframe.fancybox-opened"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*cna.com.tw"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": ".fancybox-overlay.fancybox-overlay-fixed"
+    }
   }
 ]
