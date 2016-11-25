@@ -46,7 +46,7 @@
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*.appledaily.com.tw"]
+      "if-domain": ["*appledaily.com.tw"]
     },
     "action": {
     "type": "css-display-none",
@@ -56,11 +56,21 @@
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*.appledaily.com.tw"]
+      "if-domain": ["*appledaily.com.tw"]
     },
     "action": {
     "type": "css-display-none",
     "selector": "#panelContainerDiv"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*technews.tw"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "blockUI"
     }
   }
 ]
