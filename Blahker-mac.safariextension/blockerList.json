@@ -82,5 +82,15 @@
     "type": "css-display-none",
     "selector": "#google-image-div"
     }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*techbang.com"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "#scupio_interstitialad"
+    }
   }
 ]
