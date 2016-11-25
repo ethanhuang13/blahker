@@ -75,7 +75,17 @@
     },
     "action": {
     "type": "css-display-none",
-    "selector": "blockUI"
+    "selector": ".blockUI.blockOverlay"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*technews.tw"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": ".blockUI.blockMsg.blockPage"
     }
   },
   {
