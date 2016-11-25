@@ -1,7 +1,8 @@
 [
   {
     "trigger": {
-      "url-filter": "fb_mask.js"
+      "url-filter": "fb_mask.js",
+      "if-domain": ["*ltn.com.tw"]
     },
     "action": {
       "type": "block"
@@ -9,7 +10,8 @@
   },
   {
     "trigger": {
-      "url-filter": ".*"
+      "url-filter": ".*",
+      "if-domain": ["*ltn.com.tw"]
     },
     "action": {
     "type": "css-display-none",
@@ -18,7 +20,8 @@
   },
   {
     "trigger": {
-      "url-filter": ".*"
+      "url-filter": ".*",
+      "if-domain": ["*ltn.com.tw"]
     },
     "action": {
     "type": "css-display-none",
@@ -27,7 +30,8 @@
   },
   {
     "trigger": {
-      "url-filter": ".*"
+      "url-filter": ".*",
+      "if-domain": ["*ltn.com.tw"]
     },
     "action": {
     "type": "css-display-none",
@@ -36,7 +40,8 @@
   },
   {
     "trigger": {
-      "url-filter": ".*"
+      "url-filter": ".*",
+      "if-domain": ["*ltn.com.tw"]
     },
     "action": {
     "type": "css-display-none",
