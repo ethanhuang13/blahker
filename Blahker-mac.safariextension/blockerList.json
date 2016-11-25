@@ -92,5 +92,25 @@
     "type": "css-display-none",
     "selector": "#scupio_interstitialad"
     }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*udn.com"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "#simplemodal-container"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*udn.com"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "#simplemodal-overlay"
+    }
   }
 ]
