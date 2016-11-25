@@ -187,5 +187,25 @@
     "type": "css-display-none",
     "selector": "#ad_iframe_area"
     }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*mobile01.com"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "#Full_AD"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*mobile01.com"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": ".modal-backdrop.fade.in"
+    }
   }
 ]
