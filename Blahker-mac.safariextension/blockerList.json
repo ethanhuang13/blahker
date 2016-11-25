@@ -167,5 +167,25 @@
     "type": "css-display-none",
     "selector": "#ONEAD-mobile2"
     }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*sina.com.tw"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "#ad_iframe_background"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*sina.com.tw"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "#ad_iframe_area"
+    }
   }
 ]
