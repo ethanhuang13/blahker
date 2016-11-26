@@ -10,6 +10,8 @@
 
 Blahker 是開源的，且以後將會採用適當的授權方式開放協作。如果你對於參與這個項目有興趣的話，包括提出需求申請，請參考 [CONTRIBUTING](https://github.com/ethanhuang13/blahker/blob/master/CONTRIBUTING.md) 文件。
 
+目前 macOS 版可以直接下載，iOS 版預計會透過 Elaborapp Co., Ltd. （精巧應用）的名義免費發布於 App Store，並且會加上應用程式內購的捐款功能，以提供主要開發者 [@ethanhuang13](https://twitter.com/ethanhuang13) 的部分開發成本。
+
 ## 廣告阻擋原理與隱私問題
 
 有些 iOS 廣告阻擋器是透過架設 VPN 的方式，阻止裝置存取廣告商的任何資源。但這方式最大的問題就是 VPN 完全知曉使用者的一切網路行為，對於隱私有著極大的潛在風險。
@@ -31,7 +33,7 @@ Blahker 是開源的，且以後將會採用適當的授權方式開放協作。
 - 點擊並安裝至 Safari 即可
 
 ---
-# iOS 版
+## iOS 版
 
 開發中，預計之後上架 App Store。如果你具備 Apple 開發者身分，可以將原始碼下載後安裝到自己的裝置上使用。iOS 版的阻擋規則是讀取自 GitHub 上的 [blockerList.json](https://github.com/ethanhuang13/blahker/blob/master/Blahker.safariextension/blockerList.json)，所以可以在不更新 app 的情況下自動更新阻擋規則。
 
