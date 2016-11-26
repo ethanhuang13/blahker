@@ -1,8 +1,8 @@
-# Blahker for Mac
+# CHANGELOG 
+
+# Blahker iOS
 
 ## [Unreleased]
-
-## [0.1(1)] - 2016-11-24
 ### Added
-- Project init
-
+- Load blockerList.json from GitHub
+- Put test code in app
