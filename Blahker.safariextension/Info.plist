@@ -9,11 +9,11 @@
 	<key>CFBundleDisplayName</key>
 	<string>Blahker</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.elaborapp.Blahker-Mac</string>
+	<string>com.elaborapp.Blahker.Safari</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleShortVersionString</key>
-	<string>0.1</string>
+	<string>1.0.0</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>Content</key>
@@ -22,7 +22,7 @@
 		<string>blockerList.json</string>
 	</dict>
 	<key>Description</key>
-	<string>台灣網站蓋版廣告去除器 Safari Extension</string>
+	<string>巴拉剋 - 蓋版廣告消除器</string>
 	<key>DeveloperIdentifier</key>
 	<string>SE9N6X5V7C</string>
 	<key>ExtensionInfoDictionaryVersion</key>
@@ -37,5 +37,7 @@
 			<string>None</string>
 		</dict>
 	</dict>
+	<key>Website</key>
+	<string>https://github.com/ethanhuang13/blahker</string>
 </dict>
 </plist>

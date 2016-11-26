@@ -207,5 +207,85 @@
     "type": "css-display-none",
     "selector": ".modal-backdrop.fade.in"
     }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*ettoday.net"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": ".adM01"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*ettoday.net"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": ".adM02"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*ettoday.net"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": ".adM03"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*ettoday.net"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": ".adM04"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*ettoday.net"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": ".adM05"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*ettoday.net"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": ".adM06"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*ettoday.net"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": ".adM07"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*ettoday.net"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": ".adM08"
+    }
   }
 ]
