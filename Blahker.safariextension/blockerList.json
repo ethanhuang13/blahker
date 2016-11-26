@@ -235,57 +235,26 @@
     },
     "action": {
     "type": "css-display-none",
-    "selector": ".adM03"
-    }
-  },
-  {
-    "trigger": {
-      "url-filter": ".*",
-      "if-domain": ["*ettoday.net"]
-    },
-    "action": {
-    "type": "css-display-none",
-    "selector": ".adM04"
-    }
-  },
-  {
-    "trigger": {
-      "url-filter": ".*",
-      "if-domain": ["*ettoday.net"]
-    },
-    "action": {
-    "type": "css-display-none",
-    "selector": ".adM05"
-    }
-  },
-  {
-    "trigger": {
-      "url-filter": ".*",
-      "if-domain": ["*ettoday.net"]
-    },
-    "action": {
-    "type": "css-display-none",
-    "selector": ".adM06"
-    }
-  },
-  {
-    "trigger": {
-      "url-filter": ".*",
-      "if-domain": ["*ettoday.net"]
-    },
-    "action": {
-    "type": "css-display-none",
-    "selector": ".adM07"
-    }
-  },
-  {
-    "trigger": {
-      "url-filter": ".*",
-      "if-domain": ["*ettoday.net"]
-    },
-    "action": {
-    "type": "css-display-none",
     "selector": ".adM08"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*ettoday.net"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "#adM09"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": "adM*js",
+      "if-domain": ["*ettoday.net"]
+    },
+    "action": {
+    "type": "block"
     }
   }
 ]
