@@ -256,5 +256,15 @@
     "action": {
     "type": "block"
     }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*cw.com.tw"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "iframe#iframe"
+    }
   }
 ]
