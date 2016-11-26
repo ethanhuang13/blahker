@@ -1,7 +1,7 @@
 [
   {
     "trigger": {
-      "url-filter": "fb_mask.js",
+      "url-filter": "fb_mask\\.js",
       "if-domain": ["*ltn.com.tw"]
     },
     "action": {
@@ -250,7 +250,7 @@
   },
   {
     "trigger": {
-      "url-filter": "adM*js",
+      "url-filter": "adM.*js",
       "if-domain": ["*ettoday.net"]
     },
     "action": {
