@@ -1,5 +1,6 @@
-# [Blahker[(https://github.com/ethanhuang13/blahker)
-「巴拉剋 - 蓋版廣告消除器」是一款 Safari 瀏覽器所用的擋廣告延伸插件，同時支援 macOS 與 iOS。
+# Blahker
+
+「[Blahker 巴拉剋 - 蓋版廣告消除器](https://github.com/ethanhuang13/blahker)」是一款 Safari 瀏覽器所用的擋廣告延伸插件，同時支援 macOS 與 iOS。
 
 使用者瀏覽網站時遇到蓋版網站，往往很突然，與內文無關，又很難關閉。感覺就像是前往目的地的途中，遇到不相干的人拉住你，跟你 blah blah blah 推銷個不停，又很難中斷人家，非常煩人。於是將 "blah" 與 "blocker" 合併創出 Blahker 這個名稱，中文音譯為「巴拉剋」。
 
@@ -7,15 +8,19 @@
 
 目前 Blahker 已經含括了台灣幾個常見網站的蓋版阻擋規則，未來也將以台灣的網站為主，所以大部分的說明都會是中文。如果有興趣了解阻擋規則，可以參見 [blockerList.json](https://github.com/ethanhuang13/blahker/blob/master/Blahker.safariextension/blockerList.json) 以及 Apple 的[說明文件](https://developer.apple.com/library/content/documentation/Extensions/Conceptual/ContentBlockingRules/CreatingRules/CreatingRules.html#//apple_ref/doc/uid/TP40016265-CH2-SW1)。
 
+Blahker 是開源的，且以後將會採用適當的授權方式開放協作。如果你對於參與這個項目有興趣的話，包括提出需求申請，請參考 [CONTRIBUTING](https://github.com/ethanhuang13/blahker/blob/master/CONTRIBUTING.md) 文件。
+
 ## 廣告阻擋原理與隱私問題
 
-Apple 提供了 WebKit API 給開發者來製作廣告阻擋器。Safari 會向插件詢問阻擋網頁元素的規則，插件則按照格式回傳一 JSON 檔。在這過程中，插件程式不會得知使用者瀏覽了什麼網站，使用者的隱私完全安全。在 macOS 中，可以直接安裝 .safariextz 檔案來加入插件至 Safari，而在 iOS 中則要安裝 app，然後在「設定 > Safari > 內容阻擋器」啟用 app 中所附的插件。
+有些 iOS 廣告阻擋器是透過架設 VPN 的方式，阻止裝置存取廣告商的任何資源。但這方式最大的問題就是 VPN 完全知曉使用者的一切網路行為，對於隱私有著極大的潛在風險。
 
-有些 iOS 廣告阻擋器是透過架設 VPN 的方式，阻止裝置存取廣告商的任何資源。但這方式最大的問題就是 VPN 完全知曉使用者的一切網路行為，對於隱私有著極大的潛在風險。Blahker 使用的 API 是完全安全的，且原始碼公開在此 [GitHub 網站](https://github.com/ethanhuang13/blahker)。
+所幸在 iOS 9 之後，Apple 提供了 WebKit API 給開發者來製作廣告阻擋器。Safari 會向插件詢問阻擋網頁元素的規則，插件則按照格式回傳一 JSON 檔。在這過程中，插件程式只負責提供規則，而不知道使用者瀏覽了什麼網站，隱私得到完整的保護。在 macOS 中，使用者可以直接安裝 .safariextz 檔案來加入插件至 Safari，並且在延伸功能介面中會看到「Blahker 沒有權限可讀取或傳送任何網頁的內容」。而在 iOS 中則要安裝 app，然後在「設定 > Safari > 內容阻擋器」啟用 app 中所附的插件。
 
-## Mac 版
+總而言之，Blahker 用以阻擋廣告所使用的方法是絕對不會侵犯隱私的，並且原始碼公開在此 [GitHub 網站](https://github.com/ethanhuang13/blahker)。
 
-開發中，但已可下載使用。預計之後上架至 [Safari Extensions Gallery](https://safari-extensions.apple.com)
+## macOS 版
+
+開發中，但已可下載使用。預計之後上架至 [Safari Extensions Gallery](https://safari-extensions.apple.com)。值得注意的是，macOS 版的阻擋規則是內建在插件檔當中，所以如果阻擋規則有更新的話，必須手動下載新版，或是未來透過 Safari Extensions Gallery 自動更新。
 
 ### 系統需求
 - macOS 10.10 (OS X Yosemite) 以上
@@ -28,7 +33,9 @@ Apple 提供了 WebKit API 給開發者來製作廣告阻擋器。Safari 會向�
 ---
 # iOS 版
 
-開發中，預計之後上架 App Store
+開發中，預計之後上架 App Store。如果你具備 Apple 開發者身分，可以將原始碼下載後安裝到自己的裝置上使用。iOS 版的阻擋規則是讀取自 GitHub 上的 [blockerList.json](https://github.com/ethanhuang13/blahker/blob/master/Blahker.safariextension/blockerList.json)，所以可以在不更新 app 的情況下自動更新阻擋規則。
+
+安裝 app 之後，在「設定 > Safari > 內容阻擋器」啟用 app 中所附的插件。
 
 ### 系統需求
 - iOS 9.0 以上
