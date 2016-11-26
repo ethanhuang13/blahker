@@ -266,5 +266,25 @@
     "type": "css-display-none",
     "selector": "iframe#iframe"
     }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*pixnet.net"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": ".pop-ad-cover.pop-ad-cover--deep"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*gq.com.tw"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "#popAD"
+    }
   }
 ]
