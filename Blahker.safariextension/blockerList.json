@@ -286,5 +286,15 @@
     "type": "css-display-none",
     "selector": "#popAD"
     }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*qooah.com"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": ".ypa-popup-overlay"
+    }
   }
 ]
