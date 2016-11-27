@@ -51,6 +51,16 @@
   {
     "trigger": {
       "url-filter": ".*",
+      "if-domain": ["*ltn.com.tw"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "#exp-container"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
       "if-domain": ["*appledaily.com.tw"]
     },
     "action": {
