@@ -306,5 +306,15 @@
     "type": "css-display-none",
     "selector": ".ypa-popup-overlay"
     }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*xuite.net"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "#rmiad"
+    }
   }
 ]
