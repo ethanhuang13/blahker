@@ -316,5 +316,15 @@
     "type": "css-display-none",
     "selector": "#rmiad"
     }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*techcrunch.com"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "div.lightbox"
+    }
   }
 ]
