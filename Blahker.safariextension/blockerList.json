@@ -395,5 +395,15 @@
     "type": "css-display-none",
     "selector": ".main-gift-div"
     }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*moneydj.com"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "#MDJPageAD"
+    }
   }
 ]
