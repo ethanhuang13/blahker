@@ -346,5 +346,15 @@
     "type": "css-display-none",
     "selector": "#body-region"
     }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*setn.com"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "#float_ad"
+    }
   }
 ]
