@@ -326,5 +326,15 @@
     "type": "css-display-none",
     "selector": "div.lightbox"
     }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*thenewslens.com"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "#ONEAD-mobile2"
+    }
   }
 ]
