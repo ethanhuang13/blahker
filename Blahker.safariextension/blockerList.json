@@ -121,6 +121,16 @@
   {
     "trigger": {
       "url-filter": ".*",
+      "if-domain": ["*techbang.com"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": ".mobile_full_ads"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
       "if-domain": ["*udn.com"]
     },
     "action": {
