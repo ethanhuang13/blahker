@@ -356,5 +356,25 @@
     "type": "css-display-none",
     "selector": "#float_ad"
     }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*nownews.com"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "#mui-overlay"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*nownews.com"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": ".main-gift-div"
+    }
   }
 ]
