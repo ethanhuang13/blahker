@@ -100,6 +100,15 @@
   },
   {
     "trigger": {
+      "url-filter": "jQuery\\.blockUI\\.js",
+      "if-domain": ["*technews.tw"]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
       "url-filter": ".*",
       "if-domain": ["*techbang.com"]
     },
