@@ -4,6 +4,13 @@
 
 ## 2016-12-01
 - Add app icons #1
+- Use protocol extension to reload blocker list #2
+- User setup tutorial #3
+- Detect and indicate extension enabled in app #8
+- App UI structure #11
+- Launch storyboard #12
+- Reload button in app #13
+- About page in app #14
 
 ## 2016-11-29
 - Add thenewslens.com

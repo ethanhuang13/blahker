@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		4FB8B91F37D14CE4BADB6E04 /* Pods_Blocker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB96FDE1EDD221A11D1CCA0D /* Pods_Blocker.framework */; };
+		6C04CC251DEF396F006B23D4 /* BlockerListLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C04CC241DEF396F006B23D4 /* BlockerListLoader.swift */; };
+		6C04CC261DEF396F006B23D4 /* BlockerListLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C04CC241DEF396F006B23D4 /* BlockerListLoader.swift */; };
 		6C83596A1DE312FD0033A1BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8359691DE312FD0033A1BC /* AppDelegate.swift */; };
-		6C83596C1DE312FD0033A1BC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C83596B1DE312FD0033A1BC /* ViewController.swift */; };
+		6C83596C1DE312FD0033A1BC /* SetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C83596B1DE312FD0033A1BC /* SetupViewController.swift */; };
 		6C83596F1DE312FD0033A1BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C83596D1DE312FD0033A1BC /* Main.storyboard */; };
 		6C8359711DE312FD0033A1BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C8359701DE312FD0033A1BC /* Assets.xcassets */; };
-		6C8359741DE312FD0033A1BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C8359721DE312FD0033A1BC /* LaunchScreen.storyboard */; };
 		6C83597F1DE312FE0033A1BC /* BlahkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C83597E1DE312FE0033A1BC /* BlahkerTests.swift */; };
 		6C83598A1DE312FE0033A1BC /* BlahkerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8359891DE312FE0033A1BC /* BlahkerUITests.swift */; };
 		6CC9F0CC1DE31341004142AC /* ContentBlocker.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6CC9F0C31DE31340004142AC /* ContentBlocker.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -64,12 +65,12 @@
 /* Begin PBXFileReference section */
 		1841932A702BF87CE681BFE3 /* Pods-Blahker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Blahker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Blahker/Pods-Blahker.debug.xcconfig"; sourceTree = "<group>"; };
 		27A17F0162ED74DB5B17620E /* Pods_Blahker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Blahker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C04CC241DEF396F006B23D4 /* BlockerListLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockerListLoader.swift; sourceTree = "<group>"; };
 		6C8359661DE312FD0033A1BC /* Blahker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blahker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C8359691DE312FD0033A1BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6C83596B1DE312FD0033A1BC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6C83596B1DE312FD0033A1BC /* SetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupViewController.swift; sourceTree = "<group>"; };
 		6C83596E1DE312FD0033A1BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6C8359701DE312FD0033A1BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		6C8359731DE312FD0033A1BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6C8359751DE312FD0033A1BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6C83597A1DE312FE0033A1BC /* BlahkerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlahkerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C83597E1DE312FE0033A1BC /* BlahkerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlahkerTests.swift; sourceTree = "<group>"; };
@@ -129,6 +130,7 @@
 		6C83595D1DE312FD0033A1BC = {
 			isa = PBXGroup;
 			children = (
+				6C04CC241DEF396F006B23D4 /* BlockerListLoader.swift */,
 				6C8359681DE312FD0033A1BC /* Blahker */,
 				6C83597D1DE312FE0033A1BC /* BlahkerTests */,
 				6C8359881DE312FE0033A1BC /* BlahkerUITests */,
@@ -154,10 +156,9 @@
 			isa = PBXGroup;
 			children = (
 				6C8359691DE312FD0033A1BC /* AppDelegate.swift */,
-				6C83596B1DE312FD0033A1BC /* ViewController.swift */,
+				6C83596B1DE312FD0033A1BC /* SetupViewController.swift */,
 				6C83596D1DE312FD0033A1BC /* Main.storyboard */,
 				6C8359701DE312FD0033A1BC /* Assets.xcassets */,
-				6C8359721DE312FD0033A1BC /* LaunchScreen.storyboard */,
 				6C8359751DE312FD0033A1BC /* Info.plist */,
 			);
 			path = Blahker;
@@ -355,7 +356,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6C8359741DE312FD0033A1BC /* LaunchScreen.storyboard in Resources */,
 				6C8359711DE312FD0033A1BC /* Assets.xcassets in Resources */,
 				6C83596F1DE312FD0033A1BC /* Main.storyboard in Resources */,
 			);
@@ -467,9 +467,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6C83596C1DE312FD0033A1BC /* ViewController.swift in Sources */,
+				6C83596C1DE312FD0033A1BC /* SetupViewController.swift in Sources */,
 				6C83596A1DE312FD0033A1BC /* AppDelegate.swift in Sources */,
 				6CF96A861DE931A100043471 /* ContentBlockerRequestHandlerError.swift in Sources */,
+				6C04CC251DEF396F006B23D4 /* BlockerListLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -495,6 +496,7 @@
 			files = (
 				6CF96A841DE9317500043471 /* ContentBlockerRequestHandlerError.swift in Sources */,
 				6CF96A831DE9317500043471 /* ContentBlockerRequestHandler.swift in Sources */,
+				6C04CC261DEF396F006B23D4 /* BlockerListLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -525,14 +527,6 @@
 				6C83596E1DE312FD0033A1BC /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		6C8359721DE312FD0033A1BC /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6C8359731DE312FD0033A1BC /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -578,7 +572,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -622,7 +616,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";

@@ -9,37 +9,22 @@
 import UIKit
 import MobileCoreServices
 
-class ContentBlockerRequestHandler: NSObject, NSExtensionRequestHandling {
+class ContentBlockerRequestHandler: NSObject, NSExtensionRequestHandling, BlockerListLoader {
+    var context: NSExtensionContext?
+
     func beginRequest(with context: NSExtensionContext) {
-        func success(withReturningItems returningItems: [NSExtensionItem]) {
-            context.completeRequest(returningItems: returningItems, completionHandler: nil)
-            print("Complete request")
-        }
+        self.context = context
 
-        func failed(withError error: Error) {
-            context.cancelRequest(withError: error)
-            print("Failed")
-        }
-        
-        let session = URLSession(configuration: .default)
-        guard let url = URL(string: "https://raw.githubusercontent.com/ethanhuang13/blahker/master/Blahker.safariextension/blockerList.json") else {
-            failed(withError: ContentBlockerRequestHandlerError.createBlockerListUrlFailed)
-            return
-        }
+        self.loadBlockerList()
+    }
 
-        let request = URLRequest(url: url)
-        let task = session.dataTask(with: request) { (data, response, connectionError) -> Void in
-            guard let data = data as? NSSecureCoding else {
-                failed(withError: ContentBlockerRequestHandlerError.loadBlockerListFileFailed)
-                return
-            }
+    func loadBlockerListSuccess(withReturningItems returningItems: [NSExtensionItem]) {
+        self.context?.completeRequest(returningItems: returningItems, completionHandler: nil)
+        print("Complete request")
+    }
 
-            let attachment = NSItemProvider(item: data, typeIdentifier: kUTTypeJSON as String)
-            let item = NSExtensionItem()
-            item.attachments = [attachment]
-            success(withReturningItems: [item])
-        }
-        
-        task.resume()
+    func loadBlockerListFailed(withError error: Error) {
+        self.context?.cancelRequest(withError: error)
+        print("Failed")
     }
 }
