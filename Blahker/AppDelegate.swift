@@ -7,15 +7,20 @@
 //
 
 import UIKit
+import SafariServices
+
+let contentBlockerExteiosnIdentifier = "com.elaborapp.Blahker.ContentBlocker"
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+
+        application.setMinimumBackgroundFetchInterval(UIApplicationBackgroundFetchIntervalMinimum)
+
         return true
     }
 
@@ -41,6 +46,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
-
+    func application(_ application: UIApplication, performFetchWithCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
+        SFContentBlockerManager.getStateOfContentBlocker(withIdentifier: contentBlockerExteiosnIdentifier, completionHandler: { (state, error) -> Void in
+            switch state?.isEnabled {
+            case .some(true):
+                SFContentBlockerManager.reloadContentBlocker(withIdentifier: contentBlockerExteiosnIdentifier, completionHandler: { (error) -> Void in
+                    if error == nil {
+                        print("background reloadContentBlocker complete")
+                        completionHandler(.newData)
+                    } else {
+                        print("background reloadContentBlocker: \(error)")
+                        completionHandler(.failed)
+                    }
+                })
+            default:
+                completionHandler(.noData)
+            }
+        })
+    }
 }
-

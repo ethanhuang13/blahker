@@ -10,21 +10,16 @@ import UIKit
 import MobileCoreServices
 
 class ContentBlockerRequestHandler: NSObject, NSExtensionRequestHandling, BlockerListLoader {
-    var context: NSExtensionContext?
-
     func beginRequest(with context: NSExtensionContext) {
-        self.context = context
-
-        self.loadBlockerList()
-    }
-
-    func loadBlockerListSuccess(withReturningItems returningItems: [NSExtensionItem]) {
-        self.context?.completeRequest(returningItems: returningItems, completionHandler: nil)
-        print("Complete request")
-    }
-
-    func loadBlockerListFailed(withError error: Error) {
-        self.context?.cancelRequest(withError: error)
-        print("Failed")
+        self.loadBlockerList { (items, error) in
+            if let items = items {
+                context.completeRequest(returningItems: items, completionHandler: { (expired) in
+                    print("loadBlockerList: Complete request")
+                })
+            } else if let error = error {
+                context.cancelRequest(withError: error)
+                print("loadBlockerList failed: \(error)")
+            }
+        }
     }
 }

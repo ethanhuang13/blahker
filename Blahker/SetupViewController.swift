@@ -9,9 +9,7 @@
 import UIKit
 import SafariServices
 
-fileprivate let identifier = "com.elaborapp.Blahker.ContentBlocker"
-
-class SetupViewController: UIViewController, BlockerListLoader {
+class SetupViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,10 +22,18 @@ class SetupViewController: UIViewController, BlockerListLoader {
 
     @objc private func checkContentBlockerState() {
         UIApplication.shared.isNetworkActivityIndicatorVisible = true
-        SFContentBlockerManager.getStateOfContentBlocker(withIdentifier: identifier, completionHandler: { (state, error) -> Void in
+        SFContentBlockerManager.getStateOfContentBlocker(withIdentifier: contentBlockerExteiosnIdentifier, completionHandler: { (state, error) -> Void in
             switch state?.isEnabled {
             case .some(true):
-                self.loadBlockerList()
+                SFContentBlockerManager.reloadContentBlocker(withIdentifier: contentBlockerExteiosnIdentifier, completionHandler: { (error) -> Void in
+                    UIApplication.shared.isNetworkActivityIndicatorVisible = false
+
+                    if error == nil {
+                        print("reloadContentBlocker complete")
+                    } else {
+                        print("reloadContentBlocker: \(error)")
+                    }
+                })
             default:
                 UIApplication.shared.isNetworkActivityIndicatorVisible = false
 
@@ -49,25 +55,5 @@ class SetupViewController: UIViewController, BlockerListLoader {
         let vc = SFSafariViewController(url: url)
         vc.title = "關於"
         self.show(vc, sender: self)
-    }
-
-    // MARK: BlockerListLoader
-
-    func loadBlockerListSuccess(withReturningItems returningItems: [NSExtensionItem]) {
-        SFContentBlockerManager.reloadContentBlocker(withIdentifier: identifier, completionHandler: { (error) -> Void in
-            UIApplication.shared.isNetworkActivityIndicatorVisible = false
-
-            if error == nil {
-                print("reloadContentBlocker complete")
-            } else {
-                print("reloadContentBlocker: \(error)")
-            }
-        })
-    }
-
-    func loadBlockerListFailed(withError error: Error) {
-        UIApplication.shared.isNetworkActivityIndicatorVisible = false
-
-        print("reloadRules failed: \(error)")
     }
 }

@@ -11,6 +11,7 @@
 - Launch storyboard #12
 - Reload button in app #13
 - About page in app #14
+- Background update blocker rules #7
 
 ## 2016-11-29
 - Add thenewslens.com
