@@ -47,9 +47,10 @@ class SetupViewController: UIViewController {
                 self.isLoadingBlockerList = false
 
                 let alertController = UIAlertController(title: "請開啟內容阻擋器", message: "請打開「設定」 > 「Safari」 > 「內容阻擋器」，並啟用 Blahker", preferredStyle: .alert)
-                alertController.addAction(UIAlertAction(title: "確定", style: .cancel, handler:  { (action) in
+                alertController.addAction(UIAlertAction(title: "確定", style: .default, handler:  { (action) in
                     self.checkContentBlockerState()
                 }))
+                alertController.addAction(UIAlertAction(title: "取消", style: .cancel, handler: nil))
                 self.present(alertController, animated: true, completion: nil)
             }
         })
