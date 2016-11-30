@@ -10,6 +10,15 @@ import UIKit
 import SafariServices
 
 class SetupViewController: UIViewController {
+    private var isLoadingBlockerList: Bool = false {
+        didSet {
+            let isLoading = isLoadingBlockerList
+            DispatchQueue.main.async {
+                UIApplication.shared.isNetworkActivityIndicatorVisible = isLoading
+                self.reloadButton.isEnabled = !isLoading
+            }
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,12 +30,12 @@ class SetupViewController: UIViewController {
     }
 
     @objc private func checkContentBlockerState() {
-        UIApplication.shared.isNetworkActivityIndicatorVisible = true
+        self.isLoadingBlockerList = true
         SFContentBlockerManager.getStateOfContentBlocker(withIdentifier: contentBlockerExteiosnIdentifier, completionHandler: { (state, error) -> Void in
             switch state?.isEnabled {
             case .some(true):
                 SFContentBlockerManager.reloadContentBlocker(withIdentifier: contentBlockerExteiosnIdentifier, completionHandler: { (error) -> Void in
-                    UIApplication.shared.isNetworkActivityIndicatorVisible = false
+                    self.isLoadingBlockerList = false
 
                     if error == nil {
                         print("reloadContentBlocker complete")
@@ -35,7 +44,7 @@ class SetupViewController: UIViewController {
                     }
                 })
             default:
-                UIApplication.shared.isNetworkActivityIndicatorVisible = false
+                self.isLoadingBlockerList = false
 
                 let alertController = UIAlertController(title: "請開啟內容阻擋器", message: "請打開「設定」 > 「Safari」 > 「內容阻擋器」，並啟用 Blahker", preferredStyle: .alert)
                 alertController.addAction(UIAlertAction(title: "確定", style: .cancel, handler:  { (action) in
@@ -56,4 +65,6 @@ class SetupViewController: UIViewController {
         vc.title = "關於"
         self.show(vc, sender: self)
     }
+
+    @IBOutlet weak var reloadButton: UIBarButtonItem!
 }

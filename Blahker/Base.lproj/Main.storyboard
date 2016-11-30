@@ -34,6 +34,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="reloadButton" destination="hsj-d5-yZV" id="oLr-Yy-uTB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ro1-fk-wGO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
