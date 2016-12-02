@@ -2,6 +2,9 @@
 
 # Blahker
 
+## 2016-12-02
+- Update appledaily.com.tw
+
 ## 2016-12-01
 - Add app icons #1
 - Use protocol extension to reload blocker list #2
