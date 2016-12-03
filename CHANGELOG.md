@@ -5,6 +5,7 @@
 ## 2016-12-04
 - Advanced about page #15
 - Add Crashlytics #18
+- IAP donation system #6
 
 ## 2016-12-03
 - Update setn.com

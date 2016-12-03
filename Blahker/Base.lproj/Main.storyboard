@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11760" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="9vS-WE-8fE">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="9vS-WE-8fE">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11755"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -23,7 +22,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ytO-Xj-VCQ">
-                                <rect key="frame" x="40" y="83.999999999999986" width="334" height="95.666666666666643"/>
+                                <rect key="frame" x="40" y="84" width="334" height="172"/>
                                 <string key="text">Blahker 致力於消除網站中的蓋版廣告，支援 Safari 瀏覽器。請打開「設定」 &gt; 「Safari」 &gt; 「內容阻擋器」，並啟用 Blahker。
 
 App 將會自動取得最新擋廣告網站清單，你也可以透過左上角按鈕手動更新。
@@ -33,9 +32,21 @@ App 將會自動取得最新擋廣告網站清單，你也可以透過左上角�
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XV4-mh-7zc">
+                                <rect key="frame" x="151" y="675" width="112" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="拜託別按我">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="donateButton:" destination="YFD-6a-XAF" eventType="touchUpInside" id="W3V-ey-fMr"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.90000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="ImR-kQ-bCQ" firstAttribute="top" secondItem="XV4-mh-7zc" secondAttribute="bottom" constant="22" id="L2c-d6-u6Z"/>
+                            <constraint firstItem="XV4-mh-7zc" firstAttribute="centerX" secondItem="0XW-67-FUc" secondAttribute="centerX" id="gfi-92-7W9"/>
                             <constraint firstItem="ytO-Xj-VCQ" firstAttribute="top" secondItem="4u7-PM-2Ft" secondAttribute="bottom" constant="20" id="oyg-dD-DrI"/>
                             <constraint firstItem="ytO-Xj-VCQ" firstAttribute="trailing" secondItem="0XW-67-FUc" secondAttribute="trailingMargin" constant="-20" id="z7B-QY-1wX"/>
                             <constraint firstItem="ytO-Xj-VCQ" firstAttribute="leading" secondItem="0XW-67-FUc" secondAttribute="leadingMargin" constant="20" id="zSY-kL-xW2"/>
@@ -60,7 +71,7 @@ App 將會自動取得最新擋廣告網站清單，你也可以透過左上角�
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ro1-fk-wGO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1528.8" y="-423.23838080959524"/>
+            <point key="canvasLocation" x="1526.25" y="-425"/>
         </scene>
         <!--關於-->
         <scene sceneID="51a-Ho-f1M">
