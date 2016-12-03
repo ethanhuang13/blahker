@@ -2,8 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSHumanReadableDescription</key>
+	<string>啟用 Blahker 以阻擋蓋版廣告</string>
 	<key>CFBundleDevelopmentRegion</key>
-	<string>en</string>
+	<string>zh-TW</string>
 	<key>CFBundleDisplayName</key>
 	<string>Content Blocker</string>
 	<key>CFBundleExecutable</key>

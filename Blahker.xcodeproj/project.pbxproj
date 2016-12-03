@@ -657,6 +657,7 @@
 			baseConfigurationReference = 837D0D9CCCF5D100C5B66E29 /* Pods-Blahker.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = SE9N6X5V7C;
 				INFOPLIST_FILE = Blahker/Info.plist;
@@ -673,6 +674,7 @@
 			baseConfigurationReference = B1BD962580DF9273D253C6AA /* Pods-Blahker.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = SE9N6X5V7C;
 				INFOPLIST_FILE = Blahker/Info.plist;
