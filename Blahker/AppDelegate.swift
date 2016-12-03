@@ -47,21 +47,33 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func application(_ application: UIApplication, performFetchWithCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
-        SFContentBlockerManager.getStateOfContentBlocker(withIdentifier: contentBlockerExteiosnIdentifier, completionHandler: { (state, error) -> Void in
-            switch state?.isEnabled {
-            case .some(true):
-                SFContentBlockerManager.reloadContentBlocker(withIdentifier: contentBlockerExteiosnIdentifier, completionHandler: { (error) -> Void in
-                    if error == nil {
-                        print("background reloadContentBlocker complete")
-                        completionHandler(.newData)
-                    } else {
-                        print("background reloadContentBlocker: \(error)")
-                        completionHandler(.failed)
-                    }
-                })
-            default:
-                completionHandler(.noData)
-            }
-        })
+        if #available(iOS 10.0, *) {
+            SFContentBlockerManager.getStateOfContentBlocker(withIdentifier: contentBlockerExteiosnIdentifier, completionHandler: { (state, error) -> Void in
+                switch state?.isEnabled {
+                case .some(true):
+                    SFContentBlockerManager.reloadContentBlocker(withIdentifier: contentBlockerExteiosnIdentifier, completionHandler: { (error) -> Void in
+                        if error == nil {
+                            print("background reloadContentBlocker complete")
+                            completionHandler(.newData)
+                        } else {
+                            print("background reloadContentBlocker: \(error)")
+                            completionHandler(.failed)
+                        }
+                    })
+                default:
+                    completionHandler(.noData)
+                }
+            })
+        } else {
+            SFContentBlockerManager.reloadContentBlocker(withIdentifier: contentBlockerExteiosnIdentifier, completionHandler: { (error) -> Void in
+                if error == nil {
+                    print("background reloadContentBlocker complete")
+                    completionHandler(.newData)
+                } else {
+                    print("background reloadContentBlocker: \(error)")
+                    completionHandler(.failed)
+                }
+            })
+        }
     }
 }
