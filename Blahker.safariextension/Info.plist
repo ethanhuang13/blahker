@@ -16,6 +16,11 @@
 	<string>1.0.0</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>Chrome</key>
+	<dict>
+		<key>Global Page</key>
+		<string>Global.html</string>
+	</dict>
 	<key>Content</key>
 	<dict>
 		<key>Content Blocker</key>

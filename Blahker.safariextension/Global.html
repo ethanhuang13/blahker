@@ -1,0 +1,13 @@
+<html>
+<body>
+<script type="text/javascript">
+
+xmlhttp = new XMLHttpRequest();
+xmlhttp.open("GET", "https://raw.githubusercontent.com/ethanhuang13/blahker/master/Blahker.safariextension/blockerList.json", false);
+xmlhttp.send();
+var contentBlockingRules = xmlhttp.responseText;
+
+safari.extension.setContentBlocker(contentBlockingRules);
+</script>
+</body>
+</html>
