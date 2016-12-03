@@ -4,6 +4,7 @@
 
 ## 2016-12-04
 - Advanced about page #15
+- Add Crashlytics #18
 
 ## 2016-12-03
 - Update setn.com

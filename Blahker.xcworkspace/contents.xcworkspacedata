@@ -13,4 +13,7 @@
    <FileRef
       location = "group:Blahker.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
 </Workspace>
