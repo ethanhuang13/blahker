@@ -2,6 +2,9 @@
 
 # Blahker
 
+## 2016-12-03
+- Update setn.com
+
 ## 2016-12-02
 - Update appledaily.com.tw
 
