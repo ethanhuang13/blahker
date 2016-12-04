@@ -18,6 +18,17 @@ class AboutViewController: UITableViewController {
         selectedBackgroundView.backgroundColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
         cell.selectedBackgroundView = selectedBackgroundView
 
+        switch cell.reuseIdentifier {
+        case .some("about"):
+            cell.detailTextLabel?.text = {
+                let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? ""
+                let build = Bundle.main.infoDictionary?["CFBundleVersion"] as? String ?? ""
+                return "v\(version)(\(build))"
+            }()
+            
+        default: break
+        }
+
         return cell
     }
 
@@ -36,6 +47,12 @@ class AboutViewController: UITableViewController {
                     guard let url = URL(string: "https://github.com/ethanhuang13/blahker/blob/master/Blahker.safariextension/blockerList.json") else { return }
                     let vc = SFSafariViewController(url: url)
                     vc.title = "已阻擋的蓋版網站清單"
+
+                    if #available(iOS 10.0, *) {
+                        vc.preferredBarTintColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+                        vc.preferredControlTintColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+                    }
+
                     self.show(vc, sender: self)
                 }))
                 alertController.addAction(UIAlertAction(title: "我要回報廣告網站", style: .default, handler:  { (action) in
@@ -58,11 +75,22 @@ class AboutViewController: UITableViewController {
                 popPC?.sourceRect = cell.bounds
 
                 self.present(vc, animated: true, completion: nil)
+                
+            case "facebook":
+                guard let url = URL(string: "https://www.facebook.com/blahker/") else { return }
+                UIApplication.shared.openURL(url)
+
 
             case "about":
                 guard let url = URL(string: "https://github.com/ethanhuang13/blahker/blob/master/README.md") else { return }
                 let vc = SFSafariViewController(url: url)
                 vc.title = "關於"
+
+                if #available(iOS 10.0, *) {
+                    vc.preferredBarTintColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+                    vc.preferredControlTintColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+                }
+
                 self.show(vc, sender: self)
                 
             default:

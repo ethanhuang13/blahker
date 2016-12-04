@@ -50,8 +50,22 @@ class SetupViewController: UIViewController {
 
                 if error == nil {
                     print("reloadContentBlocker complete")
+
+                    DispatchQueue.main.async {
+                        if #available(iOS 10.0, *) {
+                            let generator = UIImpactFeedbackGenerator(style: .light)
+                            generator.impactOccurred()
+                        }
+                    }
                 } else {
                     print("reloadContentBlocker: \(error)")
+
+                    DispatchQueue.main.async {
+                        if #available(iOS 10.0, *) {
+                            let generator = UINotificationFeedbackGenerator()
+                            generator.notificationOccurred(.error)
+                        }
+                    }
                 }
             })
         }
