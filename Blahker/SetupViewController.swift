@@ -11,6 +11,13 @@ import SafariServices
 import StoreKit
 
 class SetupViewController: UIViewController {
+    /// Use this flag to show alert after automatically reloading
+    private var isLoadedFailedBefore = false
+
+    /// Use this flag to show alert after manually reloading
+    private var isReloadingManually = false
+
+    /// Loading indicator and refresh button isEnabled toggling
     private var isLoadingBlockerList: Bool = false {
         didSet {
             let isLoading = isLoadingBlockerList
@@ -38,33 +45,45 @@ class SetupViewController: UIViewController {
                 + "\n\n欲回報廣告網站或者了解更多資訊，請參閱「關於」頁面。"
         }
 
-        NotificationCenter.default.addObserver(self, selector: #selector(checkContentBlockerState), name: .UIApplicationDidBecomeActive, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(checkContentBlockerState), name: .UIApplicationWillEnterForeground, object: nil)
     }
 
     @objc private func checkContentBlockerState() {
+        if let presentedVC = self.presentedViewController as? UIAlertController {
+            presentedVC.dismiss(animated: true)
+        }
+
         self.isLoadingBlockerList = true
 
         func reload() {
             SFContentBlockerManager.reloadContentBlocker(withIdentifier: contentBlockerExteiosnIdentifier, completionHandler: { (error) -> Void in
-                self.isLoadingBlockerList = false
+                DispatchQueue.main.async {
+                    self.isLoadingBlockerList = false
 
-                if error == nil {
-                    print("reloadContentBlocker complete")
+                    if self.isReloadingManually || self.isLoadedFailedBefore {
+                        self.isReloadingManually = false
 
-                    DispatchQueue.main.async {
-                        if #available(iOS 10.0, *) {
-                            let generator = UIImpactFeedbackGenerator(style: .light)
-                            generator.impactOccurred()
-                        }
-                    }
-                } else {
-                    print("reloadContentBlocker: \(error)")
+                        let title = (error == nil) ? "更新成功" : "更新失敗"
+                        let message = (error == nil) ? "已下載最新擋廣告網站清單" : "請檢查網路設定"
+                        let feedbackType: UINotificationFeedbackType = (error == nil) ? .success : .error
 
-                    DispatchQueue.main.async {
+                        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+                        alertController.addAction(UIAlertAction(title: "確定", style: .cancel, handler:  { (action) in }))
+                        self.present(alertController, animated: true, completion: nil)
+
+
                         if #available(iOS 10.0, *) {
                             let generator = UINotificationFeedbackGenerator()
-                            generator.notificationOccurred(.error)
+                            generator.notificationOccurred(feedbackType)
                         }
+                    }
+
+                    if error == nil {
+                        print("reloadContentBlocker complete")
+                        self.isLoadedFailedBefore = false
+                    } else {
+                        print("reloadContentBlocker: \(error)")
+                        self.isLoadedFailedBefore = true
                     }
                 }
             })
@@ -72,19 +91,26 @@ class SetupViewController: UIViewController {
 
         if #available(iOS 10.0, *) {
             SFContentBlockerManager.getStateOfContentBlocker(withIdentifier: contentBlockerExteiosnIdentifier, completionHandler: { (state, error) -> Void in
-                switch state?.isEnabled {
-                case .some(true):
-                    reload()
+                DispatchQueue.main.async {
+                    switch state?.isEnabled {
+                    case .some(true):
+                        reload()
 
-                default:
-                    self.isLoadingBlockerList = false
-                    
-                    let alertController = UIAlertController(title: "請開啟內容阻擋器", message: "請打開「設定」 > 「Safari」 > 「內容阻擋器」，並啟用 Blahker", preferredStyle: .alert)
-                    alertController.addAction(UIAlertAction(title: "確定", style: .default, handler:  { (action) in
-                        self.checkContentBlockerState()
-                    }))
-                    alertController.addAction(UIAlertAction(title: "取消", style: .cancel, handler: nil))
-                    self.present(alertController, animated: true, completion: nil)
+                    default:
+                        self.isLoadingBlockerList = false
+                        self.isLoadedFailedBefore = true
+
+                        let alertController = UIAlertController(title: "請開啟內容阻擋器", message: "請打開「設定」 > 「Safari」 > 「內容阻擋器」，並啟用 Blahker", preferredStyle: .alert)
+                        alertController.addAction(UIAlertAction(title: "確定", style: .default, handler:  { (action) in
+                            self.isReloadingManually = true
+                            self.checkContentBlockerState()
+                        }))
+                        alertController.addAction(UIAlertAction(title: "取消", style: .cancel, handler: nil))
+                        self.present(alertController, animated: true, completion: nil)
+
+                        let generator = UINotificationFeedbackGenerator()
+                        generator.notificationOccurred(.error)
+                    }
                 }
             })
         } else {
@@ -93,6 +119,7 @@ class SetupViewController: UIViewController {
     }
 
     @IBAction func reloadButton(_ sender: Any) {
+        isReloadingManually = true
         self.checkContentBlockerState()
     }
 
