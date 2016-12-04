@@ -2,11 +2,12 @@
 
 # Blahker
 
-## [1.0.1(3)] - 2016-12-04
+## [1.0.0(3)] - 2016-12-04
 - Taptic feedback for refreshed indication #20
 - Adjust SafariViewController barTintColor to match app style #21
 - Add Facebook Page link in About #22
 - Automatically show version in about #23
+- List current rules in the app #10
 
 ---
 ## [1.0.0(2)] - 2016-12-04

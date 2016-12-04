@@ -39,6 +39,7 @@ class AboutViewController: UITableViewController {
             let identifier = cell.reuseIdentifier {
 
             switch identifier {
+                /*
             case "list":
                 let alertController = UIAlertController(title: "已阻擋的蓋版廣告網站", message: "Blahker 阻擋台灣常見的數十個網站，並且會自動更新。未來將會把完整的列表列出。", preferredStyle: .alert)
                 alertController.addAction(UIAlertAction(title: "取消", style: .cancel, handler:  { (action) in
@@ -59,6 +60,7 @@ class AboutViewController: UITableViewController {
                     self.report()
                 }))
                 self.present(alertController, animated: true, completion: nil)
+                 */
 
             case "report":
                 self.report()

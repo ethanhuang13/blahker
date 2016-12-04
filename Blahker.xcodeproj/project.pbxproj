@@ -10,6 +10,7 @@
 		3EDE7F71B98970DC05771382 /* Pods_ContentBlocker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73AEBA8BD5DBF6439451D300 /* Pods_ContentBlocker.framework */; };
 		6C04CC2B1DEF4967006B23D4 /* BlockerListLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C04CC2A1DEF4967006B23D4 /* BlockerListLoader.swift */; };
 		6C12CBF61DF34B35003E129D /* PurchaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C12CBF51DF34B35003E129D /* PurchaseManager.swift */; };
+		6C1E61F91DF405F9002BA1B5 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1E61F81DF405F9002BA1B5 /* ListViewController.swift */; };
 		6C83596A1DE312FD0033A1BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8359691DE312FD0033A1BC /* AppDelegate.swift */; };
 		6C83596C1DE312FD0033A1BC /* SetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C83596B1DE312FD0033A1BC /* SetupViewController.swift */; };
 		6C83596F1DE312FD0033A1BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C83596D1DE312FD0033A1BC /* Main.storyboard */; };
@@ -65,6 +66,7 @@
 /* Begin PBXFileReference section */
 		6C04CC2A1DEF4967006B23D4 /* BlockerListLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockerListLoader.swift; sourceTree = "<group>"; };
 		6C12CBF51DF34B35003E129D /* PurchaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurchaseManager.swift; sourceTree = "<group>"; };
+		6C1E61F81DF405F9002BA1B5 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		6C8359661DE312FD0033A1BC /* Blahker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blahker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C8359691DE312FD0033A1BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6C83596B1DE312FD0033A1BC /* SetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupViewController.swift; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 				6C8359691DE312FD0033A1BC /* AppDelegate.swift */,
 				6C83596B1DE312FD0033A1BC /* SetupViewController.swift */,
 				6CF743F41DF2D9C6008CA1CC /* AboutViewController.swift */,
+				6C1E61F81DF405F9002BA1B5 /* ListViewController.swift */,
 				6C12CBF51DF34B35003E129D /* PurchaseManager.swift */,
 				6C83596D1DE312FD0033A1BC /* Main.storyboard */,
 				6C8359701DE312FD0033A1BC /* Assets.xcassets */,
@@ -499,6 +502,7 @@
 			files = (
 				6C83596C1DE312FD0033A1BC /* SetupViewController.swift in Sources */,
 				6C83596A1DE312FD0033A1BC /* AppDelegate.swift in Sources */,
+				6C1E61F91DF405F9002BA1B5 /* ListViewController.swift in Sources */,
 				6CF743F51DF2D9C6008CA1CC /* AboutViewController.swift in Sources */,
 				6CF96A861DE931A100043471 /* ContentBlockerRequestHandlerError.swift in Sources */,
 				6C12CBF61DF34B35003E129D /* PurchaseManager.swift in Sources */,
