@@ -8,6 +8,7 @@
 - Add tvbs.com.tw
 - Add talk.tw
 - Add life.tw
+- Add storm.mg
 
 ## 2016-12-05
 - Add teepr.com

@@ -130,7 +130,7 @@
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*techbang.com"]
+      "if-domain": ["*techbang.com", "*storm.mg"]
     },
     "action": {
     "type": "css-display-none",
