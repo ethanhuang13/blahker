@@ -6,6 +6,7 @@
 - Add ck101.com
 - Add buzzhand.com
 - Add tvbs.com.tw
+- Add talk.tw
 
 ## 2016-12-05
 - Add teepr.com

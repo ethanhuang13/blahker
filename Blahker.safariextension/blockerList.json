@@ -504,5 +504,35 @@
     "type": "css-display-none",
     "selector": "#one_ad_set_show"
     }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*talk.tw"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "#divAdCover"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*talk.tw"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": ".mobileAd-widget-2"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*talk.tw"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "div.fb-likebox.widget"
+    }
   }
 ]
