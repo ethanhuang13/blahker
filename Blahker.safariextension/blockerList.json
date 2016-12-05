@@ -465,5 +465,15 @@
     "type": "css-display-none",
     "selector": "div#hotspot"
     }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*ck101.com"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": ".adfixWp"
+    }
   }
 ]
