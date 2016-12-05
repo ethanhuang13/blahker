@@ -475,5 +475,24 @@
     "type": "css-display-none",
     "selector": ".adfixWp"
     }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*buzzhand.com"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": ".mash-lightbox.small-white-dialog.shown.mash-lightbox-fixed"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": "min",
+      "if-domain": ["*buzzhand.com"]
+    },
+    "action": {
+    "type": "block"
+    }
   }
 ]

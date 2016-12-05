@@ -5,6 +5,7 @@
 ## 2016-12-05
 - Add teepr.com
 - Add ck101.com
+- Add buzzhand.com
 
 ## [1.0.0(3)] - 2016-12-04
 - Taptic feedback for refreshed indication #20
