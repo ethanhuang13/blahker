@@ -425,5 +425,35 @@
     "type": "css-display-none",
     "selector": "#MDJPageAD"
     }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*teepr.com"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "#smaato_modalAd"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*teepr.com"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": ".popmake.size-custom.active.fixed.custom-position"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*teepr.com"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "#popmake-overlay"
+    }
   }
 ]

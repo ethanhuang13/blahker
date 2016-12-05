@@ -2,6 +2,9 @@
 
 # Blahker
 
+## 2016-12-05
+- Add teepr.com
+
 ## [1.0.0(3)] - 2016-12-04
 - Taptic feedback for refreshed indication #20
 - Adjust SafariViewController barTintColor to match app style #21
