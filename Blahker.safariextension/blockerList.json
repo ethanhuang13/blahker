@@ -455,5 +455,15 @@
     "type": "css-display-none",
     "selector": "#popmake-overlay"
     }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*teepr.com"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "div#hotspot"
+    }
   }
 ]
