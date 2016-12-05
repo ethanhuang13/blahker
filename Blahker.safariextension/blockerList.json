@@ -534,5 +534,25 @@
     "type": "css-display-none",
     "selector": "div.fb-likebox.widget"
     }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*life.tw"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "div#fullblock"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*life.tw"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "div#fullfbblock"
+    }
   }
 ]
