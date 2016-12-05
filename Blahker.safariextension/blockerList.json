@@ -494,5 +494,15 @@
     "action": {
     "type": "block"
     }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*tvbs.com.tw"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "#one_ad_set_show"
+    }
   }
 ]
