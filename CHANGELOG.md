@@ -9,6 +9,8 @@
 - Add talk.tw
 - Add life.tw
 - Add storm.mg
+- Add juksy.com
+- Add vogue.com.tw
 
 ## 2016-12-05
 - Add teepr.com

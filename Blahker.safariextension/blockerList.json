@@ -554,5 +554,25 @@
     "type": "css-display-none",
     "selector": "div#fullfbblock"
     }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*juksy.com"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "div#cover"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*vogue.com.tw"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "div.mask_off"
+    }
   }
 ]
