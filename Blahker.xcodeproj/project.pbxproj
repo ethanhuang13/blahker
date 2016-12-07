@@ -311,7 +311,7 @@
 					6C8359651DE312FD0033A1BC = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = SE9N6X5V7C;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -333,7 +333,7 @@
 					6CC9F0C21DE31340004142AC = {
 						CreatedOnToolsVersion = 8.2;
 						DevelopmentTeam = SE9N6X5V7C;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -667,11 +667,14 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = SE9N6X5V7C;
 				INFOPLIST_FILE = Blahker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.elaborapp.Blahker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "688b8b91-c605-446b-877d-43c1aff84925";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development com.elaborapp.Blahker";
 				SWIFT_VERSION = 3.0.1;
 				SWIFT_WHOLE_MODULE_OPTIMIZATION = YES;
 			};
@@ -684,11 +687,14 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = SE9N6X5V7C;
 				INFOPLIST_FILE = Blahker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.elaborapp.Blahker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "491b2896-d595-4de9-a26f-5d9859d68d07";
+				PROVISIONING_PROFILE_SPECIFIER = "match AppStore com.elaborapp.Blahker";
 				SWIFT_VERSION = 3.0.1;
 				SWIFT_WHOLE_MODULE_OPTIMIZATION = YES;
 			};
@@ -758,12 +764,15 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = SE9N6X5V7C;
 				INFOPLIST_FILE = "$(SRCROOT)/ContentBlocker/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.elaborapp.Blahker.ContentBlocker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "2f2a0e6a-51b3-4464-9634-373281a38b0e";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development com.elaborapp.Blahker.ContentBlocker";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0.1;
 				SWIFT_WHOLE_MODULE_OPTIMIZATION = YES;
@@ -776,12 +785,15 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = SE9N6X5V7C;
 				INFOPLIST_FILE = "$(SRCROOT)/ContentBlocker/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.elaborapp.Blahker.ContentBlocker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "48bf8314-caad-4d09-b313-b28b4ad78482";
+				PROVISIONING_PROFILE_SPECIFIER = "match AppStore com.elaborapp.Blahker.ContentBlocker";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0.1;
 				SWIFT_WHOLE_MODULE_OPTIMIZATION = YES;
