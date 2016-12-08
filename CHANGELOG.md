@@ -2,6 +2,9 @@
 
 # Blahker
 
+## 2016-12-08
+- Add dongtw.com
+
 ## 2016-12-06
 - Add ck101.com
 - Add buzzhand.com
