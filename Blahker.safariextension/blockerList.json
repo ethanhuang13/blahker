@@ -574,5 +574,25 @@
     "type": "css-display-none",
     "selector": "div.mask_off"
     }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*roodo.com"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "div.sitemaji_inters"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*roodo.com"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "div.slidead"
+    }
   }
 ]

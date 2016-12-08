@@ -4,6 +4,8 @@
 
 ## 2016-12-08
 - Add dongtw.com
+- Update pixnet.net
+- Add roodo.com
 
 ## 2016-12-06
 - Add ck101.com
