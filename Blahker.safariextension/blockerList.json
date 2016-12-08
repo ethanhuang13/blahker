@@ -130,7 +130,7 @@
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*techbang.com", "*storm.mg"]
+      "if-domain": ["*techbang.com", "*storm.mg", "*pixnet.net"]
     },
     "action": {
     "type": "css-display-none",
