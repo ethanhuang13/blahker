@@ -2,6 +2,13 @@
 
 # Blahker
 
+## 2016-12-09
+- Update ck101.com #25
+- Add jkforum.net #26
+- Add qooah.com #27
+- Add gamer.com.tw #28
+- Add dramaq.cc #29
+
 ## 2016-12-08
 - Add dongtw.com
 - Update pixnet.net

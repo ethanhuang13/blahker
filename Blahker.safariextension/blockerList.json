@@ -479,6 +479,26 @@
   {
     "trigger": {
       "url-filter": ".*",
+      "if-domain": ["*ck101.com"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "#pop_ad_mobile"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*ck101.com"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": ".float_ad_gray_box"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
       "if-domain": ["*buzzhand.com"]
     },
     "action": {
@@ -593,6 +613,66 @@
     "action": {
     "type": "css-display-none",
     "selector": "div.slidead"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*jkforum.net"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "div#coverad"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*qooah.com"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "div.wptouch-mobile-switch"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*gamer.com.tw"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "div.full_ad"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*dramaq.cc"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "ins.clickforceads"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*dramaq.cc"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": ".sweet-overlay"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*dramaq.cc"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": ".sweet-alert"
     }
   }
 ]
