@@ -2,6 +2,9 @@
 
 # Blahker
 
+## 2016-12-11
+- Update ltn.com.tw
+
 ## 2016-12-09
 - Update ck101.com #25
 - Add jkforum.net #26

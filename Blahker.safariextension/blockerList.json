@@ -81,7 +81,7 @@
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*appledaily.com.tw"]
+      "if-domain": ["*appledaily.com.tw", "*ltn.com.tw"]
     },
     "action": {
     "type": "css-display-none",
