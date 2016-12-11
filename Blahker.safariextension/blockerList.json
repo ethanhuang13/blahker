@@ -734,5 +734,35 @@
     "type": "css-display-none",
     "selector": "div.ad-320"
     }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*wetalk.tw"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "div#mobileModal"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*wetalk.tw"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "div.modal-backdrop.in"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": "bootstrap\\.min\\.js",
+      "resource-type": ["script"],
+      "if-domain": ["*wetalk.tw"]
+    },
+    "action": {
+    "type": "block"
+    }
   }
 ]
