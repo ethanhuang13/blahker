@@ -4,6 +4,9 @@
 
 ## 2016-12-11
 - Update ltn.com.tw
+- Add vmus.co #32
+- Add ctitv.com.tw #33
+- Add nextmag.com.tw #34
 
 ## 2016-12-09
 - Update ck101.com #25

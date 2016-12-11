@@ -674,5 +674,65 @@
     "type": "css-display-none",
     "selector": ".sweet-alert"
     }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*vmus.co"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "div#sfoverlay_up"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*vmus.co"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "div#btn_close_up"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*vmus.co"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "div#sf_popup"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*ctitv.com.tw"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "div#adover"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*nextmag.com.tw"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "section.mod-wrapper.mod-ad.ad-320"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*nextmag.com.tw"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "div.ad-320"
+    }
   }
 ]
