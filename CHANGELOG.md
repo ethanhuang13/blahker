@@ -2,6 +2,9 @@
 
 # Blahker
 
+## 2016-12-13
+- Add businessweekly.com.tw #39
+
 ## 2016-12-12
 - Add fhm.com.tw #36
 - Add webptt.com #37
