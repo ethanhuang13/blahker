@@ -2,6 +2,10 @@
 
 # Blahker
 
+## 2016-12-12
+- Add fhm.com.tw #36
+- Add webptt.com #37
+
 ## 2016-12-11
 - Update ltn.com.tw
 - Add vmus.co #32

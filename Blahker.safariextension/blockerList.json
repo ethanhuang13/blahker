@@ -764,5 +764,35 @@
     "action": {
     "type": "block"
     }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*fhm.com.tw"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "div.special_ad_cover.special_ad_cover2.open"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*fhm.com.tw"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "div.ad_box.open"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*webptt.com"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "ins.clickforceads"
+    }
   }
 ]
