@@ -2,6 +2,14 @@
 
 # Blahker
 
+## 2016-12-15
+- Add theinitium.com #42
+- Add mypaper.m.pchome.com.tw #43
+- Add mango02.com #44
+- Add cocomy.net #45
+- Add ispot.news #46
+- Add eprice.com.tw #47
+
 ## 2016-12-13
 - Add businessweekly.com.tw #39
 

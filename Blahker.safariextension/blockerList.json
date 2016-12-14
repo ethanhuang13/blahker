@@ -803,5 +803,144 @@
     "action": {
     "type": "block"
     }
+  },
+  {
+    "trigger": {
+      "url-filter": "gpt\\.js",
+      "if-domain": ["*theinitium.com"]
+    },
+    "action": {
+    "type": "block"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*theinitium.com"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "div.ad-prestitial"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*mypaper.m.pchome.com.tw"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "div.admaskbg"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*mango02.com"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "div#ad-popup-dialog-overlay"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*mango02.com"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "div#ad-popup-dialog"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*mango02.com"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "div.adbox-bg"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*mango02.com"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "div.adbox-wrapper"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*cocomy.net"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "div#adModal"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*cocomy.net"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "div#fbCover.promote-box.promote-box-fixed"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": "bootstrap",
+      "resource-type": ["script"],
+      "if-domain": ["*cocomy.net"]
+    },
+    "action": {
+    "type": "block"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*ispot.news"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "div#win_like.ui_dialog"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*ispot.news"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "div#win_like_mask.dialog_mask.ui_mask"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*eprice.com.tw"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "div.ad-300x250-popup-g"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*eprice.com.tw"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "div#popup-ad-overlay.overlay"
+    }
   }
 ]
