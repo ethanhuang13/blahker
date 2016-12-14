@@ -10,6 +10,7 @@
 - Add ispot.news #46
 - Add eprice.com.tw #47
 - Add cw.com.tw #40
+- Update pixnet.net
 
 ## 2016-12-13
 - Add businessweekly.com.tw #39
