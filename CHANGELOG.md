@@ -9,6 +9,7 @@
 - Add cocomy.net #45
 - Add ispot.news #46
 - Add eprice.com.tw #47
+- Add cw.com.tw #40
 
 ## 2016-12-13
 - Add businessweekly.com.tw #39

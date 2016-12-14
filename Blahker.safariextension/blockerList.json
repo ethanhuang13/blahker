@@ -942,5 +942,15 @@
     "type": "css-display-none",
     "selector": "div#popup-ad-overlay.overlay"
     }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*cw.com.tw"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "div.animate"
+    }
   }
 ]
