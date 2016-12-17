@@ -1,6 +1,8 @@
 # CHANGELOG
 
 # Blahker
+## 2016-12-17
+- Add cheers.com.tw #48
 
 ## 2016-12-15
 - Add theinitium.com #42

@@ -190,7 +190,7 @@
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*cna.com.tw"]
+      "if-domain": ["*cna.com.tw", "*cheers.com.tw"]
     },
     "action": {
     "type": "css-display-none",
@@ -961,6 +961,15 @@
     "action": {
     "type": "css-display-none",
     "selector": "div.animate"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": "jquery\\.fancybox\\.css",
+      "if-domain": ["*cheers.com.tw"]
+    },
+    "action": {
+    "type": "block"
     }
   }
 ]
