@@ -479,6 +479,16 @@
   {
     "trigger": {
       "url-filter": ".*",
+      "if-domain": ["*teepr.com"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "div.remodal-is-opened"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
       "if-domain": ["*ck101.com", "*dongtw.com"]
     },
     "action": {
@@ -748,6 +758,16 @@
   {
     "trigger": {
       "url-filter": ".*",
+      "if-domain": ["*nextmag.com.tw"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "div#splashad"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
       "if-domain": ["*wetalk.tw"]
     },
     "action": {
@@ -758,7 +778,7 @@
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*wetalk.tw"]
+      "if-domain": ["*wetalk.tw", "*coco01.net"]
     },
     "action": {
     "type": "css-display-none",
@@ -886,7 +906,7 @@
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*cocomy.net"]
+      "if-domain": ["*cocomy.net", "*coco01.net"]
     },
     "action": {
     "type": "css-display-none",
@@ -970,6 +990,133 @@
     },
     "action": {
     "type": "block"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*soft4fun.net"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "div.spu-bg"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*soft4fun.net"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "div.spu-box"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*tw.on.cc"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "div#mOverLay-container"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*joylah.com"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "div#popupBox"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*joylah.com"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "div#popupBackground"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*icook.tw"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "div.rl-modal"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*babyhome.com.tw"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "div#ad_m_peacock"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*healthylives.tw"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "div#fbFixedAd"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": "fbpop\\.js",
+      "if-domain": ["*healthylives.tw"]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": "class\\.js",
+      "if-domain": ["*kikinote.net"]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*kikinote.net"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "div#Shadow"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": "zone",
+      "if-domain": ["*adaymag.com"]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*adaymag.com"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "div#apps-ad"
     }
   }
 ]

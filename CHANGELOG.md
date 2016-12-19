@@ -1,6 +1,19 @@
 # CHANGELOG
 
 # Blahker
+## 2016-12-19
+- Add tw.on.cc #49
+- Add joylah.com #50
+- Add babyhome.com.tw #51
+- Add icook.tw #52
+- Add soft4fun.net #53
+- Update nextmag.com.tw #54
+- Add coco01.net #55
+- Add healthylives.tw #56
+- Add kikinote.net #57
+- Update teepr.com #58
+- Add adaymag.com #59
+
 ## 2016-12-17
 - Add cheers.com.tw #48
 
