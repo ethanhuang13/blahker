@@ -1015,7 +1015,7 @@
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*tw.on.cc"]
+      "if-domain": ["*on.cc"]
     },
     "action": {
     "type": "css-display-none",
