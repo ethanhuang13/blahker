@@ -1118,5 +1118,25 @@
     "type": "css-display-none",
     "selector": "div#apps-ad"
     }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*natgeomedia.com"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "div.ad-wrapper.mobile"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*plurk.com"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "div.sitemaji_inters"
+    }
   }
 ]

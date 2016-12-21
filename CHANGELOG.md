@@ -1,6 +1,10 @@
 # CHANGELOG
 
 # Blahker
+## 2016-12-21
+- Add natgeomedia.com #61
+- Add plurk.com #62
+
 ## 2016-12-19
 - Add tw.on.cc #49
 - Add joylah.com #50
