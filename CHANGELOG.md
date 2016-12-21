@@ -4,6 +4,7 @@
 ## 2016-12-21
 - Add natgeomedia.com #61
 - Add plurk.com #62
+- Add styletc.com #66
 
 ## 2016-12-19
 - Add tw.on.cc #49
