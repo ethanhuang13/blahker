@@ -1168,5 +1168,15 @@
     "type": "css-display-none",
     "selector": "div#rev-toaster"
     }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*clickme.net"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "div.ADs.ArticleTop"
+    }
   }
 ]

@@ -6,6 +6,7 @@
 - Add plurk.com #62
 - Add styletc.com #66
 - Update teepr.com #63
+- Add clickme.net #67
 
 ## 2016-12-19
 - Add tw.on.cc #49
