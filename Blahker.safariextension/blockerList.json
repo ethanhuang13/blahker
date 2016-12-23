@@ -896,7 +896,7 @@
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*mango02.com"]
+      "if-domain": ["*mango02.com", "*changepw.com"]
     },
     "action": {
     "type": "css-display-none",
@@ -906,7 +906,7 @@
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*mango02.com"]
+      "if-domain": ["*mango02.com", "*changepw.com"]
     },
     "action": {
     "type": "css-display-none",
