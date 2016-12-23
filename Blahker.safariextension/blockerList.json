@@ -1178,5 +1178,34 @@
     "type": "css-display-none",
     "selector": "div.ADs.ArticleTop"
     }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*changepw.com"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "div.ypabox-wrapper"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*changepw.com"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "div.ypabox-bg"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": "output\\.min\\.js",
+      "if-domain": ["*managertoday.com.tw"]
+    },
+    "action": {
+      "type": "block"
+    }
   }
 ]

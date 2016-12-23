@@ -1,6 +1,10 @@
 # CHANGELOG
 
 # Blahker
+## 2016-12-24
+- Add changepw.com #68
+- Add managertoday.com.tw #69
+
 ## 2016-12-21
 - Add natgeomedia.com #61
 - Add plurk.com #62
