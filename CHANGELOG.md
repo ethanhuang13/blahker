@@ -1,6 +1,10 @@
 # CHANGELOG
 
 # Blahker
+## 2016-12-25
+- Add mypaper.pchome.com.tw #71
+- Add kiwsy.com.hk #72
+
 ## 2016-12-24
 - Add changepw.com #68
 - Add managertoday.com.tw #69

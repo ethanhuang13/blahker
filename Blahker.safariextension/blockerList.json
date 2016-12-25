@@ -1207,5 +1207,45 @@
     "action": {
       "type": "block"
     }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*mypaper.pchome.com.tw"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "div.czy_layer"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*mypaper.pchome.com.tw"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "div.czy_wrapper"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*kiwsy.com.hk"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "div#ad-popup-dialog-overlay"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*kiwsy.com.hk"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "div#ad-popup-dialog"
+    }
   }
 ]
