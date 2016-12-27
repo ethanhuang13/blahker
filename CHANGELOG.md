@@ -1,6 +1,10 @@
 # CHANGELOG
 
 # Blahker
+## 2016-12-27
+- Add bnext.com.tw #73
+- Add news.m.pchome.com.tw #74
+
 ## 2016-12-25
 - Add mypaper.pchome.com.tw #71
 - Add kiwsy.com.hk #72
