@@ -866,7 +866,7 @@
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*mypaper.m.pchome.com.tw"]
+      "if-domain": ["*mypaper.m.pchome.com.tw", "*news.m.pchome.com.tw"]
     },
     "action": {
     "type": "css-display-none",
@@ -1246,6 +1246,16 @@
     "action": {
     "type": "css-display-none",
     "selector": "div#ad-popup-dialog"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*bnext.com.tw"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "div#ad-pixfs"
     }
   }
 ]
