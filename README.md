@@ -10,7 +10,7 @@
 
 Blahker 是開源的，且以後將會採用適當的授權方式開放協作。如果你對於參與這個項目有興趣的話，包括提出需求申請，請參考 [CONTRIBUTING](https://github.com/ethanhuang13/blahker/blob/master/CONTRIBUTING.md) 文件。
 
-目前 macOS 版可以直接下載，iOS 版預計會透過 Elaborapp Co., Ltd. （精巧應用）的名義免費發布於 App Store，並且會加上應用程式內購的捐款功能，以提供主要開發者 [@ethanhuang13](https://twitter.com/ethanhuang13) 的部分開發成本。
+目前 [macOS 版](https://github.com/ethanhuang13/blahker/blob/master/Blahker.safariextz)可以直接下載，[iOS 版](https://itunes.apple.com/tw/app/blahker-ba-la-ke-gai-ban-guang/id1182699267?mt=8&at=1l3vpBq&pt=99170802&ct=readme)透過 Elaborapp Co., Ltd. （精巧應用）免費發布於 App Store，並且加上應用程式內購的捐款功能，以提供主要開發者 [@ethanhuang13](https://twitter.com/ethanhuang13) 的部分開發成本。
 
 ## 廣告阻擋原理與隱私問題
 
@@ -22,7 +22,7 @@ Blahker 是開源的，且以後將會採用適當的授權方式開放協作。
 
 ## macOS 版
 
-開發中，但已可下載使用。預計之後上架至 [Safari Extensions Gallery](https://safari-extensions.apple.com)。值得注意的是，macOS 版的阻擋規則是內建在插件檔當中，所以如果阻擋規則有更新的話，必須手動下載新版，或是未來透過 Safari Extensions Gallery 自動更新。
+已可直接下載使用。預計之後上架至 [Safari Extensions Gallery](https://safari-extensions.apple.com)。值得注意的是，macOS 版的阻擋規則是內建在插件檔當中，所以如果阻擋規則有更新的話，必須手動下載新版，或是未來透過 Safari Extensions Gallery 自動更新。
 
 ### 系統需求
 - macOS 10.10 (OS X Yosemite) 以上
@@ -36,7 +36,8 @@ Blahker 是開源的，且以後將會採用適當的授權方式開放協作。
 ## iOS 版
 
 - 下載 [Blahker](https://itunes.apple.com/tw/app/blahker-ba-la-ke-gai-ban-guang/id1182699267?mt=8&at=1l3vpBq&pt=99170802&ct=readme)
-- 如果你具備 Apple 開發者身分，可以將原始碼下載後安裝到自己的裝置上使用。iOS 版的阻擋規則是讀取自 GitHub 上的 [blockerList.json](https://github.com/ethanhuang13/blahker/blob/master/Blahker.safariextension/blockerList.json)，所以可以在不更新 app 的情況下自動更新阻擋規則。
+- 如果你具備 Apple 開發者身分，可以將原始碼下載後安裝到自己的裝置上使用
+- iOS 版的阻擋規則是讀取自 GitHub 上的 [blockerList.json](https://github.com/ethanhuang13/blahker/blob/master/Blahker.safariextension/blockerList.json)，所以可以在不更新 app 的情況下自動更新阻擋規則
 
 安裝 app 之後，在「設定 > Safari > 內容阻擋器」啟用 app 中所附的插件。
 
@@ -55,7 +56,7 @@ Blahker 是開源的，且以後將會採用適當的授權方式開放協作。
 - [BlockParty](https://github.com/krishkumar/BlockParty) - 一個開源且原理與 Blahker 類似的廣告阻擋器
 
 ---
-## 補充：開發者感想
+## 開發者的感想
 廣告阻擋器並不是終極解答。一部分人使用阻擋器，使得網站必須投放更多更重的廣告來平衡收益。到頭來，沒有用阻擋器的使用者反而會看到更多廣告，而來不及阻擋的廣告也只會更多。這其實是個經濟學的課題。
 
 目前 Blahker 只想針對使用者體驗最差的蓋版廣告下手。研究的過程中有發現不少網站雖然有廣告，但是沒有那麼令人厭惡，而且載入速度也能滿意。相信一定有更好的方式可以兼顧內容網站的品質與使用者體驗。
