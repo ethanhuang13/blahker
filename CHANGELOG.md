@@ -1,6 +1,10 @@
 # CHANGELOG
 
 # Blahker
+## 2016-12-28
+- Add hottimes.org #80
+- Add twgreatdaily.com, thegreatdaily.com #81
+
 ## 2016-12-27
 - Add bnext.com.tw #73
 - Add news.m.pchome.com.tw #74

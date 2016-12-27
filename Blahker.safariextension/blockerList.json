@@ -240,7 +240,7 @@
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*mobile01.com"]
+      "if-domain": ["*mobile01.com", "*hottimes.org", "*twgreatdaily.com", "*thegreatdaily.com"]
     },
     "action": {
     "type": "css-display-none",
@@ -1306,6 +1306,25 @@
     "action": {
     "type": "css-display-none",
     "selector": "div.jquery-modal.blocker"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*hottimes.org", "*twgreatdaily.com", "*thegreatdaily.com"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "div.modal.fade"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": "bootstrap\\.js",
+      "if-domain": ["*hottimes.org", "*twgreatdaily.com", "*thegreatdaily.com"]
+    },
+    "action": {
+    "type": "block"
     }
   }
 ]
