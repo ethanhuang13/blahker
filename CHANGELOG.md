@@ -4,6 +4,10 @@
 ## 2016-12-27
 - Add bnext.com.tw #73
 - Add news.m.pchome.com.tw #74
+- Add share.youthwant.com.tw #76
+- Add twpapa.com #77
+- Add getez.info #78
+- Add fullyu.com #79
 
 ## 2016-12-25
 - Add mypaper.pchome.com.tw #71

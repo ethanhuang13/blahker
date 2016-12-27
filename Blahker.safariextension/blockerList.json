@@ -896,7 +896,7 @@
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*mango02.com", "*changepw.com"]
+      "if-domain": ["*mango02.com", "*changepw.com", "*twpapa.com"]
     },
     "action": {
     "type": "css-display-none",
@@ -906,7 +906,7 @@
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*mango02.com", "*changepw.com"]
+      "if-domain": ["*mango02.com", "*changepw.com", "*twpapa.com"]
     },
     "action": {
     "type": "css-display-none",
@@ -1256,6 +1256,56 @@
     "action": {
     "type": "css-display-none",
     "selector": "div#ad-pixfs"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*share.youthwant.com.tw"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "div.sitemaji_inters"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*share.youthwant.com.tw"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "div.slidead"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*getez.info"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "div#ad_block_15"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*fullyu.com"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "div#tips"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*fullyu.com"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "div.jquery-modal.blocker"
     }
   }
 ]
