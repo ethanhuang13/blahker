@@ -200,7 +200,7 @@
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*nownews.com"]
+      "if-domain": ["*nownews.com", "*ltn.com.tw"]
     },
     "action": {
     "type": "css-display-none",
