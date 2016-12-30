@@ -200,7 +200,7 @@
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*nownews.com", "*ltn.com.tw", "*thenewslens.com"]
+      "if-domain": ["*nownews.com", "*ltn.com.tw", "*thenewslens.com", "*teepr.com"]
     },
     "action": {
     "type": "css-display-none",
@@ -473,7 +473,27 @@
     },
     "action": {
     "type": "css-display-none",
-    "selector": "div.remodal-is-opened"
+    "selector": "div.remodal-overlay"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*teepr.com"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "div.remodal-wrapper"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*teepr.com"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "div[class^=remodal]"
     }
   },
   {

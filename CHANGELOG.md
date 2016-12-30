@@ -7,6 +7,8 @@
 - Update storm.mg #85
 - Add yahoo.com #86
 - Add yam.com #87
+- Update teepr.com #88
+- Update teepr.com #89
 
 ## 2016-12-28
 - Add hottimes.org #80
