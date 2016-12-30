@@ -1,6 +1,13 @@
 # CHANGELOG
 
 # Blahker
+## 2016-12-30
+- Update techbang.com #83
+- Add fashionwaltz.com #84
+- Update storm.mg #85
+- Add yahoo.com #86
+- Add yam.com #87
+
 ## 2016-12-28
 - Add hottimes.org #80
 - Add twgreatdaily.com, thegreatdaily.com #81

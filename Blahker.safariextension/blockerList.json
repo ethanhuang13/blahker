@@ -1326,5 +1326,55 @@
     "action": {
     "type": "block"
     }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*yahoo.com"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "#header-2-GoldenGate-Proxy"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*yam.com"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "#idle_lightbox"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*techbang.com"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "#pop-container"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*storm.mg"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": ".vex"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*fashionwaltz.com"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "div.stb-container"
+    }
   }
 ]
