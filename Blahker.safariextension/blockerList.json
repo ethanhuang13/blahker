@@ -130,7 +130,7 @@
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*techbang.com", "*storm.mg", "*pixnet.net"]
+      "if-domain": ["*techbang.com", "*storm.mg", "*pixnet.net", "*sina.com.tw"]
     },
     "action": {
     "type": "css-display-none",
@@ -1365,6 +1365,16 @@
     "action": {
     "type": "css-display-none",
     "selector": "div.stb-container"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*fashionwaltz.com"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": ".clickforceads"
     }
   }
 ]
