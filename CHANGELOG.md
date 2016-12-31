@@ -9,6 +9,8 @@
 - Add yam.com #87
 - Update teepr.com #88
 - Update teepr.com #89
+- Update sina.com.tw #92
+- Update fashionwaltz.com #93
 
 ## 2016-12-28
 - Add hottimes.org #80
