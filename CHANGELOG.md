@@ -1,6 +1,9 @@
 # CHANGELOG
 
 # Blahker
+## 2017-01-02
+- Update sina.com.tw #92
+
 ## 2016-12-30
 - Update techbang.com #83
 - Add fashionwaltz.com #84
