@@ -250,6 +250,16 @@
   {
     "trigger": {
       "url-filter": ".*",
+      "if-domain": ["*sina.com.tw"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": ".mfp-wrap"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
       "if-domain": ["*mobile01.com"]
     },
     "action": {
