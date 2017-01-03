@@ -13,10 +13,20 @@ protocol BlockerListLoader {
     func loadBlockerList(completion: @escaping (([NSExtensionItem]?, Error?) -> Void))
 }
 
+
+fileprivate let blockerListUrl: URL? = {
+    #if DEBUG
+        return Bundle.main.url(forResource: "blockerList", withExtension: "json")
+    #else
+        return URL(string: "https://raw.githubusercontent.com/ethanhuang13/blahker/master/Blahker.safariextension/blockerList.json")
+    #endif
+}()
+
 extension BlockerListLoader {
     func loadBlockerList(completion: @escaping (([NSExtensionItem]?, Error?) -> Void)) {
+
         let session = URLSession(configuration: .default)
-        guard let url = URL(string: "https://raw.githubusercontent.com/ethanhuang13/blahker/master/Blahker.safariextension/blockerList.json") else {
+        guard let url = blockerListUrl else {
             completion(nil, ContentBlockerRequestHandlerError.createBlockerListUrlFailed)
             return
         }

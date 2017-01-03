@@ -11,6 +11,7 @@
 		6C04CC2B1DEF4967006B23D4 /* BlockerListLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C04CC2A1DEF4967006B23D4 /* BlockerListLoader.swift */; };
 		6C12CBF61DF34B35003E129D /* PurchaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C12CBF51DF34B35003E129D /* PurchaseManager.swift */; };
 		6C1E61F91DF405F9002BA1B5 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1E61F81DF405F9002BA1B5 /* ListViewController.swift */; };
+		6C50B15F1E1BFA4A00D2C338 /* blockerList.json in Resources */ = {isa = PBXBuildFile; fileRef = 6C50B15E1E1BFA4A00D2C338 /* blockerList.json */; };
 		6C83596A1DE312FD0033A1BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8359691DE312FD0033A1BC /* AppDelegate.swift */; };
 		6C83596C1DE312FD0033A1BC /* SetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C83596B1DE312FD0033A1BC /* SetupViewController.swift */; };
 		6C83596F1DE312FD0033A1BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C83596D1DE312FD0033A1BC /* Main.storyboard */; };
@@ -67,6 +68,7 @@
 		6C04CC2A1DEF4967006B23D4 /* BlockerListLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockerListLoader.swift; sourceTree = "<group>"; };
 		6C12CBF51DF34B35003E129D /* PurchaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurchaseManager.swift; sourceTree = "<group>"; };
 		6C1E61F81DF405F9002BA1B5 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		6C50B15E1E1BFA4A00D2C338 /* blockerList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = blockerList.json; path = Blahker.safariextension/blockerList.json; sourceTree = SOURCE_ROOT; };
 		6C8359661DE312FD0033A1BC /* Blahker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blahker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C8359691DE312FD0033A1BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6C83596B1DE312FD0033A1BC /* SetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupViewController.swift; sourceTree = "<group>"; };
@@ -187,6 +189,7 @@
 		6CF96A7F1DE9317500043471 /* ContentBlocker */ = {
 			isa = PBXGroup;
 			children = (
+				6C50B15E1E1BFA4A00D2C338 /* blockerList.json */,
 				6C04CC2A1DEF4967006B23D4 /* BlockerListLoader.swift */,
 				6CF96A801DE9317500043471 /* ContentBlockerRequestHandler.swift */,
 				6CF96A811DE9317500043471 /* ContentBlockerRequestHandlerError.swift */,
@@ -386,6 +389,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C50B15F1E1BFA4A00D2C338 /* blockerList.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -673,7 +677,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.elaborapp.Blahker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "688b8b91-c605-446b-877d-43c1aff84925";
+				PROVISIONING_PROFILE = "976de6dc-1aa7-4061-a8dc-1aeb92542c6f";
 				PROVISIONING_PROFILE_SPECIFIER = "match Development com.elaborapp.Blahker";
 				SWIFT_VERSION = 3.0.1;
 				SWIFT_WHOLE_MODULE_OPTIMIZATION = YES;
@@ -693,7 +697,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.elaborapp.Blahker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "491b2896-d595-4de9-a26f-5d9859d68d07";
+				PROVISIONING_PROFILE = "37c5dcb2-44ef-4848-b5ac-28f1b22bbc67";
 				PROVISIONING_PROFILE_SPECIFIER = "match AppStore com.elaborapp.Blahker";
 				SWIFT_VERSION = 3.0.1;
 				SWIFT_WHOLE_MODULE_OPTIMIZATION = YES;

@@ -1,6 +1,9 @@
 # CHANGELOG
 
 # Blahker
+## 2017-01-04
+- Debug mode for app to verify blockerList.json before push #97
+
 ## 2017-01-03
 - Add SF overlay ad #96
 
