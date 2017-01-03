@@ -4,6 +4,9 @@
 ## 2017-01-04
 - Debug mode for app to verify blockerList.json before push #97
 
+## 2017-01-03
+- Add SF overlay ad #96
+
 ## 2017-01-02
 - Update sina.com.tw #92
 

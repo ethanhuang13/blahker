@@ -1406,5 +1406,15 @@
     "type": "css-display-none",
     "selector": ".clickforceads"
     }
+  },
+  {
+    "trigger": {
+      "url-filter": "adtype\/pop.*js",
+      "resource-type": ["script"],
+      "if-domain": ["*sales-frontier.com"]
+    },
+    "action": {
+    "type": "block"
+    }
   }
 ]
