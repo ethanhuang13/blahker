@@ -1,6 +1,10 @@
 # CHANGELOG
 
 # Blahker
+## 2017-01-08
+- Add everydayhealth.com #99
+- Add parenting.com.tw #100
+
 ## 2017-01-04
 - Debug mode for app to verify blockerList.json before push #97
 
