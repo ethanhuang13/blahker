@@ -1,6 +1,10 @@
 # CHANGELOG
 
 # Blahker
+## 2017-01-10
+- Add ttv.com.tw #101
+- Add sportsv.net #102
+
 ## 2017-01-08
 - Add everydayhealth.com #99
 - Add parenting.com.tw #100

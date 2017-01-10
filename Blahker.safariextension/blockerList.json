@@ -130,7 +130,7 @@
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*techbang.com", "*storm.mg", "*pixnet.net", "*sina.com.tw"]
+      "if-domain": ["*techbang.com", "*storm.mg", "*pixnet.net", "*sina.com.tw", "*ttv.com.tw"]
     },
     "action": {
     "type": "css-display-none",
@@ -668,7 +668,7 @@
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*roodo.com", "*plurk.com", "*share.youthwant.com.tw"]
+      "if-domain": ["*roodo.com", "*plurk.com", "*share.youthwant.com.tw", "*sportsv.net"]
     },
     "action": {
     "type": "css-display-none",
