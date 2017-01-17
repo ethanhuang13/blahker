@@ -1,6 +1,9 @@
 # CHANGELOG
 
 # Blahker
+## 2017-01-17
+- Update thenewslens.com #104
+
 ## 2017-01-10
 - Add ttv.com.tw #101
 - Add sportsv.net #102

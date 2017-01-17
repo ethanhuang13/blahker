@@ -209,6 +209,24 @@
   },
   {
     "trigger": {
+      "url-filter": "innity\\.js",
+      "if-domain": ["*thenewslens.com"]
+    },
+    "action": {
+    "type": "block"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": "proxy_174471\\.js",
+      "if-domain": ["*thenewslens.com"]
+    },
+    "action": {
+    "type": "block"
+    }
+  },
+  {
+    "trigger": {
       "url-filter": ".*",
       "if-domain": ["*sina.com.tw"]
     },
