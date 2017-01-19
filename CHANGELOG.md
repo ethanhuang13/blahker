@@ -1,6 +1,9 @@
 # CHANGELOG
 
 # Blahker
+## 2017-01-19
+- Update tw.mobi.yahoo.com #105
+
 ## 2017-01-17
 - Update thenewslens.com #104
 
