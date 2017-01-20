@@ -1453,5 +1453,15 @@
     "action": {
       "type": "block"
     }
-  }  
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*appledaily.com.tw"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "div#innity_adslot_174648"
+    }
+  }
 ]

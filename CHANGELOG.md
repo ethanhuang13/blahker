@@ -1,6 +1,9 @@
 # CHANGELOG
 
 # Blahker
+## 2017-01-20
+Update appledaily.com.tw #106
+
 ## 2017-01-19
 - Update tw.mobi.yahoo.com #105
 
