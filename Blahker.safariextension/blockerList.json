@@ -184,7 +184,7 @@
     },
     "action": {
     "type": "css-display-none",
-    "selector": ".fancybox-wrap.fancybox-mobile.fancybox-type-iframe.fancybox-opened"
+    "selector": ".fancybox-wrap"
     }
   },
   {
@@ -194,7 +194,27 @@
     },
     "action": {
     "type": "css-display-none",
-    "selector": ".fancybox-overlay.fancybox-overlay-fixed"
+    "selector": ".fancybox-overlay"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*bunnygo.net"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "#fancybox-overlay"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*bunnygo.net"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "#fancybox-wrap"
     }
   },
   {
@@ -1462,6 +1482,46 @@
     "action": {
     "type": "css-display-none",
     "selector": "div#innity_adslot_174648"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*bunnygo.net"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "div#fancybox-content"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*bunnygo.net"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "#fancybox-close"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*gvm.com.tw"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "#colorbox"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*gvm.com.tw"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "#cboxOverlay"
     }
   }
 ]

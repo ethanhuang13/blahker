@@ -1,6 +1,10 @@
 # CHANGELOG
 
 # Blahker
+## 2017-01-24
+- Add gvm.com.tw #108
+- Add bunnygo.net #109
+
 ## 2017-01-20
 - Update appledaily.com.tw #106
 
