@@ -22,15 +22,13 @@ Blahker 是開源的，且以後將會採用適當的授權方式開放協作。
 
 ## macOS 版
 
-已可直接下載使用。預計之後上架至 [Safari Extensions Gallery](https://safari-extensions.apple.com)。值得注意的是，macOS 版的阻擋規則是內建在插件檔當中，所以如果阻擋規則有更新的話，必須手動下載新版，或是未來透過 Safari Extensions Gallery 自動更新。
-
 ### 系統需求
 - macOS 10.10 (OS X Yosemite) 以上
 - Safari 9.0 以上
 
 ### 安裝方式
-- 下載 [Blahker.safariextz](https://github.com/ethanhuang13/blahker/blob/master/Blahker.safariextz)
-- 點擊並安裝至 Safari 即可
+- 從 Apple 官方的 [Safari 延伸功能網站](https://safari-extensions.apple.com/?q=blahker)直接安裝
+- 或是下載 [Blahker.safariextz](https://github.com/ethanhuang13/blahker/blob/master/Blahker.safariextz)，點擊並安裝至 Safari 即可
 
 ---
 ## iOS 版
