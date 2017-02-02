@@ -1523,5 +1523,14 @@
     "type": "css-display-none",
     "selector": "#cboxOverlay"
     }
+  },
+  {
+    "trigger": {
+      "url-filter": "adj.*php",
+      "if-domain": ["*pad.skyozora.com"]
+    },
+    "action": {
+    "type": "block"
+    }
   }
 ]
