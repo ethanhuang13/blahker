@@ -3,6 +3,7 @@
 # Blahker
 ## 2017-02-04
 - Add pad.skyozora.com #112
+- Add bepo.ctitv.com.tw #110
 
 ## 2017-01-24
 - Add gvm.com.tw #108
