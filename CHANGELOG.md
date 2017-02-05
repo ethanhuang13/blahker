@@ -1,6 +1,9 @@
 # CHANGELOG
 
 # Blahker
+## 2017-02-05
+- Add plays01.com #113
+
 ## 2017-02-04
 - Add pad.skyozora.com #112
 - Add bepo.ctitv.com.tw #110

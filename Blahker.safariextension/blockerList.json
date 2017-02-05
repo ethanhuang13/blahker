@@ -1542,5 +1542,25 @@
     "action": {
     "type": "block"
     }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*plays01.com"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": ".ypabox-bg"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*plays01.com"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": ".ypabox-wrapper"
+    }
   }
 ]
