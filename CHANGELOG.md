@@ -1,6 +1,9 @@
 # CHANGELOG
 
 # Blahker
+## 2017-02-09
+- Add gigacircle.com #114
+
 ## 2017-02-05
 - Add plays01.com #113
 

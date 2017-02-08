@@ -200,11 +200,21 @@
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*cna.com.tw", "*cheers.com.tw"]
+      "if-domain": ["*cna.com.tw", "*cheers.com.tw", "*gigacircle.com"]
     },
     "action": {
     "type": "css-display-none",
     "selector": ".fancybox-overlay"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*gigacircle.com"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": ".fancybox-wrap"
     }
   },
   {
@@ -716,7 +726,7 @@
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*roodo.com", "*plurk.com", "*share.youthwant.com.tw", "*sportsv.net"]
+      "if-domain": ["*roodo.com", "*plurk.com", "*share.youthwant.com.tw", "*sportsv.net", "*gigacircle.com"]
     },
     "action": {
     "type": "css-display-none",
