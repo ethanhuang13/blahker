@@ -318,6 +318,26 @@
   {
     "trigger": {
       "url-filter": ".*",
+      "if-domain": ["*sina.com.tw"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "#fullAd"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*sina.com.tw"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "#popup_google_ad"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
       "if-domain": ["*mobile01.com"]
     },
     "action": {

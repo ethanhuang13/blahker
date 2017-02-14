@@ -1,6 +1,9 @@
 # CHANGELOG
 
 # Blahker
+## 2017-02-14
+- Add Update sina.com.tw #115
+
 ## 2017-02-09
 - Add gigacircle.com #114
 
