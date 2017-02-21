@@ -1592,5 +1592,24 @@
     "type": "css-display-none",
     "selector": ".ypabox-wrapper"
     }
+  },
+  {
+    "trigger": {
+      "url-filter": "dfpPop\\.jsp",
+      "if-domain": ["*commonhealth.com.tw"]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*commonhealth.com.tw"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "iframe#iframe"
+    }
   }
 ]

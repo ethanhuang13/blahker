@@ -1,6 +1,9 @@
 # CHANGELOG
 
 # Blahker
+## 2017-02-21
+- Add commonhealth.com.tw #116
+
 ## 2017-02-14
 - Add Update sina.com.tw #115
 
