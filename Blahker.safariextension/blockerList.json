@@ -1611,5 +1611,25 @@
     "type": "css-display-none",
     "selector": "iframe#iframe"
     }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*92-tv.com"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": ".fb-box"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*92-tv.com"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": ".fb_bg"
+    }
   }
 ]
