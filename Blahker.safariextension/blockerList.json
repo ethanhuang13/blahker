@@ -1631,5 +1631,35 @@
     "type": "css-display-none",
     "selector": ".fb_bg"
     }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*overdope.com"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "#sfoverlay_up"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*overdope.com"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "#sf_popup"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*overdope.com"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "#btn_close_up"
+    }
   }
 ]
