@@ -826,7 +826,7 @@
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*vmus.co"]
+      "if-domain": ["*vmus.co", "*inote.tw"]
     },
     "action": {
     "type": "css-display-none",
@@ -836,7 +836,7 @@
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*vmus.co"]
+      "if-domain": ["*vmus.co", "*inote.tw"]
     },
     "action": {
     "type": "css-display-none",
@@ -846,7 +846,7 @@
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*vmus.co"]
+      "if-domain": ["*vmus.co", "*inote.tw"]
     },
     "action": {
     "type": "css-display-none",
@@ -1660,6 +1660,16 @@
     "action": {
     "type": "css-display-none",
     "selector": "#btn_close_up"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*inote.tw"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "#sfoverlay_up"
     }
   }
 ]

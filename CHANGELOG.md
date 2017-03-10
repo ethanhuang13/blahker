@@ -1,6 +1,9 @@
 # CHANGELOG
 
 # Blahker
+## 2017-03-10
+- Add inote.tw #120
+
 ## 2017-02-22
 - Add overdope.com #118
 
