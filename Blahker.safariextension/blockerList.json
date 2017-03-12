@@ -85,7 +85,7 @@
     },
     "action": {
     "type": "css-display-none",
-    "selector": "div#eyeDiv"
+    "selector": "#eyeDiv"
     }
   },
   {
@@ -471,7 +471,7 @@
     },
     "action": {
     "type": "css-display-none",
-    "selector": "div.lightbox"
+    "selector": ".lightbox"
     }
   },
   {
@@ -571,7 +571,7 @@
     },
     "action": {
     "type": "css-display-none",
-    "selector": "div#hotspot"
+    "selector": "#hotspot"
     }
   },
   {
@@ -581,7 +581,7 @@
     },
     "action": {
     "type": "css-display-none",
-    "selector": "div.remodal-overlay"
+    "selector": ".remodal-overlay"
     }
   },
   {
@@ -591,7 +591,7 @@
     },
     "action": {
     "type": "css-display-none",
-    "selector": "div.remodal-wrapper"
+    "selector": ".remodal-wrapper"
     }
   },
   {
@@ -611,7 +611,7 @@
     },
     "action": {
     "type": "css-display-none",
-    "selector": "div.fxMediaBox"
+    "selector": ".fxMediaBox"
     }
   },
   {
@@ -700,7 +700,7 @@
     },
     "action": {
     "type": "css-display-none",
-    "selector": "div.fb-likebox.widget"
+    "selector": ".fb-likebox.widget"
     }
   },
   {
@@ -710,7 +710,7 @@
     },
     "action": {
     "type": "css-display-none",
-    "selector": "div#fullblock"
+    "selector": "#fullblock"
     }
   },
   {
@@ -720,7 +720,7 @@
     },
     "action": {
     "type": "css-display-none",
-    "selector": "div#fullfbblock"
+    "selector": "#fullfbblock"
     }
   },
   {
@@ -730,7 +730,7 @@
     },
     "action": {
     "type": "css-display-none",
-    "selector": "div#cover"
+    "selector": "#cover"
     }
   },
   {
@@ -740,7 +740,7 @@
     },
     "action": {
     "type": "css-display-none",
-    "selector": "div.mask_off"
+    "selector": ".mask_off"
     }
   },
   {
@@ -750,7 +750,7 @@
     },
     "action": {
     "type": "css-display-none",
-    "selector": "div.sitemaji_inters"
+    "selector": ".sitemaji_inters"
     }
   },
   {
@@ -760,7 +760,7 @@
     },
     "action": {
     "type": "css-display-none",
-    "selector": "div.slidead"
+    "selector": ".slidead"
     }
   },
   {
@@ -770,7 +770,7 @@
     },
     "action": {
     "type": "css-display-none",
-    "selector": "div#coverad"
+    "selector": "#coverad"
     }
   },
   {
@@ -780,7 +780,7 @@
     },
     "action": {
     "type": "css-display-none",
-    "selector": "div.wptouch-mobile-switch"
+    "selector": ".wptouch-mobile-switch"
     }
   },
   {
@@ -790,7 +790,7 @@
     },
     "action": {
     "type": "css-display-none",
-    "selector": "div.full_ad"
+    "selector": ".full_ad"
     }
   },
   {
@@ -826,31 +826,61 @@
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*vmus.co", "*inote.tw"]
+      "if-domain": ["*vmus.co", "*inote.tw", "*overdope.com"]
     },
     "action": {
     "type": "css-display-none",
-    "selector": "div#sfoverlay_up"
+    "selector": "#sfoverlay_up"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*vmus.co", "*inote.tw"]
+      "if-domain": ["*vmus.co", "*inote.tw", "*overdope.com"]
     },
     "action": {
     "type": "css-display-none",
-    "selector": "div#btn_close_up"
+    "selector": "#sfoverlay_ud"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*vmus.co", "*inote.tw"]
+      "if-domain": ["*vmus.co", "*inote.tw", "*overdope.com"]
     },
     "action": {
     "type": "css-display-none",
-    "selector": "div#sf_popup"
+    "selector": "#btn_close_up"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*vmus.co", "*inote.tw", "*overdope.com"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "#btn_close_ud"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*vmus.co", "*inote.tw", "*overdope.com"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "#sf_popunder"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*vmus.co", "*inote.tw", "*overdope.com"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "#sf_popup"
     }
   },
   {
@@ -860,7 +890,7 @@
     },
     "action": {
     "type": "css-display-none",
-    "selector": "div#adover"
+    "selector": "#adover"
     }
   },
   {
@@ -880,7 +910,7 @@
     },
     "action": {
     "type": "css-display-none",
-    "selector": "div.ad-320"
+    "selector": ".ad-320"
     }
   },
   {
@@ -890,7 +920,7 @@
     },
     "action": {
     "type": "css-display-none",
-    "selector": "div#splashad"
+    "selector": "#splashad"
     }
   },
   {
@@ -900,7 +930,7 @@
     },
     "action": {
     "type": "css-display-none",
-    "selector": "div#mobileModal"
+    "selector": "#mobileModal"
     }
   },
   {
@@ -910,7 +940,7 @@
     },
     "action": {
     "type": "css-display-none",
-    "selector": "div.modal-backdrop.in"
+    "selector": ".modal-backdrop.in"
     }
   },
   {
@@ -930,7 +960,7 @@
     },
     "action": {
     "type": "css-display-none",
-    "selector": "div.special_ad_cover.special_ad_cover2.open"
+    "selector": ".special_ad_cover.special_ad_cover2.open"
     }
   },
   {
@@ -940,7 +970,7 @@
     },
     "action": {
     "type": "css-display-none",
-    "selector": "div.ad_box.open"
+    "selector": ".ad_box.open"
     }
   },
   {
@@ -978,7 +1008,7 @@
     },
     "action": {
     "type": "css-display-none",
-    "selector": "div.ad-prestitial"
+    "selector": ".ad-prestitial"
     }
   },
   {
@@ -988,7 +1018,7 @@
     },
     "action": {
     "type": "css-display-none",
-    "selector": "div.admaskbg"
+    "selector": ".admaskbg"
     }
   },
   {
@@ -998,7 +1028,7 @@
     },
     "action": {
     "type": "css-display-none",
-    "selector": "div#ad-popup-dialog-overlay"
+    "selector": "#ad-popup-dialog-overlay"
     }
   },
   {
@@ -1008,7 +1038,7 @@
     },
     "action": {
     "type": "css-display-none",
-    "selector": "div#ad-popup-dialog"
+    "selector": "#ad-popup-dialog"
     }
   },
   {
@@ -1018,7 +1048,7 @@
     },
     "action": {
     "type": "css-display-none",
-    "selector": "div.adbox-bg"
+    "selector": ".adbox-bg"
     }
   },
   {
@@ -1028,7 +1058,7 @@
     },
     "action": {
     "type": "css-display-none",
-    "selector": "div.adbox-wrapper"
+    "selector": ".adbox-wrapper"
     }
   },
   {
@@ -1038,7 +1068,7 @@
     },
     "action": {
     "type": "css-display-none",
-    "selector": "div#adModal"
+    "selector": "#adModal"
     }
   },
   {
@@ -1048,7 +1078,7 @@
     },
     "action": {
     "type": "css-display-none",
-    "selector": "div#fbCover.promote-box.promote-box-fixed"
+    "selector": "#fbCover.promote-box.promote-box-fixed"
     }
   },
   {
@@ -1068,7 +1098,7 @@
     },
     "action": {
     "type": "css-display-none",
-    "selector": "div#win_like.ui_dialog"
+    "selector": "#win_like.ui_dialog"
     }
   },
   {
@@ -1078,7 +1108,7 @@
     },
     "action": {
     "type": "css-display-none",
-    "selector": "div#win_like_mask.dialog_mask.ui_mask"
+    "selector": "#win_like_mask.dialog_mask.ui_mask"
     }
   },
   {
@@ -1088,7 +1118,7 @@
     },
     "action": {
     "type": "css-display-none",
-    "selector": "div.ad-300x250-popup-g"
+    "selector": ".ad-300x250-popup-g"
     }
   },
   {
@@ -1098,7 +1128,7 @@
     },
     "action": {
     "type": "css-display-none",
-    "selector": "div#popup-ad-overlay.overlay"
+    "selector": "#popup-ad-overlay.overlay"
     }
   },
   {
@@ -1108,7 +1138,7 @@
     },
     "action": {
     "type": "css-display-none",
-    "selector": "div.animate"
+    "selector": ".animate"
     }
   },
   {
@@ -1127,7 +1157,7 @@
     },
     "action": {
     "type": "css-display-none",
-    "selector": "div.spu-bg"
+    "selector": ".spu-bg"
     }
   },
   {
@@ -1137,7 +1167,7 @@
     },
     "action": {
     "type": "css-display-none",
-    "selector": "div.spu-box"
+    "selector": ".spu-box"
     }
   },
   {
@@ -1147,7 +1177,7 @@
     },
     "action": {
     "type": "css-display-none",
-    "selector": "div#mOverLay-container"
+    "selector": "#mOverLay-container"
     }
   },
   {
@@ -1157,7 +1187,7 @@
     },
     "action": {
     "type": "css-display-none",
-    "selector": "div#popupBox"
+    "selector": "#popupBox"
     }
   },
   {
@@ -1167,7 +1197,7 @@
     },
     "action": {
     "type": "css-display-none",
-    "selector": "div#popupBackground"
+    "selector": "#popupBackground"
     }
   },
   {
@@ -1177,7 +1207,7 @@
     },
     "action": {
     "type": "css-display-none",
-    "selector": "div.rl-modal"
+    "selector": ".rl-modal"
     }
   },
   {
@@ -1187,7 +1217,7 @@
     },
     "action": {
     "type": "css-display-none",
-    "selector": "div#ad_m_peacock"
+    "selector": "#ad_m_peacock"
     }
   },
   {
@@ -1197,7 +1227,7 @@
     },
     "action": {
     "type": "css-display-none",
-    "selector": "div#fbFixedAd"
+    "selector": "#fbFixedAd"
     }
   },
   {
@@ -1225,7 +1255,7 @@
     },
     "action": {
     "type": "css-display-none",
-    "selector": "div#Shadow"
+    "selector": "#Shadow"
     }
   },
   {
@@ -1244,7 +1274,7 @@
     },
     "action": {
     "type": "css-display-none",
-    "selector": "div#apps-ad"
+    "selector": "#apps-ad"
     }
   },
   {
@@ -1254,7 +1284,7 @@
     },
     "action": {
     "type": "css-display-none",
-    "selector": "div.ad-wrapper.mobile"
+    "selector": ".ad-wrapper.mobile"
     }
   },
   {
@@ -1264,7 +1294,7 @@
     },
     "action": {
     "type": "css-display-none",
-    "selector": "div.mobile-ad-box"
+    "selector": ".mobile-ad-box"
     }
   },
   {
@@ -1274,7 +1304,7 @@
     },
     "action": {
     "type": "css-display-none",
-    "selector": "div#rev-toaster"
+    "selector": "#rev-toaster"
     }
   },
   {
@@ -1284,7 +1314,7 @@
     },
     "action": {
     "type": "css-display-none",
-    "selector": "div.ADs.ArticleTop"
+    "selector": ".ADs.ArticleTop"
     }
   },
   {
@@ -1294,7 +1324,7 @@
     },
     "action": {
     "type": "css-display-none",
-    "selector": "div.ypabox-wrapper"
+    "selector": ".ypabox-wrapper"
     }
   },
   {
@@ -1304,7 +1334,7 @@
     },
     "action": {
     "type": "css-display-none",
-    "selector": "div.ypabox-bg"
+    "selector": ".ypabox-bg"
     }
   },
   {
@@ -1323,7 +1353,7 @@
     },
     "action": {
     "type": "css-display-none",
-    "selector": "div.czy_layer"
+    "selector": ".czy_layer"
     }
   },
   {
@@ -1333,7 +1363,7 @@
     },
     "action": {
     "type": "css-display-none",
-    "selector": "div.czy_wrapper"
+    "selector": ".czy_wrapper"
     }
   },
   {
@@ -1343,7 +1373,7 @@
     },
     "action": {
     "type": "css-display-none",
-    "selector": "div#ad-popup-dialog-overlay"
+    "selector": "#ad-popup-dialog-overlay"
     }
   },
   {
@@ -1353,7 +1383,7 @@
     },
     "action": {
     "type": "css-display-none",
-    "selector": "div#ad-popup-dialog"
+    "selector": "#ad-popup-dialog"
     }
   },
   {
@@ -1363,7 +1393,7 @@
     },
     "action": {
     "type": "css-display-none",
-    "selector": "div#ad-pixfs"
+    "selector": "#ad-pixfs"
     }
   },
   {
@@ -1373,7 +1403,7 @@
     },
     "action": {
     "type": "css-display-none",
-    "selector": "div.slidead"
+    "selector": ".slidead"
     }
   },
   {
@@ -1383,7 +1413,7 @@
     },
     "action": {
     "type": "css-display-none",
-    "selector": "div#ad_block_15"
+    "selector": "#ad_block_15"
     }
   },
   {
@@ -1393,7 +1423,7 @@
     },
     "action": {
     "type": "css-display-none",
-    "selector": "div#tips"
+    "selector": "#tips"
     }
   },
   {
@@ -1403,7 +1433,7 @@
     },
     "action": {
     "type": "css-display-none",
-    "selector": "div.jquery-modal.blocker"
+    "selector": ".jquery-modal.blocker"
     }
   },
   {
@@ -1413,7 +1443,7 @@
     },
     "action": {
     "type": "css-display-none",
-    "selector": "div.modal.fade"
+    "selector": ".modal.fade"
     }
   },
   {
@@ -1442,7 +1472,7 @@
     },
     "action": {
     "type": "css-display-none",
-    "selector": "div#DARLAlyr"
+    "selector": "#DARLAlyr"
     }
   },
   {
@@ -1482,7 +1512,7 @@
     },
     "action": {
     "type": "css-display-none",
-    "selector": "div.stb-container"
+    "selector": ".stb-container"
     }
   },
   {
@@ -1521,7 +1551,7 @@
     },
     "action": {
     "type": "css-display-none",
-    "selector": "div#innity_adslot_174648"
+    "selector": "#innity_adslot_174648"
     }
   },
   {
@@ -1531,7 +1561,7 @@
     },
     "action": {
     "type": "css-display-none",
-    "selector": "div#fancybox-content"
+    "selector": "#fancybox-content"
     }
   },
   {
@@ -1635,41 +1665,11 @@
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*overdope.com"]
-    },
-    "action": {
-    "type": "css-display-none",
-    "selector": "#sfoverlay_up"
-    }
-  },
-  {
-    "trigger": {
-      "url-filter": ".*",
-      "if-domain": ["*overdope.com"]
-    },
-    "action": {
-    "type": "css-display-none",
-    "selector": "#sf_popup"
-    }
-  },
-  {
-    "trigger": {
-      "url-filter": ".*",
-      "if-domain": ["*overdope.com"]
-    },
-    "action": {
-    "type": "css-display-none",
-    "selector": "#btn_close_up"
-    }
-  },
-  {
-    "trigger": {
-      "url-filter": ".*",
       "if-domain": ["*inote.tw"]
     },
     "action": {
     "type": "css-display-none",
-    "selector": "#sfoverlay_up"
+    "selector": ".ppiiad-DT-mainAD-wrap"
     }
   }
 ]

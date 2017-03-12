@@ -1,6 +1,9 @@
 # CHANGELOG
 
 # Blahker
+## 2017-03-12
+- Update inote.tw #121
+
 ## 2017-03-10
 - Add inote.tw #120
 
