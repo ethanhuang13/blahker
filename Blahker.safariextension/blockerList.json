@@ -1671,5 +1671,15 @@
     "type": "css-display-none",
     "selector": ".ppiiad-DT-mainAD-wrap"
     }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*pchome.com.tw"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "#admaskbg"
+    }
   }
 ]

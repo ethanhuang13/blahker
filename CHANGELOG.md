@@ -1,6 +1,9 @@
 # CHANGELOG
 
 # Blahker
+## 2017-03-21
+- Update pchome.com.tw #123
+
 ## 2017-03-12
 - Update inote.tw #121
 
