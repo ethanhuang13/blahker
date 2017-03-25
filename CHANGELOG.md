@@ -1,6 +1,9 @@
 # CHANGELOG
 
 # Blahker
+## 2017-03-25
+- 擋掉男人幫網站蓋板廣告會導致無法向下捲動 #125
+
 ## 2017-03-21
 - Update pchome.com.tw #123
 

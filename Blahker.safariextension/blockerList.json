@@ -956,26 +956,6 @@
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*fhm.com.tw"]
-    },
-    "action": {
-    "type": "css-display-none",
-    "selector": ".special_ad_cover.special_ad_cover2.open"
-    }
-  },
-  {
-    "trigger": {
-      "url-filter": ".*",
-      "if-domain": ["*fhm.com.tw"]
-    },
-    "action": {
-    "type": "css-display-none",
-    "selector": ".ad_box.open"
-    }
-  },
-  {
-    "trigger": {
-      "url-filter": ".*",
       "if-domain": ["*webptt.com"]
     },
     "action": {
