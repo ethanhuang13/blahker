@@ -4,6 +4,7 @@
 ## 2017-04-03
 - Add 8drama.com #126
 - Update businessweekly.com.tw #127
+- Add SF overlay ad #96 block sfpdpopexp.js
 
 ## 2017-03-25
 - 擋掉男人幫網站蓋板廣告會導致無法向下捲動 #125 Remove fhm.com.tw

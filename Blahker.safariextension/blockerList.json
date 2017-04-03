@@ -1681,5 +1681,13 @@
     "type": "css-display-none",
     "selector": "#adoffno"
     }
+  },
+  {
+    "trigger": {
+      "url-filter": "sfpdpopexp\\.js"
+    },
+    "action": {
+      "type": "block"
+    }
   }
 ]
