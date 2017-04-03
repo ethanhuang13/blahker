@@ -91,6 +91,16 @@
   {
     "trigger": {
       "url-filter": ".*",
+      "if-domain": ["*appledaily.com.tw", "*ltn.com.tw", "*businessweekly.com.tw"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "#AdSameFullPanel"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
       "if-domain": ["*ctitv.com.tw"]
     },
     "action": {
