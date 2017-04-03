@@ -1,8 +1,11 @@
 # CHANGELOG
 
 # Blahker
+## 2017-04-03
+- Add 8drama.com #126
+
 ## 2017-03-25
-- 擋掉男人幫網站蓋板廣告會導致無法向下捲動 #125
+- 擋掉男人幫網站蓋板廣告會導致無法向下捲動 #125 Remove fhm.com.tw
 
 ## 2017-03-21
 - Update pchome.com.tw #123

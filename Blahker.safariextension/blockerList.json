@@ -1661,5 +1661,15 @@
     "type": "css-display-none",
     "selector": "#admaskbg"
     }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*8drama.com"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "#adoffno"
+    }
   }
 ]
