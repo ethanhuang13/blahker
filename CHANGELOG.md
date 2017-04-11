@@ -1,6 +1,9 @@
 # CHANGELOG
 
 # Blahker
+## 2017-04-11
+- Add toy-people.com #128
+
 ## 2017-04-03
 - Add 8drama.com #126
 - Update businessweekly.com.tw #127

@@ -1689,5 +1689,25 @@
     "action": {
       "type": "block"
     }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*toy-people.com"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": ".fullBG"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*toy-people.com"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": ".PopupLayerBg"
+    }
   }
 ]
