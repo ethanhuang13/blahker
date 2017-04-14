@@ -1709,5 +1709,15 @@
     "type": "css-display-none",
     "selector": ".PopupLayerBg"
     }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*pkget.com"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": ".wowocean-reveal-modal-pk"
+    }
   }
 ]
