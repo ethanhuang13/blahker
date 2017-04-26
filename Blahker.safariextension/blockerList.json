@@ -1719,5 +1719,25 @@
     "type": "css-display-none",
     "selector": ".wowocean-reveal-modal-pk"
     }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*niusnews.com"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": ".divMPop"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*niusnews.com"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": ".divLoginMask"
+    }
   }
 ]

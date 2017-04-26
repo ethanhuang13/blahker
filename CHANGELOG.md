@@ -1,6 +1,9 @@
 # CHANGELOG
 
 # Blahker
+## 2017-04-26
+- Add niusnews.com #130
+
 ## 2017-04-14
 - Add pkget.com #129
 
