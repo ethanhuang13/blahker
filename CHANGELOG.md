@@ -3,6 +3,7 @@
 # Blahker
 ## 2017-04-28
 - Update everydayhealth.com.tw #131
+- Add eprice.com.hk #132
 
 ## 2017-04-26
 - Add niusnews.com #130
