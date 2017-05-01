@@ -865,8 +865,7 @@
   },
   {
     "trigger": {
-      "url-filter": ".*",
-      "if-domain": ["*vmus.co", "*inote.tw", "*overdope.com"]
+      "url-filter": ".*"
     },
     "action": {
     "type": "css-display-none",
@@ -875,8 +874,7 @@
   },
   {
     "trigger": {
-      "url-filter": ".*",
-      "if-domain": ["*vmus.co", "*inote.tw", "*overdope.com"]
+      "url-filter": ".*"
     },
     "action": {
     "type": "css-display-none",
@@ -885,8 +883,7 @@
   },
   {
     "trigger": {
-      "url-filter": ".*",
-      "if-domain": ["*vmus.co", "*inote.tw", "*overdope.com"]
+      "url-filter": ".*"
     },
     "action": {
     "type": "css-display-none",
@@ -895,8 +892,7 @@
   },
   {
     "trigger": {
-      "url-filter": ".*",
-      "if-domain": ["*vmus.co", "*inote.tw", "*overdope.com"]
+      "url-filter": ".*"
     },
     "action": {
     "type": "css-display-none",
@@ -905,8 +901,7 @@
   },
   {
     "trigger": {
-      "url-filter": ".*",
-      "if-domain": ["*vmus.co", "*inote.tw", "*overdope.com"]
+      "url-filter": ".*"
     },
     "action": {
     "type": "css-display-none",
@@ -915,8 +910,7 @@
   },
   {
     "trigger": {
-      "url-filter": ".*",
-      "if-domain": ["*vmus.co", "*inote.tw", "*overdope.com"]
+      "url-filter": ".*"
     },
     "action": {
     "type": "css-display-none",
@@ -1808,6 +1802,16 @@
     "action": {
     "type": "css-display-none",
     "selector": ".divLoginMask"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*loveshares.cc"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": ".dgd_stb_box"
     }
   }
 ]

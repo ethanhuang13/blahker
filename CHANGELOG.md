@@ -1,6 +1,9 @@
 # CHANGELOG
 
 # Blahker
+## 2017-05-01
+- Add loveshares.cc #134
+
 ## 2017-04-30
 - Update ck101.com #133
 
