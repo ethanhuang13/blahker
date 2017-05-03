@@ -1813,5 +1813,45 @@
     "type": "css-display-none",
     "selector": ".dgd_stb_box"
     }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*weibo.com"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "#cboxOverlay"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*weibo.com"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "#colorbox"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*weibo.com"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "#footer_mobile_bottom"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*weibo.com"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "#scupio_interstitialad"
+    }
   }
 ]

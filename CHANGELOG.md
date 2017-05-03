@@ -1,6 +1,9 @@
 # CHANGELOG
 
 # Blahker
+## 2017-05-02
+- Add weibo.com #135
+
 ## 2017-05-01
 - Add loveshares.cc #134
 
