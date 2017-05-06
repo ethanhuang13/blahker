@@ -1902,5 +1902,25 @@
     "type": "css-display-none",
     "selector": ".popup_background"
     }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*presslogic.com"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": ".presslogic-popup-ad-iframe-full"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*presslogic.com"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": ".hotmobAdPopup"
+    }
   }
 ]
