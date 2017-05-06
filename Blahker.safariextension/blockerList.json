@@ -149,8 +149,7 @@
   },
   {
     "trigger": {
-      "url-filter": ".*",
-      "if-domain": ["*techbang.com", "*storm.mg", "*pixnet.net", "*sina.com.tw", "*ttv.com.tw"]
+      "url-filter": ".*"
     },
     "action": {
     "type": "css-display-none",
@@ -1842,16 +1841,6 @@
     "action": {
     "type": "css-display-none",
     "selector": "#footer_mobile_bottom"
-    }
-  },
-  {
-    "trigger": {
-      "url-filter": ".*",
-      "if-domain": ["*weibo.com"]
-    },
-    "action": {
-    "type": "css-display-none",
-    "selector": "#scupio_interstitialad"
     }
   }
 ]

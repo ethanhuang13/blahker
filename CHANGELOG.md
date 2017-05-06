@@ -1,6 +1,9 @@
 # CHANGELOG
 
 # Blahker
+## 2017-05-07
+- Update businessweekly.com.tw #136
+
 ## 2017-05-02
 - Add weibo.com #135
 
