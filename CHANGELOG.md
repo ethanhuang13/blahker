@@ -6,6 +6,7 @@
 - Add sina.com.hk #137
 - Add nextmedia.com #138
 - Add beautyexchange.com.hk #139
+- Add hk01.com #140
 
 ## 2017-05-02
 - Add weibo.com #135

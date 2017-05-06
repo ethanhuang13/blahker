@@ -1882,5 +1882,25 @@
     "type": "css-display-none",
     "selector": ".presite_container"
     }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*hk01.com"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": ".popup_wrapper"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*hk01.com"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": ".popup_background"
+    }
   }
 ]
