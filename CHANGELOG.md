@@ -3,6 +3,7 @@
 # Blahker
 ## 2017-05-07
 - Update businessweekly.com.tw #136
+- Add sina.com.hk #137
 
 ## 2017-05-02
 - Add weibo.com #135

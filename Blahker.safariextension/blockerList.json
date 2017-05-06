@@ -1842,5 +1842,35 @@
     "type": "css-display-none",
     "selector": "#footer_mobile_bottom"
     }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*sina.com.hk"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": ".kiwi-ad-sticky-listing-bottom-mobile-wrapper"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*sina.com.hk"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": ".guru_mobile_popup_wrapper"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*sina.com.hk"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": ".guru_close_button_wrapper"
+    }
   }
 ]
