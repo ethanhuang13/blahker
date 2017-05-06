@@ -4,11 +4,13 @@
 ## 2017-05-07
 - Update businessweekly.com.tw #136
 - Add sina.com.hk #137
+- Add nextmedia.com #138
 
 ## 2017-05-02
 - Add weibo.com #135
 
 ## 2017-05-01
+- Add nextmedia.com
 - Add loveshares.cc #134
 
 ## 2017-04-30
