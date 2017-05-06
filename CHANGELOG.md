@@ -8,6 +8,8 @@
 - Add beautyexchange.com.hk #139
 - Add hk01.com #140
 - Add presslogic.com #141
+- Add bomb01.com #142
+- Add thestandnews.com #143
 
 ## 2017-05-02
 - Add weibo.com #135

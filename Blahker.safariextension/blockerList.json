@@ -1922,5 +1922,25 @@
     "type": "css-display-none",
     "selector": ".hotmobAdPopup"
     }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*bomb01.com"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": ".modal"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*thestandnews.com"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": ".mobile-overlay"
+    }
   }
 ]
