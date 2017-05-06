@@ -10,6 +10,7 @@
 - Add presslogic.com #141
 - Add bomb01.com #142
 - Add thestandnews.com #143
+- Update yahoo.com #144
 
 ## 2017-05-02
 - Add weibo.com #135
