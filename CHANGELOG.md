@@ -5,6 +5,7 @@
 - Update businessweekly.com.tw #136
 - Add sina.com.hk #137
 - Add nextmedia.com #138
+- Add beautyexchange.com.hk #139
 
 ## 2017-05-02
 - Add weibo.com #135

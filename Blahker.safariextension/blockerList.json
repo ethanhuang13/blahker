@@ -1872,5 +1872,15 @@
     "type": "css-display-none",
     "selector": ".guru_close_button_wrapper"
     }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*beautyexchange.com.hk"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": ".presite_container"
+    }
   }
 ]
