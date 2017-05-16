@@ -446,6 +446,16 @@
   {
     "trigger": {
       "url-filter": ".*",
+      "if-domain": ["*pixnet.net"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "#pix-mib-unfold-ad"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
       "if-domain": ["*gq.com.tw"]
     },
     "action": {

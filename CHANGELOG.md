@@ -1,6 +1,9 @@
 # CHANGELOG
 
 # Blahker
+## 2017-05-16
+- Update pixnet.net #146
+
 ## 2017-05-07
 - Update businessweekly.com.tw #136
 - Add sina.com.hk #137
