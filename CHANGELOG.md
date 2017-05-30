@@ -1,4 +1,9 @@
 # CHANGELOG
+# Blahker
+
+## 2017-05-30
+- Update pixnet #147
+- Add minniewu.net(pixnet) #148
 
 # Blahker
 ## 2017-05-16
