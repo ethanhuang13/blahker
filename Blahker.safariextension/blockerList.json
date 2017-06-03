@@ -426,7 +426,7 @@
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*pixnet.net", "minniewu.net", "pixnet.ahui3c.com"]
+      "if-domain": ["*pixnet.net"]
     },
     "action": {
     "type": "css-display-none",
@@ -436,7 +436,7 @@
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*pixnet.net", "minniewu.net", "pixnet.ahui3c.com"]
+      "if-domain": ["*pixnet.net"]
     },
     "action": {
     "type": "css-display-none",
@@ -446,7 +446,7 @@
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*pixnet.net", "minniewu.net", "pixnet.ahui3c.com"]
+      "if-domain": ["*pixnet.net"]
     },
     "action": {
     "type": "css-display-none",
@@ -456,7 +456,43 @@
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*pixnet.net", "minniewu.net", "pixnet.ahui3c.com"]
+      "if-domain": ["*pixnet.net"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": ".ad-header"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*"
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": ".pop-ad-cover.pop-ad-cover--deep"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*"
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": ".pop-ad-cover"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*"
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "#pix-mib-unfold-ad"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*"
     },
     "action": {
     "type": "css-display-none",

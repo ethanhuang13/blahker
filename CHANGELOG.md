@@ -1,6 +1,9 @@
 # CHANGELOG
 # Blahker
 
+## 2017-06-05
+- Pixnet.net aggressive mode #149
+
 ## 2017-05-30
 - Update pixnet #147
 - Add minniewu.net(pixnet) #148
