@@ -1,6 +1,9 @@
 # CHANGELOG
 # Blahker
 
+## 2017-06-14
+- Add udn.com #150
+
 ## 2017-06-05
 - Pixnet.net aggressive mode #149
 
