@@ -1,6 +1,9 @@
 # CHANGELOG
 # Blahker
 
+## 2017-06-27
+- Update bnext.com.tw #151
+
 ## 2017-06-14
 - Add udn.com #150
 

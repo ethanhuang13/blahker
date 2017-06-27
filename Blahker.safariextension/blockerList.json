@@ -258,8 +258,7 @@
   },
   {
     "trigger": {
-      "url-filter": ".*",
-      "if-domain": ["*nownews.com", "*ltn.com.tw", "*thenewslens.com", "*teepr.com"]
+      "url-filter": ".*"
     },
     "action": {
     "type": "css-display-none",
@@ -1493,6 +1492,16 @@
     "action": {
     "type": "css-display-none",
     "selector": "#ad-pixfs"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*bnext.com.tw"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "#lightbox0_pdup"
     }
   },
   {
