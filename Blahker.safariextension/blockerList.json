@@ -2027,5 +2027,14 @@
     "type": "css-display-none",
     "selector": ".mobile-overlay"
     }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*"
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": ".ad-320x480-popup-g"
+    }
   }
 ]

@@ -3,6 +3,7 @@
 
 ## 2017-06-27
 - Update bnext.com.tw #151
+- Update eprice.com.tw #152
 
 ## 2017-06-14
 - Add udn.com #150
