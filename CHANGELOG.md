@@ -1,6 +1,9 @@
 # CHANGELOG
 # Blahker
 
+## 2017-06-30
+- Add vpon blocking #153
+
 ## 2017-06-27
 - Update bnext.com.tw #151
 - Update eprice.com.tw #152
