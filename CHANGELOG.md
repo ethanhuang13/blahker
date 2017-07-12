@@ -1,6 +1,9 @@
 # CHANGELOG
 # Blahker
 
+## 2017-07-12
+- Add #ad-full-page for pixnet.net and others #154
+
 ## 2017-06-30
 - Add vpon blocking #153
 

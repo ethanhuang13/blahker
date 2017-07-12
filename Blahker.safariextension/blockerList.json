@@ -2045,5 +2045,14 @@
     "type": "css-display-none",
     "selector": "vpon"
     }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*"
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "#ad-full-page"
+    }
   }
 ]
