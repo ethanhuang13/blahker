@@ -2063,5 +2063,14 @@
     "type": "css-display-none",
     "selector": "#mib-video-expander"
     }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*"
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "#full-ad"
+    }
   }
 ]

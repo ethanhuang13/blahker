@@ -1,5 +1,7 @@
 # CHANGELOG
 # Blahker
+## 2017-08-17
+- Add upmedia.mg #157
 
 ## 2017-07-17
 - Update pixnet #149
