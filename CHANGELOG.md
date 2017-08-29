@@ -1,5 +1,8 @@
 # CHANGELOG
 # Blahker
+## 2017-08-29
+- Pixnet.net aggressive mode #149
+
 ## 2017-08-17
 - Add upmedia.mg #157
 

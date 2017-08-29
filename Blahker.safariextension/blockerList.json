@@ -158,6 +158,15 @@
   },
   {
     "trigger": {
+      "url-filter": ".*"
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "#scupio_interstitial"
+    }
+  },
+  {
+    "trigger": {
       "url-filter": ".*",
       "if-domain": ["*techbang.com"]
     },
