@@ -2,6 +2,7 @@
 # Blahker
 ## 2017-09-11
 - Add mook.com.tw #158
+- Add upmedia.mg #159
 
 ## 2017-08-29
 - Pixnet.net aggressive mode #149

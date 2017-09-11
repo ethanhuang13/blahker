@@ -2099,5 +2099,23 @@
     "type": "css-display-none",
     "selector": ".modal-dialog"
     }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*upmedia.mg"
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "#note_windows"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*upmedia.mg"
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "#maskfb"
+    }
   }
 ]
