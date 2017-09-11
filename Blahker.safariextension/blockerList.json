@@ -2081,5 +2081,23 @@
     "type": "css-display-none",
     "selector": "#full-ad"
     }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*mook.com.tw"
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "#modal-one"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*mook.com.tw"
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": ".modal-dialog"
+    }
   }
 ]
