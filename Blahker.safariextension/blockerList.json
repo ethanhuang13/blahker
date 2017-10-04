@@ -101,16 +101,6 @@
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*ctitv.com.tw"]
-    },
-    "action": {
-    "type": "css-display-none",
-    "selector": ".blockUI"
-    }
-  },
-  {
-    "trigger": {
-      "url-filter": ".*",
       "if-domain": ["*technews.tw", "*ctitv.com.tw"]
     },
     "action": {

@@ -1,5 +1,8 @@
 # CHANGELOG
 # Blahker
+## 2017-10-04
+- Update for ctitv.com.tw
+
 ## 2017-09-11
 - Add mook.com.tw #158
 - Add upmedia.mg #159
