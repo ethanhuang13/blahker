@@ -1,6 +1,7 @@
 # CHANGELOG
 # Blahker
 ## 2017-10-04
+- .clickforceads
 - Update for ctitv.com.tw
 
 ## 2017-09-11
