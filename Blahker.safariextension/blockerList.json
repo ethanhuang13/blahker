@@ -2096,5 +2096,14 @@
     "type": "css-display-none",
     "selector": "#maskfb"
     }
+  },
+  {
+    "trigger": {
+      "url-filter": "jquery.magnific-popup\\.js",
+      "if-domain": ["*mombaby.com.tw"]
+    },
+    "action": {
+      "type": "block"
+    }
   }
 ]
