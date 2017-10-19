@@ -1,5 +1,8 @@
 # CHANGELOG
 # Blahker
+## 2017-10-19
+- Update appledaily.com.tw
+
 ## 2017-10-08
 - Add mombaby.com.tw #160
 

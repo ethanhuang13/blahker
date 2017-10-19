@@ -1366,7 +1366,7 @@
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*adaymag.com"]
+      "if-domain": ["*adaymag.com", "*appledaily.com.tw"]
     },
     "action": {
     "type": "css-display-none",
