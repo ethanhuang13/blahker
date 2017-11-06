@@ -1505,6 +1505,26 @@
   {
     "trigger": {
       "url-filter": ".*",
+      "if-domain": ["*bnext.com.tw"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": ".bnextmeida-banner"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*bnext.com.tw"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "#desktop_cover_ad"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
       "if-domain": ["*share.youthwant.com.tw"]
     },
     "action": {
@@ -2104,6 +2124,15 @@
     },
     "action": {
       "type": "block"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*"
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": ".kiwiad-popup-overlay"
     }
   }
 ]

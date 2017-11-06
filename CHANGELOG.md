@@ -1,5 +1,9 @@
 # CHANGELOG
 # Blahker
+## 2017-11-06
+- Update bnext.com.tw
+- Add .kiwiad-popup-overlay
+
 ## 2017-10-19
 - Update appledaily.com.tw
 
