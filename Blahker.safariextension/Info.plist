@@ -5,7 +5,7 @@
 	<key>Author</key>
 	<string>Elaborapp Co., Ltd.</string>
 	<key>Builder Version</key>
-	<string>12604.3.5.1.1</string>
+	<string>12604.1.38.1.7</string>
 	<key>CFBundleDisplayName</key>
 	<string>Blahker</string>
 	<key>CFBundleIdentifier</key>
@@ -16,10 +16,10 @@
 	<string>1.0.1</string>
 	<key>CFBundleVersion</key>
 	<string>2</string>
-	<key>Content</key>
+	<key>Chrome</key>
 	<dict>
-		<key>Content Blocker</key>
-		<string>blockerList.json</string>
+		<key>Global Page</key>
+		<string>Global.html</string>
 	</dict>
 	<key>Description</key>
 	<string>巴拉剋 - 蓋版廣告消除器</string>
