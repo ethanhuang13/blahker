@@ -8,6 +8,7 @@
 - Support iPhone X #163
 - Fix refresh control crash #164
 - Remind user attach screenshot when reporting #165
+- Add 1024px icon #166
 
 ## 2017-11-06
 - Update bnext.com.tw
