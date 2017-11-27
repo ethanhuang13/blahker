@@ -63,6 +63,7 @@ platform :ios do
   end
 
   error do |lane, exception|
+  enable_automatic_code_signing(path: "Blahker.xcodeproj")
   end
 end
 
