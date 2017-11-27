@@ -111,7 +111,7 @@ class AboutViewController: UITableViewController {
         let vc = MFMailComposeViewController()
         vc.setToRecipients(["elaborapp+blahker@gmail.com"])
         vc.setSubject("[Blahker 使用者回報]我有問題")
-        vc.setMessageBody("Hello 開發者，\n\n建議加入擋蓋版廣告之網站：\n\n", isHTML: false)
+        vc.setMessageBody("Hello 開發者，\n\n建議加入擋蓋版廣告之網站：\n（建議附上螢幕截圖，以利判斷，謝謝）\n\n", isHTML: false)
         vc.mailComposeDelegate = self
         self.present(vc, animated: true, completion: { })
     }
