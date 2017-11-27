@@ -33,7 +33,7 @@ extension BlockerListLoader {
 
         let request = URLRequest(url: url)
         let task = session.dataTask(with: request) { (data, response, connectionError) -> Void in
-            guard let data = data as? NSSecureCoding else {
+            guard let data = data as NSSecureCoding? else {
                 completion(nil, ContentBlockerRequestHandlerError.loadBlockerListFileFailed)
                 return
             }

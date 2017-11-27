@@ -61,7 +61,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                             print("background reloadContentBlocker complete")
                             completionHandler(.newData)
                         } else {
-                            print("background reloadContentBlocker: \(error)")
+                            print("background reloadContentBlocker: \(String(describing: error))")
                             completionHandler(.failed)
                         }
                     })
@@ -75,7 +75,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                     print("background reloadContentBlocker complete")
                     completionHandler(.newData)
                 } else {
-                    print("background reloadContentBlocker: \(error)")
+                    print("background reloadContentBlocker: \(String(describing: error))")
                     completionHandler(.failed)
                 }
             })

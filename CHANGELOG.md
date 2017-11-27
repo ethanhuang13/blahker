@@ -2,6 +2,9 @@
 # Blahker
 
 - App block list UI with light scroll bar #145
+- Support iOS 11 #161
+- Upgrade to Swift 4 #162
+- Support iPhone X #163
 
 ## 2017-11-06
 - Update bnext.com.tw

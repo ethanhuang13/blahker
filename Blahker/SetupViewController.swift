@@ -33,16 +33,25 @@ class SetupViewController: UIViewController {
 
         checkContentBlockerState()
 
-        // iOS 10 can detect content blocker exteiosn status
+        // iOS 10+ can detect content blocker exteiosn status
         if #available(iOS 10.0, *) {
-            tutorialLabel.text = "Blahker 致力於消除網站中的蓋版廣告，支援 Safari 瀏覽器。"
-                + "\n\nApp 將會自動取得最新擋廣告網站清單，你也可以透過左上角按鈕手動更新。"
-                + "\n\n欲回報廣告網站或者了解更多資訊，請參閱「關於」頁面。"
+            tutorialLabel.text = """
+            Blahker 致力於消除網站中的蓋版廣告，支援 Safari 瀏覽器。
+
+            App 將會自動取得最新擋廣告網站清單，你也可以透過左上角按鈕手動更新。
+
+            欲回報廣告網站或者了解更多資訊，請參閱「關於」頁面。
+            """
         } else {
-            tutorialLabel.text = "Blahker 致力於消除網站中的蓋版廣告，支援 Safari 瀏覽器。"
-                + "\n\n請確定「設定」 > 「Safari」 > 「內容阻擋器」，已經啟用 Blahker。"
-                + "\n\nApp 將會自動取得最新擋廣告網站清單，你也可以透過左上角按鈕手動更新。"
-                + "\n\n欲回報廣告網站或者了解更多資訊，請參閱「關於」頁面。"
+            tutorialLabel.text = """
+            Blahker 致力於消除網站中的蓋版廣告，支援 Safari 瀏覽器。"
+
+            請確定「設定」 > 「Safari」 > 「內容阻擋器」，已經啟用 Blahker。"
+
+            App 將會自動取得最新擋廣告網站清單，你也可以透過左上角按鈕手動更新。"
+
+            欲回報廣告網站或者了解更多資訊，請參閱「關於」頁面。
+            """
         }
 
         NotificationCenter.default.addObserver(self, selector: #selector(checkContentBlockerState), name: .UIApplicationWillEnterForeground, object: nil)
@@ -82,7 +91,7 @@ class SetupViewController: UIViewController {
                         print("reloadContentBlocker complete")
                         self.isLoadedFailedBefore = false
                     } else {
-                        print("reloadContentBlocker: \(error)")
+                        print("reloadContentBlocker: \(String(describing: error))")
                         self.isLoadedFailedBefore = true
                     }
                 }

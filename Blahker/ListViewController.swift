@@ -26,7 +26,7 @@ class ListViewController: UITableViewController {
         tableView.indicatorStyle = .white
     }
 
-    func reload() {
+    @objc func reload() {
         guard let url = URL(string: "https://raw.githubusercontent.com/ethanhuang13/blahker/master/Blahker.safariextension/blockerList.json") else {
             return
         }
