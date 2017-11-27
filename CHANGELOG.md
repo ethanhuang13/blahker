@@ -1,5 +1,8 @@
 # CHANGELOG
 # Blahker
+
+- App block list UI with light scroll bar #145
+
 ## 2017-11-06
 - Update bnext.com.tw
 - Add .kiwiad-popup-overlay

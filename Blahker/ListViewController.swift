@@ -19,9 +19,11 @@ class ListViewController: UITableViewController {
         reload()
 
         let refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action: #selector(reload), for: .valueChanged)
         self.refreshControl = refreshControl
-        self.tableView.addSubview(refreshControl)
-        self.refreshControl?.addTarget(self, action: #selector(reload), for: .valueChanged)
+
+        tableView.backgroundView?.addSubview(refreshControl)
+        tableView.indicatorStyle = .white
     }
 
     func reload() {
