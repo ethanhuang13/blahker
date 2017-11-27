@@ -5,6 +5,7 @@
 - Support iOS 11 #161
 - Upgrade to Swift 4 #162
 - Support iPhone X #163
+- Fix refresh control crash #164
 
 ## 2017-11-06
 - Update bnext.com.tw

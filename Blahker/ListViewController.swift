@@ -35,8 +35,10 @@ class ListViewController: UITableViewController {
         let session = URLSession(configuration: .default)
         let request = URLRequest(url: url)
         let task = session.dataTask(with: request) { (data, response, connectionError) -> Void in
-            self.refreshControl?.endRefreshing()
-            UIApplication.shared.isNetworkActivityIndicatorVisible = false
+            DispatchQueue.main.async {
+                self.refreshControl?.endRefreshing()
+                UIApplication.shared.isNetworkActivityIndicatorVisible = false
+            }
 
             guard let data = data,
                 let jsons = JSON(data: data).array else { return }
