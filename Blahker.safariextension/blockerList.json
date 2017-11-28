@@ -2134,5 +2134,14 @@
     "type": "css-display-none",
     "selector": ".kiwiad-popup-overlay"
     }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*"
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": ".ad-cover"
+    }
   }
 ]
