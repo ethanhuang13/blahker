@@ -4,6 +4,7 @@
 ## 2017-11-28
 - Add .ad-cover (www.mirrormedia.mg)
 - Add #Cover.splash (tw.appledaily.com)
+- Add .mobile_AD (www.popdaily.com.tw)
 
 ## [1.0.1(4)] - 2017-11-28
 - App block list UI with light scroll bar #145

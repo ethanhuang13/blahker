@@ -2152,5 +2152,14 @@
     "type": "css-display-none",
     "selector": "#Cover.splash"
     }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*"
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "div.mobile_AD"
+    }
   }
 ]
