@@ -2143,5 +2143,14 @@
     "type": "css-display-none",
     "selector": ".ad-cover"
     }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*"
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "#Cover.splash"
+    }
   }
 ]
