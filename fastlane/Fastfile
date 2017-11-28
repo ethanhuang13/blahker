@@ -29,7 +29,7 @@ platform :ios do
      version_number: version_number
     )
 
-    build_number = "4" # Change build number here
+    build_number = "5" # Change build number here
     increment_build_number(
       build_number: build_number
     )

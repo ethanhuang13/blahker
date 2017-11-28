@@ -1,6 +1,9 @@
 # CHANGELOG
 # Blahker
 
+## [1.0.1(5)] - 2017-11-28
+- Add 1024px icon #166
+
 ## 2017-11-28
 - Add .ad-cover (www.mirrormedia.mg)
 - Add #Cover.splash (tw.appledaily.com)
