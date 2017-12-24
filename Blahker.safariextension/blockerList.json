@@ -750,6 +750,26 @@
   {
     "trigger": {
       "url-filter": ".*",
+      "if-domain": ["*ck101.com"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": ".videoAdWrapper"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*ck101.com"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": ".pi-Ad-mb-stick"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
       "if-domain": ["*buzzhand.com"]
     },
     "action": {

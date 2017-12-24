@@ -2,6 +2,7 @@
 # Blahker
 
 ## 2017-12-24
+- Add .videoAdWrapper, .pi-Ad-mb-stick (ck101.com)
 - Add div[id^=\"innity_adslot\"] (tw.appledaily.com)
 
 ## [iOS 1.0.1(5)] - 2017-11-28
