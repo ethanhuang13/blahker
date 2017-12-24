@@ -1,7 +1,10 @@
 # CHANGELOG
 # Blahker
 
-## [1.0.1(5)] - 2017-11-28
+## 2017-12-24
+- Add div[id^=\"innity_adslot\"] (tw.appledaily.com)
+
+## [iOS 1.0.1(5)] - 2017-11-28
 - Add 1024px icon #166
 
 ## 2017-11-28
@@ -9,7 +12,7 @@
 - Add #Cover.splash (tw.appledaily.com)
 - Add .mobile_AD (www.popdaily.com.tw)
 
-## [1.0.1(4)] - 2017-11-28
+## [iOS 1.0.1(4)] - 2017-11-28
 - App block list UI with light scroll bar #145
 - Support iOS 11 #161
 - Upgrade to Swift 4 #162
@@ -273,7 +276,7 @@
 ## 2016-12-05
 - Add teepr.com
 
-## [1.0.0(3)] - 2016-12-04
+## [iOS 1.0.0(3)] - 2016-12-04
 - Taptic feedback for refreshed indication #20
 - Adjust SafariViewController barTintColor to match app style #21
 - Add Facebook Page link in About #22
@@ -281,7 +284,7 @@
 - List current rules in the app #10
 
 ---
-## [1.0.0(2)] - 2016-12-04
+## [iOS 1.0.0(2)] - 2016-12-04
 - Advanced about page #15
 - Add Crashlytics #18
 - IAP donation system #6
