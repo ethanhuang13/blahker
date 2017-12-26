@@ -1,6 +1,9 @@
 # CHANGELOG
 # Blahker
 
+## 2017-12-26
+- Add .idleAd (ettoday.net)
+
 ## 2017-12-24
 - Add .videoAdWrapper, .pi-Ad-mb-stick (ck101.com)
 - Add div[id^=\"innity_adslot\"] (tw.appledaily.com)

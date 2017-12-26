@@ -424,6 +424,16 @@
   {
     "trigger": {
       "url-filter": ".*",
+      "if-domain": ["*ettoday.net"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": ".idleAd"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
       "if-domain": ["*cw.com.tw"]
     },
     "action": {
