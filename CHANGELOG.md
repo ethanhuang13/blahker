@@ -1,6 +1,9 @@
 # CHANGELOG
 # Blahker
 
+## 2017-12-27
+- Add #google_image_div, #divBG.Bg (chinatimes.com)
+
 ## 2017-12-26
 - Add .idleAd (ettoday.net)
 
