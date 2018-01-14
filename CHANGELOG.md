@@ -1,6 +1,9 @@
 # CHANGELOG
 # Blahker
 
+## 2018-01-14
+- Remove output.min.js (managertoday.com.tw)
+
 ## 2017-12-27
 - Add #google_image_div, #divBG.Bg (chinatimes.com)
 
