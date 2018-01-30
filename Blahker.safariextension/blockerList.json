@@ -228,6 +228,16 @@
   {
     "trigger": {
       "url-filter": ".*",
+      "if-domain": ["*chinatimes.com"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": ".lightbox_3min"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
       "if-domain": ["*cna.com.tw"]
     },
     "action": {
@@ -238,7 +248,7 @@
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*cna.com.tw", "*cheers.com.tw", "*gigacircle.com"]
+      "if-domain": ["*cna.com.tw", "*cheers.com.tw", "*gigacircle.com", "*appledaily.com"]
     },
     "action": {
     "type": "css-display-none",
@@ -385,11 +395,21 @@
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*mobile01.com", "*hottimes.org", "*twgreatdaily.com", "*thegreatdaily.com"]
+      "if-domain": ["*mobile01.com", "*hottimes.org", "*twgreatdaily.com", "*thegreatdaily.com", "*managertoday.com.tw"]
     },
     "action": {
     "type": "css-display-none",
     "selector": ".modal-backdrop.fade.in"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*managertoday.com.tw"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "#idle-win"
     }
   },
   {
@@ -625,6 +645,26 @@
     "action": {
     "type": "css-display-none",
     "selector": ".main-gift-div"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*nownews.com"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": ".backdropStyle_y02jly"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*nownews.com"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": ".dialog_1t36429"
     }
   },
   {

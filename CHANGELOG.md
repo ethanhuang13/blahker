@@ -1,6 +1,13 @@
 # CHANGELOG
 # Blahker
 
+## 2018-01-30
+- Add .lightbox_3min (chinatimes.com)
+- Update .fancybox-overlay (appledaily.com)
+- Update .modal-backdrop.fade.in (managertoday.com.tw)
+- Add #idle-win (managertoday.com.tw)
+- Add .backdropStyle_y02jly .dialog_1t36429 (nownews.com)
+
 ## 2018-01-14
 - Remove output.min.js (managertoday.com.tw)
 
