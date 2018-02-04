@@ -1,6 +1,9 @@
 # CHANGELOG
 # Blahker
 
+## 2018-02-05
+- Add .coverads (u-car.com.tw)
+
 ## 2018-01-30
 - Add .lightbox_3min (chinatimes.com)
 - Update .fancybox-overlay (appledaily.com)

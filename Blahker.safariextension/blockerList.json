@@ -2251,5 +2251,14 @@
     "type": "css-display-none",
     "selector": "div[id^=\"innity_adslot\"]"
     }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*u-car.com.tw"
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": ".coverads"
+    }
   }
 ]
