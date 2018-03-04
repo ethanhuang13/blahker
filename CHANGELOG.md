@@ -1,6 +1,9 @@
 # CHANGELOG
 # Blahker
 
+## 2018-03-04
+- Add juksyCover (juksy.com)
+
 ## 2018-02-05
 - Add .coverads (u-car.com.tw)
 

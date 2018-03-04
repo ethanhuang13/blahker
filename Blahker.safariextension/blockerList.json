@@ -929,6 +929,16 @@
   {
     "trigger": {
       "url-filter": ".*",
+      "if-domain": ["*juksy.com"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": ".juksyCover"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
       "if-domain": ["*vogue.com.tw"]
     },
     "action": {
@@ -1601,6 +1611,16 @@
     "action": {
     "type": "css-display-none",
     "selector": "#desktop_cover_ad"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*bnext.com.tw"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": ".delay_full_cover_ad"
     }
   },
   {
