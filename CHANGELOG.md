@@ -1,6 +1,9 @@
 # CHANGELOG
 # Blahker
 
+## 2018-03-29
+- Add #OpenAd (appledaily.com)
+
 ## 2018-03-04
 - Add juksyCover (juksy.com)
 

@@ -1804,6 +1804,16 @@
   {
     "trigger": {
       "url-filter": ".*",
+      "if-domain": ["*appledaily.com.tw"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "#OpenAd"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
       "if-domain": ["*bunnygo.net"]
     },
     "action": {
