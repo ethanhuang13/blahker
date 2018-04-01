@@ -25,21 +25,43 @@ platform :ios do
   desc "Apply version & build number"
   lane :vb do
     version_number = "1.0.1" # Change version number here
+    build_number = "5" # Change build number here
+
+    ensure_git_branch(branch: 'dev')
+    git_pull
+    
     increment_version_number(
-     version_number: version_number
+      version_number: version_number
     )
 
-    build_number = "5" # Change build number here
     increment_build_number(
       build_number: build_number
+    )
+
+    git_add(path: ".")
+    version_string = version_number + "(" + build_number + ")"
+    commit_message = "Version bump to " + version_string + " by Fastlane."
+    git_commit(path: ".", message: commit_message)
+    add_git_tag(tag: version_number + "/" + build_number)
+  end
+
+  private_lane :build_for_app_store do
+    match(type: "appstore")
+    gym(scheme: "Blahker",
+      export_options: {
+        method: "app-store",
+        provisioningProfiles: { 
+          "com.elaborapp.Blahker" => "match AppStore com.elaborapp.Blahker",
+          "com.elaborapp.Blahker.ContentBlocker" => "match AppStore com.elaborapp.Blahker.ContentBlocker"
+        }
+      },
+      export_xcargs: '-allowProvisioningUpdates',
     )
   end
 
   desc "Submit a new Beta Build to Apple TestFlight"
-  desc "This will also make sure the profile is up to date"
   lane :tf do
-    match(type: "appstore")
-    gym(scheme: "Blahker")
+    build_for_app_store
     pilot(skip_waiting_for_build_processing: true)
   end
 
@@ -47,15 +69,7 @@ platform :ios do
   lane :store do
     ensure_git_branch
     ensure_git_status_clean
-    match(type: "appstore")
-    disable_automatic_code_signing(path: "Blahker.xcodeproj")
-    gym(scheme: "Blahker",
-      export_options: {
-        method: "app-store"
-      },
-      export_xcargs: '-allowProvisioningUpdates'
-    )
-    enable_automatic_code_signing(path: "Blahker.xcodeproj")
+    build_for_app_store
     pilot(skip_waiting_for_build_processing: true)
   end
 
@@ -63,7 +77,6 @@ platform :ios do
   end
 
   error do |lane, exception|
-  enable_automatic_code_signing(path: "Blahker.xcodeproj")
   end
 end
 
