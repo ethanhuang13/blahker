@@ -1,6 +1,7 @@
 # CHANGELOG
 # Blahker
 
+## [iOS 1.0.2(6)] - 2018-04-02
 - Remove Crashlytics integration #167
 - Update project settings #170
 

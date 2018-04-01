@@ -24,8 +24,8 @@ platform :ios do
 
   desc "Apply version & build number"
   lane :vb do
-    version_number = "1.0.1" # Change version number here
-    build_number = "5" # Change build number here
+    version_number = "1.0.2" # Change version number here
+    build_number = "6" # Change build number here
 
     ensure_git_branch(branch: 'dev')
     git_pull
