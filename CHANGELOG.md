@@ -2,6 +2,7 @@
 # Blahker
 
 - Remove Crashlytics integration #167
+- Update project settings #170
 
 ## 2018-04-01
 - Add domain zimgifts.bid

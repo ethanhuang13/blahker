@@ -41,11 +41,12 @@ class ListViewController: UITableViewController {
             }
 
             guard let data = data,
-                let jsons = JSON(data: data).array else { return }
+                let jsons = try? JSON(data: data).array,
+                let rules = jsons else { return }
 
             self.rules = [:]
 
-            for rule in jsons {
+            for rule in rules {
                 guard let domains = rule["trigger"]["if-domain"].array,
                     let selector = rule["action"]["selector"].string else { continue }
                 for domain in domains {
