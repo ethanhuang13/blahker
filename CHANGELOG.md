@@ -4,8 +4,8 @@
 ## 2018-04-01
 - Add domain zimgifts.bid
 - Add #show_box (udn.com)
+- Add #guru_mobile_popup_wrapper (sina.com.hk)
 
----
 ## 2018-03-29
 - Add #OpenAd (appledaily.com)
 
