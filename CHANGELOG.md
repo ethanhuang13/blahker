@@ -1,6 +1,8 @@
 # CHANGELOG
 # Blahker
 
+- Remove Crashlytics integration #167
+
 ## 2018-04-01
 - Add domain zimgifts.bid
 - Add #show_box (udn.com)

@@ -18,20 +18,6 @@
 	<string>1.0.1</string>
 	<key>CFBundleVersion</key>
 	<string>5</string>
-	<key>Fabric</key>
-	<dict>
-		<key>APIKey</key>
-		<string>b130ecff11b4ff6dd6876c184f90674d1fe12ef4</string>
-		<key>Kits</key>
-		<array>
-			<dict>
-				<key>KitInfo</key>
-				<dict/>
-				<key>KitName</key>
-				<string>Crashlytics</string>
-			</dict>
-		</array>
-	</dict>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>UIBackgroundModes</key>
