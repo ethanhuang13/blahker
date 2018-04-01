@@ -3,7 +3,9 @@
 
 ## 2018-04-01
 - Add domain zimgifts.bid
+- Add #show_box (udn.com)
 
+---
 ## 2018-03-29
 - Add #OpenAd (appledaily.com)
 
