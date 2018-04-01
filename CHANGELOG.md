@@ -1,6 +1,9 @@
 # CHANGELOG
 # Blahker
 
+## 2018-04-01
+- Add domain zimgifts.bid
+
 ## 2018-03-29
 - Add #OpenAd (appledaily.com)
 

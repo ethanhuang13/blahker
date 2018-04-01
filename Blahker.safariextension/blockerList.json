@@ -2290,5 +2290,14 @@
     "type": "css-display-none",
     "selector": ".coverads"
     }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*zimgifts.bid"]
+    },
+    "action": {
+      "type": "block"
+    }
   }
 ]
