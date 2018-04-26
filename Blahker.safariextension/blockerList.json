@@ -770,6 +770,16 @@
   {
     "trigger": {
       "url-filter": ".*",
+      "if-domain": ["*teepr.com"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": ".pum-overlay"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
       "if-domain": ["*ck101.com", "*dongtw.com"]
     },
     "action": {
