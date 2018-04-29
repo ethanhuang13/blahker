@@ -2,7 +2,7 @@
 # Blahker
 
 ## 2018-04-29
-- Add div iframe[src~=tamedia] (newtalk.tw)
+- Add iframe[src*="tamedia"] (newtalk.tw)
 
 ## 2018-04-26
 - Add .pum-overlay (teepr.com)

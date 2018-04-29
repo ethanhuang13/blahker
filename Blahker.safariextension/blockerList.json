@@ -2342,7 +2342,7 @@
     },
     "action": {
     "type": "css-display-none",
-    "selector": "div iframe[src~=tamedia]"
+    "selector": "iframe[src*=\"tamedia\"]"
     }
   }
 ]
