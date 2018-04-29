@@ -2334,5 +2334,15 @@
     "action": {
       "type": "block"
     }
+  },
+   {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": ["*newtalk.tw"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "div iframe[src~=tamedia]"
+    }
   }
 ]
