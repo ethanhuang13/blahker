@@ -1,6 +1,9 @@
 # CHANGELOG
 # Blahker
 
+## 2018-07-27
+- Add div[id*=\"_ad_container\"] (ck101.ccom)
+
 ## 2018-04-29
 - Add iframe[src*="tamedia"] (newtalk.tw)
 
