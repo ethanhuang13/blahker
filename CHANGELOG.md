@@ -1,9 +1,12 @@
 # CHANGELOG
 # Blahker
 
+## 2018-08-03
+- Add hinetwork (xuite.net)
+
 ## 2018-07-27
 - Add div[id*=\"_ad_container\"] (ck101.ccom)
-- Add appledaily.com
+- Add appledaily.com (appledaily.com.tw)
 
 ## 2018-04-29
 - Add iframe[src*="tamedia"] (newtalk.tw)

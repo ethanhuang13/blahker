@@ -600,6 +600,16 @@
   {
     "trigger": {
       "url-filter": ".*",
+      "if-domain": ["*xuite.net"]
+    },
+    "action": {
+    "type": "css-display-none",
+    "selector": "hinetwork"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
       "if-domain": ["*techcrunch.com"]
     },
     "action": {
