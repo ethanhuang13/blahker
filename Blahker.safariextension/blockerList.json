@@ -2,7 +2,9 @@
   {
     "trigger": {
       "url-filter": "fb_mask\\.js",
-      "if-domain": ["*ltn.com.tw"]
+      "if-domain": [
+        "*ltn.com.tw"
+      ]
     },
     "action": {
       "type": "block"
@@ -11,117 +13,153 @@
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*ltn.com.tw", "*appledaily.com.tw", "*appledaily.com", "*nextmedia.com"]
+      "if-domain": [
+        "*ltn.com.tw",
+        "*appledaily.com.tw",
+        "*appledaily.com",
+        "*nextmedia.com"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": ".splash"
+      "type": "css-display-none",
+      "selector": ".splash"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*ltn.com.tw"]
+      "if-domain": [
+        "*ltn.com.tw"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": ".fb_mask"
+      "type": "css-display-none",
+      "selector": ".fb_mask"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*ltn.com.tw"]
+      "if-domain": [
+        "*ltn.com.tw"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "#gwd-ad"
+      "type": "css-display-none",
+      "selector": "#gwd-ad"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*ltn.com.tw"]
+      "if-domain": [
+        "*ltn.com.tw"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": ".google-image-div"
+      "type": "css-display-none",
+      "selector": ".google-image-div"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*ltn.com.tw"]
+      "if-domain": [
+        "*ltn.com.tw"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "#exp-container"
+      "type": "css-display-none",
+      "selector": "#exp-container"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*appledaily.com.tw", "*appledaily.com"]
+      "if-domain": [
+        "*appledaily.com.tw",
+        "*appledaily.com"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "#panelShade"
+      "type": "css-display-none",
+      "selector": "#panelShade"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*appledaily.com.tw", "*appledaily.com"]
+      "if-domain": [
+        "*appledaily.com.tw",
+        "*appledaily.com"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "#panelContainerDiv"
+      "type": "css-display-none",
+      "selector": "#panelContainerDiv"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*appledaily.com.tw", "*appledaily.com", "*ltn.com.tw", "*businessweekly.com.tw"]
+      "if-domain": [
+        "*appledaily.com.tw",
+        "*appledaily.com",
+        "*ltn.com.tw",
+        "*businessweekly.com.tw"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "#eyeDiv"
+      "type": "css-display-none",
+      "selector": "#eyeDiv"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*appledaily.com.tw", "*appledaily.com", "*ltn.com.tw", "*businessweekly.com.tw"]
+      "if-domain": [
+        "*appledaily.com.tw",
+        "*appledaily.com",
+        "*ltn.com.tw",
+        "*businessweekly.com.tw"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "#AdSameFullPanel"
+      "type": "css-display-none",
+      "selector": "#AdSameFullPanel"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*technews.tw", "*ctitv.com.tw"]
+      "if-domain": [
+        "*technews.tw",
+        "*ctitv.com.tw"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": ".blockUI.blockOverlay"
+      "type": "css-display-none",
+      "selector": ".blockUI.blockOverlay"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*technews.tw"]
+      "if-domain": [
+        "*technews.tw"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": ".blockUI.blockMsg.blockPage"
+      "type": "css-display-none",
+      "selector": ".blockUI.blockMsg.blockPage"
     }
   },
   {
     "trigger": {
       "url-filter": "jQuery\\.blockUI\\.js",
-      "if-domain": ["*technews.tw"]
+      "if-domain": [
+        "*technews.tw"
+      ]
     },
     "action": {
       "type": "block"
@@ -130,11 +168,13 @@
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*techbang.com"]
+      "if-domain": [
+        "*techbang.com"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "#google-image-div"
+      "type": "css-display-none",
+      "selector": "#google-image-div"
     }
   },
   {
@@ -142,8 +182,8 @@
       "url-filter": ".*"
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "#scupio_interstitialad"
+      "type": "css-display-none",
+      "selector": "#scupio_interstitialad"
     }
   },
   {
@@ -151,148 +191,179 @@
       "url-filter": ".*"
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "#scupio_interstitial"
+      "type": "css-display-none",
+      "selector": "#scupio_interstitial"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*techbang.com"]
+      "if-domain": [
+        "*techbang.com"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": ".mobile_full_ads"
+      "type": "css-display-none",
+      "selector": ".mobile_full_ads"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*udn.com"]
+      "if-domain": [
+        "*udn.com"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "#simplemodal-container"
+      "type": "css-display-none",
+      "selector": "#simplemodal-container"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*udn.com"]
+      "if-domain": [
+        "*udn.com"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "#simplemodal-overlay"
+      "type": "css-display-none",
+      "selector": "#simplemodal-overlay"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*udn.com"]
+      "if-domain": [
+        "*udn.com"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": ".overlay-container"
+      "type": "css-display-none",
+      "selector": ".overlay-container"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*udn.com"]
+      "if-domain": [
+        "*udn.com"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "#show_box"
+      "type": "css-display-none",
+      "selector": "#show_box"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*chinatimes.com"]
+      "if-domain": [
+        "*chinatimes.com"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "#pagead_divBG"
+      "type": "css-display-none",
+      "selector": "#pagead_divBG"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*chinatimes.com"]
+      "if-domain": [
+        "*chinatimes.com"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "#google_image_div"
+      "type": "css-display-none",
+      "selector": "#google_image_div"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*chinatimes.com"]
+      "if-domain": [
+        "*chinatimes.com"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "#divBG.Bg"
+      "type": "css-display-none",
+      "selector": "#divBG.Bg"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*chinatimes.com"]
+      "if-domain": [
+        "*chinatimes.com"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": ".lightbox_3min"
+      "type": "css-display-none",
+      "selector": ".lightbox_3min"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*cna.com.tw"]
+      "if-domain": [
+        "*cna.com.tw"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": ".fancybox-wrap"
+      "type": "css-display-none",
+      "selector": ".fancybox-wrap"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*cna.com.tw", "*cheers.com.tw", "*gigacircle.com", "*appledaily.com"]
+      "if-domain": [
+        "*cna.com.tw",
+        "*cheers.com.tw",
+        "*gigacircle.com",
+        "*appledaily.com"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": ".fancybox-overlay"
+      "type": "css-display-none",
+      "selector": ".fancybox-overlay"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*gigacircle.com"]
+      "if-domain": [
+        "*gigacircle.com"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": ".fancybox-wrap"
+      "type": "css-display-none",
+      "selector": ".fancybox-wrap"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*bunnygo.net"]
+      "if-domain": [
+        "*bunnygo.net"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "#fancybox-overlay"
+      "type": "css-display-none",
+      "selector": "#fancybox-overlay"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*bunnygo.net"]
+      "if-domain": [
+        "*bunnygo.net"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "#fancybox-wrap"
+      "type": "css-display-none",
+      "selector": "#fancybox-wrap"
     }
   },
   {
@@ -300,235 +371,285 @@
       "url-filter": ".*"
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "#ONEAD-mobile2"
+      "type": "css-display-none",
+      "selector": "#ONEAD-mobile2"
     }
   },
   {
     "trigger": {
       "url-filter": "innity\\.js",
-      "if-domain": ["*thenewslens.com"]
+      "if-domain": [
+        "*thenewslens.com"
+      ]
     },
     "action": {
-    "type": "block"
+      "type": "block"
     }
   },
   {
     "trigger": {
       "url-filter": "proxy_174471\\.js",
-      "if-domain": ["*thenewslens.com"]
+      "if-domain": [
+        "*thenewslens.com"
+      ]
     },
     "action": {
-    "type": "block"
+      "type": "block"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*sina.com.tw"]
+      "if-domain": [
+        "*sina.com.tw"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "#ad_iframe_background"
+      "type": "css-display-none",
+      "selector": "#ad_iframe_background"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*sina.com.tw"]
+      "if-domain": [
+        "*sina.com.tw"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "#ad_iframe_area"
+      "type": "css-display-none",
+      "selector": "#ad_iframe_area"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*sina.com.tw"]
+      "if-domain": [
+        "*sina.com.tw"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": ".mfp-bg"
+      "type": "css-display-none",
+      "selector": ".mfp-bg"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*sina.com.tw"]
+      "if-domain": [
+        "*sina.com.tw"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": ".mfp-container"
+      "type": "css-display-none",
+      "selector": ".mfp-container"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*sina.com.tw"]
+      "if-domain": [
+        "*sina.com.tw"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": ".mfp-wrap"
+      "type": "css-display-none",
+      "selector": ".mfp-wrap"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*sina.com.tw"]
+      "if-domain": [
+        "*sina.com.tw"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "#fullAd"
+      "type": "css-display-none",
+      "selector": "#fullAd"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*sina.com.tw"]
+      "if-domain": [
+        "*sina.com.tw"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "#popup_google_ad"
+      "type": "css-display-none",
+      "selector": "#popup_google_ad"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*mobile01.com"]
+      "if-domain": [
+        "*mobile01.com"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "#Full_AD"
+      "type": "css-display-none",
+      "selector": "#Full_AD"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*mobile01.com", "*hottimes.org", "*twgreatdaily.com", "*thegreatdaily.com", "*managertoday.com.tw"]
+      "if-domain": [
+        "*mobile01.com",
+        "*hottimes.org",
+        "*twgreatdaily.com",
+        "*thegreatdaily.com",
+        "*managertoday.com.tw"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": ".modal-backdrop.fade.in"
+      "type": "css-display-none",
+      "selector": ".modal-backdrop.fade.in"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*managertoday.com.tw"]
+      "if-domain": [
+        "*managertoday.com.tw"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "#idle-win"
+      "type": "css-display-none",
+      "selector": "#idle-win"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*ettoday.net"]
+      "if-domain": [
+        "*ettoday.net"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": ".adM01"
+      "type": "css-display-none",
+      "selector": ".adM01"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*ettoday.net"]
+      "if-domain": [
+        "*ettoday.net"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": ".adM02"
+      "type": "css-display-none",
+      "selector": ".adM02"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*ettoday.net"]
+      "if-domain": [
+        "*ettoday.net"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": ".adM08"
+      "type": "css-display-none",
+      "selector": ".adM08"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*ettoday.net"]
+      "if-domain": [
+        "*ettoday.net"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "#adM09"
+      "type": "css-display-none",
+      "selector": "#adM09"
     }
   },
   {
     "trigger": {
       "url-filter": "adM.*js",
-      "if-domain": ["*ettoday.net"]
+      "if-domain": [
+        "*ettoday.net"
+      ]
     },
     "action": {
-    "type": "block"
+      "type": "block"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*ettoday.net"]
+      "if-domain": [
+        "*ettoday.net"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": ".idleAd"
+      "type": "css-display-none",
+      "selector": ".idleAd"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*cw.com.tw"]
+      "if-domain": [
+        "*cw.com.tw"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "iframe#iframe"
+      "type": "css-display-none",
+      "selector": "iframe#iframe"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*pixnet.net"]
+      "if-domain": [
+        "*pixnet.net"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": ".pop-ad-cover.pop-ad-cover--deep"
+      "type": "css-display-none",
+      "selector": ".pop-ad-cover.pop-ad-cover--deep"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*pixnet.net"]
+      "if-domain": [
+        "*pixnet.net"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": ".pop-ad-cover"
+      "type": "css-display-none",
+      "selector": ".pop-ad-cover"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*pixnet.net"]
+      "if-domain": [
+        "*pixnet.net"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "#pix-mib-unfold-ad"
+      "type": "css-display-none",
+      "selector": "#pix-mib-unfold-ad"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*pixnet.net"]
+      "if-domain": [
+        "*pixnet.net"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": ".ad-header"
+      "type": "css-display-none",
+      "selector": ".ad-header"
     }
   },
   {
@@ -536,8 +657,8 @@
       "url-filter": ".*"
     },
     "action": {
-    "type": "css-display-none",
-    "selector": ".pop-ad-cover.pop-ad-cover--deep"
+      "type": "css-display-none",
+      "selector": ".pop-ad-cover.pop-ad-cover--deep"
     }
   },
   {
@@ -545,8 +666,8 @@
       "url-filter": ".*"
     },
     "action": {
-    "type": "css-display-none",
-    "selector": ".pop-ad-cover"
+      "type": "css-display-none",
+      "selector": ".pop-ad-cover"
     }
   },
   {
@@ -554,8 +675,8 @@
       "url-filter": ".*"
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "#pix-mib-unfold-ad"
+      "type": "css-display-none",
+      "selector": "#pix-mib-unfold-ad"
     }
   },
   {
@@ -563,477 +684,576 @@
       "url-filter": ".*"
     },
     "action": {
-    "type": "css-display-none",
-    "selector": ".ad-header"
+      "type": "css-display-none",
+      "selector": ".ad-header"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*gq.com.tw"]
+      "if-domain": [
+        "*gq.com.tw"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "#popAD"
+      "type": "css-display-none",
+      "selector": "#popAD"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*qooah.com"]
+      "if-domain": [
+        "*qooah.com"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": ".ypa-popup-overlay"
+      "type": "css-display-none",
+      "selector": ".ypa-popup-overlay"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*xuite.net"]
+      "if-domain": [
+        "*xuite.net"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "#rmiad"
+      "type": "css-display-none",
+      "selector": "#rmiad"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*xuite.net"]
+      "if-domain": [
+        "*xuite.net"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "hinetwork"
+      "type": "css-display-none",
+      "selector": "hinetwork"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*techcrunch.com"]
+      "if-domain": [
+        "*techcrunch.com"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": ".lightbox"
+      "type": "css-display-none",
+      "selector": ".lightbox"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*elle.com.tw"]
+      "if-domain": [
+        "*elle.com.tw"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "#body-region"
+      "type": "css-display-none",
+      "selector": "#body-region"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*setn.com"]
+      "if-domain": [
+        "*setn.com"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "#float_ad"
+      "type": "css-display-none",
+      "selector": "#float_ad"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*setn.com"]
+      "if-domain": [
+        "*setn.com"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "#ad_incover_container"
+      "type": "css-display-none",
+      "selector": "#ad_incover_container"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*nownews.com"]
+      "if-domain": [
+        "*nownews.com"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "#mui-overlay"
+      "type": "css-display-none",
+      "selector": "#mui-overlay"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*nownews.com"]
+      "if-domain": [
+        "*nownews.com"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": ".main-gift-div"
+      "type": "css-display-none",
+      "selector": ".main-gift-div"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*nownews.com"]
+      "if-domain": [
+        "*nownews.com"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": ".backdropStyle_y02jly"
+      "type": "css-display-none",
+      "selector": ".backdropStyle_y02jly"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*nownews.com"]
+      "if-domain": [
+        "*nownews.com"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": ".dialog_1t36429"
+      "type": "css-display-none",
+      "selector": ".dialog_1t36429"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*moneydj.com"]
+      "if-domain": [
+        "*moneydj.com"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "#MDJPageAD"
+      "type": "css-display-none",
+      "selector": "#MDJPageAD"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*teepr.com"]
+      "if-domain": [
+        "*teepr.com"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "#smaato_modalAd"
+      "type": "css-display-none",
+      "selector": "#smaato_modalAd"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*teepr.com"]
+      "if-domain": [
+        "*teepr.com"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": ".popmake.size-custom.active.fixed.custom-position"
+      "type": "css-display-none",
+      "selector": ".popmake.size-custom.active.fixed.custom-position"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*teepr.com"]
+      "if-domain": [
+        "*teepr.com"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "#popmake-overlay"
+      "type": "css-display-none",
+      "selector": "#popmake-overlay"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*teepr.com"]
+      "if-domain": [
+        "*teepr.com"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "#hotspot"
+      "type": "css-display-none",
+      "selector": "#hotspot"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*teepr.com"]
+      "if-domain": [
+        "*teepr.com"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": ".remodal-overlay"
+      "type": "css-display-none",
+      "selector": ".remodal-overlay"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*teepr.com"]
+      "if-domain": [
+        "*teepr.com"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": ".remodal-wrapper"
+      "type": "css-display-none",
+      "selector": ".remodal-wrapper"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*teepr.com"]
+      "if-domain": [
+        "*teepr.com"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "div[class^=remodal]"
+      "type": "css-display-none",
+      "selector": "div[class^=remodal]"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*teepr.com"]
+      "if-domain": [
+        "*teepr.com"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": ".fxMediaBox"
+      "type": "css-display-none",
+      "selector": ".fxMediaBox"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*teepr.com"]
+      "if-domain": [
+        "*teepr.com"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": ".pum-overlay"
+      "type": "css-display-none",
+      "selector": ".pum-overlay"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*ck101.com", "*dongtw.com"]
+      "if-domain": [
+        "*ck101.com",
+        "*dongtw.com"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": ".adfixWp"
+      "type": "css-display-none",
+      "selector": ".adfixWp"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*ck101.com"]
+      "if-domain": [
+        "*ck101.com"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "#pop_ad_mobile"
+      "type": "css-display-none",
+      "selector": "#pop_ad_mobile"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*ck101.com"]
+      "if-domain": [
+        "*ck101.com"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": ".float_ad_gray_box"
+      "type": "css-display-none",
+      "selector": ".float_ad_gray_box"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*ck101.com"]
+      "if-domain": [
+        "*ck101.com"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": ".pi-ck-mobile-2c-scroll-wrap"
+      "type": "css-display-none",
+      "selector": ".pi-ck-mobile-2c-scroll-wrap"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*ck101.com"]
+      "if-domain": [
+        "*ck101.com"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": ".pi-ck-nav-wrap"
+      "type": "css-display-none",
+      "selector": ".pi-ck-nav-wrap"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*ck101.com"]
+      "if-domain": [
+        "*ck101.com"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": ".a_cn"
+      "type": "css-display-none",
+      "selector": ".a_cn"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*ck101.com"]
+      "if-domain": [
+        "*ck101.com"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": ".videoAdWrapper"
+      "type": "css-display-none",
+      "selector": ".videoAdWrapper"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*ck101.com"]
+      "if-domain": [
+        "*ck101.com"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": ".pi-Ad-mb-stick"
+      "type": "css-display-none",
+      "selector": ".pi-Ad-mb-stick"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*ck101.com"]
+      "if-domain": [
+        "*ck101.com"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "div[id*=\"_ad_container\"]"
+      "type": "css-display-none",
+      "selector": "div[id*=\"_ad_container\"]"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*buzzhand.com"]
+      "if-domain": [
+        "*buzzhand.com"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": ".mash-lightbox.small-white-dialog.shown.mash-lightbox-fixed"
+      "type": "css-display-none",
+      "selector": ".mash-lightbox.small-white-dialog.shown.mash-lightbox-fixed"
     }
   },
   {
     "trigger": {
       "url-filter": "min",
-      "if-domain": ["*buzzhand.com"]
+      "if-domain": [
+        "*buzzhand.com"
+      ]
     },
     "action": {
-    "type": "block"
+      "type": "block"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*tvbs.com.tw"]
+      "if-domain": [
+        "*tvbs.com.tw"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "#one_ad_set_show"
+      "type": "css-display-none",
+      "selector": "#one_ad_set_show"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*talk.tw"]
+      "if-domain": [
+        "*talk.tw"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "#divAdCover"
+      "type": "css-display-none",
+      "selector": "#divAdCover"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*talk.tw"]
+      "if-domain": [
+        "*talk.tw"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": ".mobileAd-widget-2"
+      "type": "css-display-none",
+      "selector": ".mobileAd-widget-2"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*talk.tw"]
+      "if-domain": [
+        "*talk.tw"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": ".fb-likebox.widget"
+      "type": "css-display-none",
+      "selector": ".fb-likebox.widget"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*life.tw"]
+      "if-domain": [
+        "*life.tw"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "#fullblock"
+      "type": "css-display-none",
+      "selector": "#fullblock"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*life.tw"]
+      "if-domain": [
+        "*life.tw"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "#fullfbblock"
+      "type": "css-display-none",
+      "selector": "#fullfbblock"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*juksy.com"]
+      "if-domain": [
+        "*juksy.com"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "#cover"
+      "type": "css-display-none",
+      "selector": "#cover"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*juksy.com"]
+      "if-domain": [
+        "*juksy.com"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": ".juksyCover"
+      "type": "css-display-none",
+      "selector": ".juksyCover"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*vogue.com.tw"]
+      "if-domain": [
+        "*vogue.com.tw"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": ".mask_off"
+      "type": "css-display-none",
+      "selector": ".mask_off"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*roodo.com", "*plurk.com", "*share.youthwant.com.tw", "*sportsv.net", "*gigacircle.com"]
+      "if-domain": [
+        "*roodo.com",
+        "*plurk.com",
+        "*share.youthwant.com.tw",
+        "*sportsv.net",
+        "*gigacircle.com"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": ".sitemaji_inters"
+      "type": "css-display-none",
+      "selector": ".sitemaji_inters"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*roodo.com"]
+      "if-domain": [
+        "*roodo.com"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": ".slidead"
+      "type": "css-display-none",
+      "selector": ".slidead"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*jkforum.net"]
+      "if-domain": [
+        "*jkforum.net"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "#coverad"
+      "type": "css-display-none",
+      "selector": "#coverad"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*qooah.com"]
+      "if-domain": [
+        "*qooah.com"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": ".wptouch-mobile-switch"
+      "type": "css-display-none",
+      "selector": ".wptouch-mobile-switch"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*gamer.com.tw"]
+      "if-domain": [
+        "*gamer.com.tw"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": ".full_ad"
+      "type": "css-display-none",
+      "selector": ".full_ad"
     }
   },
   {
@@ -1041,28 +1261,32 @@
       "url-filter": ".*"
     },
     "action": {
-    "type": "css-display-none",
-    "selector": ".clickforceads"
+      "type": "css-display-none",
+      "selector": ".clickforceads"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*dramaq.cc"]
+      "if-domain": [
+        "*dramaq.cc"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": ".sweet-overlay"
+      "type": "css-display-none",
+      "selector": ".sweet-overlay"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*dramaq.cc"]
+      "if-domain": [
+        "*dramaq.cc"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": ".sweet-alert"
+      "type": "css-display-none",
+      "selector": ".sweet-alert"
     }
   },
   {
@@ -1070,8 +1294,8 @@
       "url-filter": ".*"
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "#sfoverlay_up"
+      "type": "css-display-none",
+      "selector": "#sfoverlay_up"
     }
   },
   {
@@ -1079,8 +1303,8 @@
       "url-filter": ".*"
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "#sfoverlay_ud"
+      "type": "css-display-none",
+      "selector": "#sfoverlay_ud"
     }
   },
   {
@@ -1088,8 +1312,8 @@
       "url-filter": ".*"
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "#btn_close_up"
+      "type": "css-display-none",
+      "selector": "#btn_close_up"
     }
   },
   {
@@ -1097,8 +1321,8 @@
       "url-filter": ".*"
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "#btn_close_ud"
+      "type": "css-display-none",
+      "selector": "#btn_close_ud"
     }
   },
   {
@@ -1106,8 +1330,8 @@
       "url-filter": ".*"
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "#sf_popunder"
+      "type": "css-display-none",
+      "selector": "#sf_popunder"
     }
   },
   {
@@ -1115,361 +1339,444 @@
       "url-filter": ".*"
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "#sf_popup"
+      "type": "css-display-none",
+      "selector": "#sf_popup"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*ctitv.com.tw"]
+      "if-domain": [
+        "*ctitv.com.tw"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "#adover"
+      "type": "css-display-none",
+      "selector": "#adover"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*gotv.ctitv.com.tw"]
+      "if-domain": [
+        "*gotv.ctitv.com.tw"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "iframe"
+      "type": "css-display-none",
+      "selector": "iframe"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*nextmag.com.tw"]
+      "if-domain": [
+        "*nextmag.com.tw"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "section.mod-wrapper.mod-ad.ad-320"
+      "type": "css-display-none",
+      "selector": "section.mod-wrapper.mod-ad.ad-320"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*nextmag.com.tw"]
+      "if-domain": [
+        "*nextmag.com.tw"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": ".ad-320"
+      "type": "css-display-none",
+      "selector": ".ad-320"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*nextmag.com.tw"]
+      "if-domain": [
+        "*nextmag.com.tw"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "#splashad"
+      "type": "css-display-none",
+      "selector": "#splashad"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*wetalk.tw"]
+      "if-domain": [
+        "*wetalk.tw"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "#mobileModal"
+      "type": "css-display-none",
+      "selector": "#mobileModal"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*wetalk.tw", "*coco01.net"]
+      "if-domain": [
+        "*wetalk.tw",
+        "*coco01.net"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": ".modal-backdrop.in"
+      "type": "css-display-none",
+      "selector": ".modal-backdrop.in"
     }
   },
   {
     "trigger": {
       "url-filter": "bootstrap\\.min\\.js",
-      "resource-type": ["script"],
-      "if-domain": ["*wetalk.tw"]
+      "resource-type": [
+        "script"
+      ],
+      "if-domain": [
+        "*wetalk.tw"
+      ]
     },
     "action": {
-    "type": "block"
+      "type": "block"
     }
   },
   {
     "trigger": {
       "url-filter": "ebHtml5ExpBanner_api\\.js",
-      "if-domain": ["*businessweekly.com.tw"]
+      "if-domain": [
+        "*businessweekly.com.tw"
+      ]
     },
     "action": {
-    "type": "block"
+      "type": "block"
     }
   },
   {
     "trigger": {
       "url-filter": "gpt\\.js",
-      "if-domain": ["*theinitium.com"]
+      "if-domain": [
+        "*theinitium.com"
+      ]
     },
     "action": {
-    "type": "block"
+      "type": "block"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*theinitium.com"]
+      "if-domain": [
+        "*theinitium.com"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": ".ad-prestitial"
+      "type": "css-display-none",
+      "selector": ".ad-prestitial"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*mypaper.m.pchome.com.tw", "*news.m.pchome.com.tw"]
+      "if-domain": [
+        "*mypaper.m.pchome.com.tw",
+        "*news.m.pchome.com.tw"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": ".admaskbg"
+      "type": "css-display-none",
+      "selector": ".admaskbg"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*mango02.com"]
+      "if-domain": [
+        "*mango02.com"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "#ad-popup-dialog-overlay"
+      "type": "css-display-none",
+      "selector": "#ad-popup-dialog-overlay"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*mango02.com"]
+      "if-domain": [
+        "*mango02.com"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "#ad-popup-dialog"
+      "type": "css-display-none",
+      "selector": "#ad-popup-dialog"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*mango02.com", "*changepw.com", "*twpapa.com"]
+      "if-domain": [
+        "*mango02.com",
+        "*changepw.com",
+        "*twpapa.com"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": ".adbox-bg"
+      "type": "css-display-none",
+      "selector": ".adbox-bg"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*mango02.com", "*changepw.com", "*twpapa.com"]
+      "if-domain": [
+        "*mango02.com",
+        "*changepw.com",
+        "*twpapa.com"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": ".adbox-wrapper"
+      "type": "css-display-none",
+      "selector": ".adbox-wrapper"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*cocomy.net", "*coco01.net"]
+      "if-domain": [
+        "*cocomy.net",
+        "*coco01.net"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "#adModal"
+      "type": "css-display-none",
+      "selector": "#adModal"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*cocomy.net"]
+      "if-domain": [
+        "*cocomy.net"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "#fbCover.promote-box.promote-box-fixed"
+      "type": "css-display-none",
+      "selector": "#fbCover.promote-box.promote-box-fixed"
     }
   },
   {
     "trigger": {
       "url-filter": "bootstrap",
-      "resource-type": ["script"],
-      "if-domain": ["*cocomy.net"]
+      "resource-type": [
+        "script"
+      ],
+      "if-domain": [
+        "*cocomy.net"
+      ]
     },
     "action": {
-    "type": "block"
+      "type": "block"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*ispot.news"]
+      "if-domain": [
+        "*ispot.news"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "#win_like.ui_dialog"
+      "type": "css-display-none",
+      "selector": "#win_like.ui_dialog"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*ispot.news"]
+      "if-domain": [
+        "*ispot.news"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "#win_like_mask.dialog_mask.ui_mask"
+      "type": "css-display-none",
+      "selector": "#win_like_mask.dialog_mask.ui_mask"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*eprice.com.tw"]
+      "if-domain": [
+        "*eprice.com.tw"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": ".ad-300x250-popup-g"
+      "type": "css-display-none",
+      "selector": ".ad-300x250-popup-g"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*eprice.com.tw"]
+      "if-domain": [
+        "*eprice.com.tw"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "#popup-ad-overlay.overlay"
+      "type": "css-display-none",
+      "selector": "#popup-ad-overlay.overlay"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*eprice.com.hk"]
+      "if-domain": [
+        "*eprice.com.hk"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "#popup-ad-overlay"
+      "type": "css-display-none",
+      "selector": "#popup-ad-overlay"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*eprice.com.hk"]
+      "if-domain": [
+        "*eprice.com.hk"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": ".ad-300x250-popup-g"
+      "type": "css-display-none",
+      "selector": ".ad-300x250-popup-g"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*cw.com.tw"]
+      "if-domain": [
+        "*cw.com.tw"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": ".animate"
+      "type": "css-display-none",
+      "selector": ".animate"
     }
   },
   {
     "trigger": {
       "url-filter": "jquery\\.fancybox\\.css",
-      "if-domain": ["*cheers.com.tw"]
+      "if-domain": [
+        "*cheers.com.tw"
+      ]
     },
     "action": {
-    "type": "block"
+      "type": "block"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*soft4fun.net"]
+      "if-domain": [
+        "*soft4fun.net"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": ".spu-bg"
+      "type": "css-display-none",
+      "selector": ".spu-bg"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*soft4fun.net"]
+      "if-domain": [
+        "*soft4fun.net"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": ".spu-box"
+      "type": "css-display-none",
+      "selector": ".spu-box"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*on.cc"]
+      "if-domain": [
+        "*on.cc"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "#mOverLay-container"
+      "type": "css-display-none",
+      "selector": "#mOverLay-container"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*joylah.com"]
+      "if-domain": [
+        "*joylah.com"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "#popupBox"
+      "type": "css-display-none",
+      "selector": "#popupBox"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*joylah.com"]
+      "if-domain": [
+        "*joylah.com"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "#popupBackground"
+      "type": "css-display-none",
+      "selector": "#popupBackground"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*icook.tw"]
+      "if-domain": [
+        "*icook.tw"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": ".rl-modal"
+      "type": "css-display-none",
+      "selector": ".rl-modal"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*babyhome.com.tw"]
+      "if-domain": [
+        "*babyhome.com.tw"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "#ad_m_peacock"
+      "type": "css-display-none",
+      "selector": "#ad_m_peacock"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*healthylives.tw"]
+      "if-domain": [
+        "*healthylives.tw"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "#fbFixedAd"
+      "type": "css-display-none",
+      "selector": "#fbFixedAd"
     }
   },
   {
     "trigger": {
       "url-filter": "fbpop\\.js",
-      "if-domain": ["*healthylives.tw"]
+      "if-domain": [
+        "*healthylives.tw"
+      ]
     },
     "action": {
       "type": "block"
@@ -1478,7 +1785,9 @@
   {
     "trigger": {
       "url-filter": "class\\.js",
-      "if-domain": ["*kikinote.net"]
+      "if-domain": [
+        "*kikinote.net"
+      ]
     },
     "action": {
       "type": "block"
@@ -1487,17 +1796,21 @@
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*kikinote.net"]
+      "if-domain": [
+        "*kikinote.net"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "#Shadow"
+      "type": "css-display-none",
+      "selector": "#Shadow"
     }
   },
   {
     "trigger": {
       "url-filter": "zone",
-      "if-domain": ["*adaymag.com"]
+      "if-domain": [
+        "*adaymag.com"
+      ]
     },
     "action": {
       "type": "block"
@@ -1506,326 +1819,398 @@
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*adaymag.com", "*appledaily.com.tw", "*appledaily.com"]
+      "if-domain": [
+        "*adaymag.com",
+        "*appledaily.com.tw",
+        "*appledaily.com"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "#apps-ad"
+      "type": "css-display-none",
+      "selector": "#apps-ad"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*natgeomedia.com"]
+      "if-domain": [
+        "*natgeomedia.com"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": ".ad-wrapper.mobile"
+      "type": "css-display-none",
+      "selector": ".ad-wrapper.mobile"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*styletc.com"]
+      "if-domain": [
+        "*styletc.com"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": ".mobile-ad-box"
+      "type": "css-display-none",
+      "selector": ".mobile-ad-box"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*styletc.com"]
+      "if-domain": [
+        "*styletc.com"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "#rev-toaster"
+      "type": "css-display-none",
+      "selector": "#rev-toaster"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*clickme.net"]
+      "if-domain": [
+        "*clickme.net"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": ".ADs.ArticleTop"
+      "type": "css-display-none",
+      "selector": ".ADs.ArticleTop"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*changepw.com"]
+      "if-domain": [
+        "*changepw.com"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": ".ypabox-wrapper"
+      "type": "css-display-none",
+      "selector": ".ypabox-wrapper"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*changepw.com"]
+      "if-domain": [
+        "*changepw.com"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": ".ypabox-bg"
+      "type": "css-display-none",
+      "selector": ".ypabox-bg"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*mypaper.pchome.com.tw"]
+      "if-domain": [
+        "*mypaper.pchome.com.tw"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": ".czy_layer"
+      "type": "css-display-none",
+      "selector": ".czy_layer"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*mypaper.pchome.com.tw"]
+      "if-domain": [
+        "*mypaper.pchome.com.tw"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": ".czy_wrapper"
+      "type": "css-display-none",
+      "selector": ".czy_wrapper"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*kiwsy.com.hk"]
+      "if-domain": [
+        "*kiwsy.com.hk"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "#ad-popup-dialog-overlay"
+      "type": "css-display-none",
+      "selector": "#ad-popup-dialog-overlay"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*kiwsy.com.hk"]
+      "if-domain": [
+        "*kiwsy.com.hk"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "#ad-popup-dialog"
+      "type": "css-display-none",
+      "selector": "#ad-popup-dialog"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*bnext.com.tw"]
+      "if-domain": [
+        "*bnext.com.tw"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "#ad-pixfs"
+      "type": "css-display-none",
+      "selector": "#ad-pixfs"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*bnext.com.tw"]
+      "if-domain": [
+        "*bnext.com.tw"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "#lightbox0_pdup"
+      "type": "css-display-none",
+      "selector": "#lightbox0_pdup"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*bnext.com.tw"]
+      "if-domain": [
+        "*bnext.com.tw"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": ".bnextmeida-banner"
+      "type": "css-display-none",
+      "selector": ".bnextmeida-banner"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*bnext.com.tw"]
+      "if-domain": [
+        "*bnext.com.tw"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "#desktop_cover_ad"
+      "type": "css-display-none",
+      "selector": "#desktop_cover_ad"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*bnext.com.tw"]
+      "if-domain": [
+        "*bnext.com.tw"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": ".delay_full_cover_ad"
+      "type": "css-display-none",
+      "selector": ".delay_full_cover_ad"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*share.youthwant.com.tw"]
+      "if-domain": [
+        "*share.youthwant.com.tw"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": ".slidead"
+      "type": "css-display-none",
+      "selector": ".slidead"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*getez.info"]
+      "if-domain": [
+        "*getez.info"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "#ad_block_15"
+      "type": "css-display-none",
+      "selector": "#ad_block_15"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*fullyu.com"]
+      "if-domain": [
+        "*fullyu.com"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "#tips"
+      "type": "css-display-none",
+      "selector": "#tips"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*fullyu.com"]
+      "if-domain": [
+        "*fullyu.com"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": ".jquery-modal.blocker"
+      "type": "css-display-none",
+      "selector": ".jquery-modal.blocker"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*hottimes.org", "*twgreatdaily.com", "*thegreatdaily.com"]
+      "if-domain": [
+        "*hottimes.org",
+        "*twgreatdaily.com",
+        "*thegreatdaily.com"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": ".modal.fade"
+      "type": "css-display-none",
+      "selector": ".modal.fade"
     }
   },
   {
     "trigger": {
       "url-filter": "bootstrap\\.js",
-      "if-domain": ["*hottimes.org", "*twgreatdaily.com", "*thegreatdaily.com"]
+      "if-domain": [
+        "*hottimes.org",
+        "*twgreatdaily.com",
+        "*thegreatdaily.com"
+      ]
     },
     "action": {
-    "type": "block"
+      "type": "block"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*yahoo.com"]
+      "if-domain": [
+        "*yahoo.com"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "#header-2-GoldenGate-Proxy"
+      "type": "css-display-none",
+      "selector": "#header-2-GoldenGate-Proxy"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*yahoo.com"]
+      "if-domain": [
+        "*yahoo.com"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "#DARLAlyr"
+      "type": "css-display-none",
+      "selector": "#DARLAlyr"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*yahoo.com"]
+      "if-domain": [
+        "*yahoo.com"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": ".darla"
+      "type": "css-display-none",
+      "selector": ".darla"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*yam.com"]
+      "if-domain": [
+        "*yam.com"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "#idle_lightbox"
+      "type": "css-display-none",
+      "selector": "#idle_lightbox"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*techbang.com"]
+      "if-domain": [
+        "*techbang.com"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "#pop-container"
+      "type": "css-display-none",
+      "selector": "#pop-container"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*storm.mg"]
+      "if-domain": [
+        "*storm.mg"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": ".vex"
+      "type": "css-display-none",
+      "selector": ".vex"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*fashionwaltz.com"]
+      "if-domain": [
+        "*fashionwaltz.com"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": ".stb-container"
+      "type": "css-display-none",
+      "selector": ".stb-container"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*everydayhealth.com.tw"]
+      "if-domain": [
+        "*everydayhealth.com.tw"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "#popup-dfp"
+      "type": "css-display-none",
+      "selector": "#popup-dfp"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*everydayhealth.com.tw"]
+      "if-domain": [
+        "*everydayhealth.com.tw"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": ".indexLightbox"
+      "type": "css-display-none",
+      "selector": ".indexLightbox"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*everydayhealth.com.tw"]
+      "if-domain": [
+        "*everydayhealth.com.tw"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "#div-gpt-ad-1472022102587-0"
+      "type": "css-display-none",
+      "selector": "#div-gpt-ad-1472022102587-0"
     }
   },
   {
     "trigger": {
       "url-filter": "ad_popup\\.html",
-      "if-domain": ["*parenting.com.tw"]
+      "if-domain": [
+        "*parenting.com.tw"
+      ]
     },
     "action": {
       "type": "block"
@@ -1834,96 +2219,83 @@
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*appledaily.com.tw", "*appledaily.com"]
+      "if-domain": [
+        "*appledaily.com.tw",
+        "*appledaily.com"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "#innity_adslot_174648"
+      "type": "css-display-none",
+      "selector": "#innity_adslot_174648"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*appledaily.com.tw", "*appledaily.com"]
+      "if-domain": [
+        "*appledaily.com.tw",
+        "*appledaily.com"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "#OpenAd"
+      "type": "css-display-none",
+      "selector": "#OpenAd"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*bunnygo.net"]
+      "if-domain": [
+        "*bunnygo.net"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "#fancybox-content"
+      "type": "css-display-none",
+      "selector": "#fancybox-content"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*bunnygo.net"]
+      "if-domain": [
+        "*bunnygo.net"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "#fancybox-close"
+      "type": "css-display-none",
+      "selector": "#fancybox-close"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*gvm.com.tw"]
+      "if-domain": [
+        "*gvm.com.tw"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "#colorbox"
+      "type": "css-display-none",
+      "selector": "#colorbox"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*gvm.com.tw"]
+      "if-domain": [
+        "*gvm.com.tw"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "#cboxOverlay"
+      "type": "css-display-none",
+      "selector": "#cboxOverlay"
     }
   },
   {
     "trigger": {
       "url-filter": "adj.*php",
-      "if-domain": ["*pad.skyozora.com"]
-    },
-    "action": {
-    "type": "block"
-    }
-  },
-  {
-    "trigger": {
-      "url-filter": ".*",
-      "if-domain": ["*plays01.com"]
-    },
-    "action": {
-    "type": "css-display-none",
-    "selector": ".ypabox-bg"
-    }
-  },
-  {
-    "trigger": {
-      "url-filter": ".*",
-      "if-domain": ["*plays01.com"]
-    },
-    "action": {
-    "type": "css-display-none",
-    "selector": ".ypabox-wrapper"
-    }
-  },
-  {
-    "trigger": {
-      "url-filter": "dfpPop\\.jsp",
-      "if-domain": ["*commonhealth.com.tw"]
+      "if-domain": [
+        "*pad.skyozora.com"
+      ]
     },
     "action": {
       "type": "block"
@@ -1932,61 +2304,108 @@
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*commonhealth.com.tw"]
+      "if-domain": [
+        "*plays01.com"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "iframe#iframe"
+      "type": "css-display-none",
+      "selector": ".ypabox-bg"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*92-tv.com"]
+      "if-domain": [
+        "*plays01.com"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": ".fb-box"
+      "type": "css-display-none",
+      "selector": ".ypabox-wrapper"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": "dfpPop\\.jsp",
+      "if-domain": [
+        "*commonhealth.com.tw"
+      ]
+    },
+    "action": {
+      "type": "block"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*92-tv.com"]
+      "if-domain": [
+        "*commonhealth.com.tw"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": ".fb_bg"
+      "type": "css-display-none",
+      "selector": "iframe#iframe"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*inote.tw"]
+      "if-domain": [
+        "*92-tv.com"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": ".ppiiad-DT-mainAD-wrap"
+      "type": "css-display-none",
+      "selector": ".fb-box"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*pchome.com.tw"]
+      "if-domain": [
+        "*92-tv.com"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "#admaskbg"
+      "type": "css-display-none",
+      "selector": ".fb_bg"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*8drama.com"]
+      "if-domain": [
+        "*inote.tw"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "#adoffno"
+      "type": "css-display-none",
+      "selector": ".ppiiad-DT-mainAD-wrap"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": [
+        "*pchome.com.tw"
+      ]
+    },
+    "action": {
+      "type": "css-display-none",
+      "selector": "#admaskbg"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": [
+        "*8drama.com"
+      ]
+    },
+    "action": {
+      "type": "css-display-none",
+      "selector": "#adoffno"
     }
   },
   {
@@ -2000,201 +2419,241 @@
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*toy-people.com"]
+      "if-domain": [
+        "*toy-people.com"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": ".fullBG"
+      "type": "css-display-none",
+      "selector": ".fullBG"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*toy-people.com"]
+      "if-domain": [
+        "*toy-people.com"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": ".PopupLayerBg"
+      "type": "css-display-none",
+      "selector": ".PopupLayerBg"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*pkget.com"]
+      "if-domain": [
+        "*pkget.com"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": ".wowocean-reveal-modal-pk"
+      "type": "css-display-none",
+      "selector": ".wowocean-reveal-modal-pk"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*niusnews.com"]
+      "if-domain": [
+        "*niusnews.com"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": ".divMPop"
+      "type": "css-display-none",
+      "selector": ".divMPop"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*niusnews.com"]
+      "if-domain": [
+        "*niusnews.com"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": ".divLoginMask"
+      "type": "css-display-none",
+      "selector": ".divLoginMask"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*loveshares.cc"]
+      "if-domain": [
+        "*loveshares.cc"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": ".dgd_stb_box"
+      "type": "css-display-none",
+      "selector": ".dgd_stb_box"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*weibo.com"]
+      "if-domain": [
+        "*weibo.com"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "#cboxOverlay"
+      "type": "css-display-none",
+      "selector": "#cboxOverlay"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*weibo.com"]
+      "if-domain": [
+        "*weibo.com"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "#colorbox"
+      "type": "css-display-none",
+      "selector": "#colorbox"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*weibo.com"]
+      "if-domain": [
+        "*weibo.com"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "#footer_mobile_bottom"
+      "type": "css-display-none",
+      "selector": "#footer_mobile_bottom"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*sina.com.hk"]
+      "if-domain": [
+        "*sina.com.hk"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": ".kiwi-ad-sticky-listing-bottom-mobile-wrapper"
+      "type": "css-display-none",
+      "selector": ".kiwi-ad-sticky-listing-bottom-mobile-wrapper"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*sina.com.hk"]
+      "if-domain": [
+        "*sina.com.hk"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": ".guru_mobile_popup_wrapper"
+      "type": "css-display-none",
+      "selector": ".guru_mobile_popup_wrapper"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*sina.com.hk"]
+      "if-domain": [
+        "*sina.com.hk"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "#guru_mobile_popup_wrapper"
+      "type": "css-display-none",
+      "selector": "#guru_mobile_popup_wrapper"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*sina.com.hk"]
+      "if-domain": [
+        "*sina.com.hk"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": ".guru_close_button_wrapper"
+      "type": "css-display-none",
+      "selector": ".guru_close_button_wrapper"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*beautyexchange.com.hk"]
+      "if-domain": [
+        "*beautyexchange.com.hk"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": ".presite_container"
+      "type": "css-display-none",
+      "selector": ".presite_container"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*hk01.com"]
+      "if-domain": [
+        "*hk01.com"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": ".popup_wrapper"
+      "type": "css-display-none",
+      "selector": ".popup_wrapper"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*hk01.com"]
+      "if-domain": [
+        "*hk01.com"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": ".popup_background"
+      "type": "css-display-none",
+      "selector": ".popup_background"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*presslogic.com"]
+      "if-domain": [
+        "*presslogic.com"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": ".presslogic-popup-ad-iframe-full"
+      "type": "css-display-none",
+      "selector": ".presslogic-popup-ad-iframe-full"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*presslogic.com"]
+      "if-domain": [
+        "*presslogic.com"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": ".hotmobAdPopup"
+      "type": "css-display-none",
+      "selector": ".hotmobAdPopup"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*bomb01.com"]
+      "if-domain": [
+        "*bomb01.com"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": ".modal"
+      "type": "css-display-none",
+      "selector": ".modal"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*thestandnews.com"]
+      "if-domain": [
+        "*thestandnews.com"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": ".mobile-overlay"
+      "type": "css-display-none",
+      "selector": ".mobile-overlay"
     }
   },
   {
@@ -2202,8 +2661,8 @@
       "url-filter": ".*"
     },
     "action": {
-    "type": "css-display-none",
-    "selector": ".ad-320x480-popup-g"
+      "type": "css-display-none",
+      "selector": ".ad-320x480-popup-g"
     }
   },
   {
@@ -2211,8 +2670,8 @@
       "url-filter": ".*"
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "vpon"
+      "type": "css-display-none",
+      "selector": "vpon"
     }
   },
   {
@@ -2220,8 +2679,8 @@
       "url-filter": ".*"
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "#ad-full-page"
+      "type": "css-display-none",
+      "selector": "#ad-full-page"
     }
   },
   {
@@ -2229,8 +2688,8 @@
       "url-filter": ".*"
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "#mib-video-expander"
+      "type": "css-display-none",
+      "selector": "#mib-video-expander"
     }
   },
   {
@@ -2238,54 +2697,64 @@
       "url-filter": ".*"
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "#full-ad"
+      "type": "css-display-none",
+      "selector": "#full-ad"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": [".*mook.com.tw"]
+      "if-domain": [
+        ".*mook.com.tw"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "#modal-one"
+      "type": "css-display-none",
+      "selector": "#modal-one"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": [".*mook.com.tw"]
+      "if-domain": [
+        ".*mook.com.tw"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": ".modal-dialog"
+      "type": "css-display-none",
+      "selector": ".modal-dialog"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": [".*upmedia.mg"]
+      "if-domain": [
+        ".*upmedia.mg"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "#note_windows"
+      "type": "css-display-none",
+      "selector": "#note_windows"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": [".*upmedia.mg"]
+      "if-domain": [
+        ".*upmedia.mg"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "#maskfb"
+      "type": "css-display-none",
+      "selector": "#maskfb"
     }
   },
   {
     "trigger": {
       "url-filter": "jquery.magnific-popup\\.js",
-      "if-domain": ["*mombaby.com.tw"]
+      "if-domain": [
+        "*mombaby.com.tw"
+      ]
     },
     "action": {
       "type": "block"
@@ -2296,8 +2765,8 @@
       "url-filter": ".*"
     },
     "action": {
-    "type": "css-display-none",
-    "selector": ".kiwiad-popup-overlay"
+      "type": "css-display-none",
+      "selector": ".kiwiad-popup-overlay"
     }
   },
   {
@@ -2305,8 +2774,8 @@
       "url-filter": ".*"
     },
     "action": {
-    "type": "css-display-none",
-    "selector": ".ad-cover"
+      "type": "css-display-none",
+      "selector": ".ad-cover"
     }
   },
   {
@@ -2314,8 +2783,8 @@
       "url-filter": ".*"
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "#Cover.splash"
+      "type": "css-display-none",
+      "selector": "#Cover.splash"
     }
   },
   {
@@ -2323,8 +2792,8 @@
       "url-filter": ".*"
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "div.mobile_AD"
+      "type": "css-display-none",
+      "selector": "div.mobile_AD"
     }
   },
   {
@@ -2332,37 +2801,43 @@
       "url-filter": ".*"
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "div[id^=\"innity_adslot\"]"
+      "type": "css-display-none",
+      "selector": "div[id^=\"innity_adslot\"]"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*u-car.com.tw"]
+      "if-domain": [
+        "*u-car.com.tw"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": ".coverads"
+      "type": "css-display-none",
+      "selector": ".coverads"
     }
   },
   {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*zimgifts.bid"]
+      "if-domain": [
+        "*zimgifts.bid"
+      ]
     },
     "action": {
       "type": "block"
     }
   },
-   {
+  {
     "trigger": {
       "url-filter": ".*",
-      "if-domain": ["*newtalk.tw"]
+      "if-domain": [
+        "*newtalk.tw"
+      ]
     },
     "action": {
-    "type": "css-display-none",
-    "selector": "iframe[src*=\"tamedia\"]"
+      "type": "css-display-none",
+      "selector": "iframe[src*=\"tamedia\"]"
     }
   }
 ]
