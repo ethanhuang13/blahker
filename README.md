@@ -1,4 +1,5 @@
-# Blahker
+# Blahker 🈲
+![](https://travis-ci.org/ethanhuang13/blahker.svg?branch=master) [![GitHub release](https://img.shields.io/github/release/ethanhuang13/blahker.svg)](https://itunes.apple.com/tw/app/blahker-ba-la-ke-gai-ban-guang/id1182699267?mt=8&at=1l3vpBq&pt=99170802&ct=readme) ![GitHub top language](https://img.shields.io/github/languages/top/ethanhuang13/blahker.svg) [![GitHub](https://img.shields.io/github/license/ethanhuang13/blahker.svg)](https://github.com/ethanhuang13/blahker/blob/master/LICENSE) 
 
 「[Blahker 巴拉剋 - 蓋版廣告消除器](https://github.com/ethanhuang13/blahker)」是一款 Safari 瀏覽器所用的擋廣告延伸插件，同時支援 macOS 與 iOS。
 
