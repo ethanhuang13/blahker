@@ -1,5 +1,6 @@
 # CHANGELOG
 # Blahker
+- Replace SwiftyJSON with Codable #172
 
 ## 2018-08-03
 - Add hinetwork (xuite.net)

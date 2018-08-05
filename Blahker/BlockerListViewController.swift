@@ -7,26 +7,25 @@
 //
 
 import UIKit
-import SwiftyJSON
 
-class ListViewController: UITableViewController {
+class BlockerListViewController: UITableViewController {
     var rules = [String: [String]]()
     var sortedRules = [String]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        reload()
+        reloadData()
 
         let refreshControl = UIRefreshControl()
-        refreshControl.addTarget(self, action: #selector(reload), for: .valueChanged)
+        refreshControl.addTarget(self, action: #selector(reloadData), for: .valueChanged)
         self.refreshControl = refreshControl
 
         tableView.backgroundView?.addSubview(refreshControl)
         tableView.indicatorStyle = .white
     }
 
-    @objc func reload() {
+    @objc func reloadData() {
         guard let url = URL(string: "https://raw.githubusercontent.com/ethanhuang13/blahker/master/Blahker.safariextension/blockerList.json") else {
             return
         }
@@ -34,27 +33,31 @@ class ListViewController: UITableViewController {
         UIApplication.shared.isNetworkActivityIndicatorVisible = true
         let session = URLSession(configuration: .default)
         let request = URLRequest(url: url)
-        let task = session.dataTask(with: request) { (data, response, connectionError) -> Void in
+        let task = session.dataTask(with: request) { (data, response, connectionError) in
             DispatchQueue.main.async {
                 self.refreshControl?.endRefreshing()
                 UIApplication.shared.isNetworkActivityIndicatorVisible = false
             }
 
             guard let data = data,
-                let jsons = try? JSON(data: data).array,
-                let rules = jsons else { return }
+                let rules = try? JSONDecoder().decode([Rule].self, from: data) else {
+                    return
+            }
 
             self.rules = [:]
 
             for rule in rules {
-                guard let domains = rule["trigger"]["if-domain"].array,
-                    let selector = rule["action"]["selector"].string else { continue }
-                for domain in domains {
-                    if let domainString = domain.string {
-                        var selectors = self.rules[domainString] ?? []
+                if let domains = rule.trigger.ifDomain,
+                    let selector = rule.action.selector {
+                    for domain in domains {
+                        var selectors = self.rules[domain] ?? []
                         selectors.append(selector)
-                        self.rules[domainString] = selectors
+                        self.rules[domain] = selectors
                     }
+                } else if let selector = rule.action.selector {
+                    var selectors = self.rules["Any"] ?? []
+                    selectors.append(selector)
+                    self.rules["Any"] = selectors
                 }
             }
 
@@ -77,6 +80,7 @@ class ListViewController: UITableViewController {
         let domain = sortedRules[indexPath.row]
         cell.textLabel?.text = domain
         cell.detailTextLabel?.text = "  " + (rules[domain]?.joined(separator: ", ") ?? "")
+        cell.detailTextLabel?.numberOfLines = 0
 
         return cell
     }

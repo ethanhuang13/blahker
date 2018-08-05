@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3EDE7F71B98970DC05771382 /* Pods_ContentBlocker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73AEBA8BD5DBF6439451D300 /* Pods_ContentBlocker.framework */; };
 		6C04CC2B1DEF4967006B23D4 /* BlockerListLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C04CC2A1DEF4967006B23D4 /* BlockerListLoader.swift */; };
 		6C12CBF61DF34B35003E129D /* PurchaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C12CBF51DF34B35003E129D /* PurchaseManager.swift */; };
-		6C1E61F91DF405F9002BA1B5 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1E61F81DF405F9002BA1B5 /* ListViewController.swift */; };
+		6C1E61F91DF405F9002BA1B5 /* BlockerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1E61F81DF405F9002BA1B5 /* BlockerListViewController.swift */; };
 		6C50B15F1E1BFA4A00D2C338 /* blockerList.json in Resources */ = {isa = PBXBuildFile; fileRef = 6C50B15E1E1BFA4A00D2C338 /* blockerList.json */; };
+		6C50E20F2116B88600A8B495 /* Rule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C50E20E2116B88600A8B495 /* Rule.swift */; };
+		6C50E2102116BEF300A8B495 /* Rule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C50E20E2116B88600A8B495 /* Rule.swift */; };
+		6C50E2122116C7AF00A8B495 /* BlockerList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C50E2112116C7AF00A8B495 /* BlockerList.storyboard */; };
 		6C83596A1DE312FD0033A1BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8359691DE312FD0033A1BC /* AppDelegate.swift */; };
 		6C83596C1DE312FD0033A1BC /* SetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C83596B1DE312FD0033A1BC /* SetupViewController.swift */; };
 		6C83596F1DE312FD0033A1BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C83596D1DE312FD0033A1BC /* Main.storyboard */; };
@@ -23,7 +25,6 @@
 		6CF96A831DE9317500043471 /* ContentBlockerRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF96A801DE9317500043471 /* ContentBlockerRequestHandler.swift */; };
 		6CF96A841DE9317500043471 /* ContentBlockerRequestHandlerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF96A811DE9317500043471 /* ContentBlockerRequestHandlerError.swift */; };
 		6CF96A861DE931A100043471 /* ContentBlockerRequestHandlerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF96A811DE9317500043471 /* ContentBlockerRequestHandlerError.swift */; };
-		84B6F1E25AA1B6DAEB22E309 /* Pods_Blahker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACC218B2C4A08FEEE8A7AF20 /* Pods_Blahker.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,8 +68,13 @@
 /* Begin PBXFileReference section */
 		6C04CC2A1DEF4967006B23D4 /* BlockerListLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockerListLoader.swift; sourceTree = "<group>"; };
 		6C12CBF51DF34B35003E129D /* PurchaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurchaseManager.swift; sourceTree = "<group>"; };
-		6C1E61F81DF405F9002BA1B5 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		6C1E61F81DF405F9002BA1B5 /* BlockerListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockerListViewController.swift; sourceTree = "<group>"; };
+		6C4721832116CF560031A64E /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
+		6C4721842116CF560031A64E /* CONTRIBUTING.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CONTRIBUTING.md; sourceTree = "<group>"; };
+		6C4721852116CF570031A64E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		6C50B15E1E1BFA4A00D2C338 /* blockerList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = blockerList.json; path = Blahker.safariextension/blockerList.json; sourceTree = SOURCE_ROOT; };
+		6C50E20E2116B88600A8B495 /* Rule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rule.swift; sourceTree = "<group>"; };
+		6C50E2112116C7AF00A8B495 /* BlockerList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BlockerList.storyboard; sourceTree = "<group>"; };
 		6C8359661DE312FD0033A1BC /* Blahker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blahker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C8359691DE312FD0033A1BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6C83596B1DE312FD0033A1BC /* SetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupViewController.swift; sourceTree = "<group>"; };
@@ -87,12 +93,6 @@
 		6CF96A801DE9317500043471 /* ContentBlockerRequestHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentBlockerRequestHandler.swift; sourceTree = "<group>"; };
 		6CF96A811DE9317500043471 /* ContentBlockerRequestHandlerError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentBlockerRequestHandlerError.swift; sourceTree = "<group>"; };
 		6CF96A821DE9317500043471 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		73AEBA8BD5DBF6439451D300 /* Pods_ContentBlocker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ContentBlocker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		837D0D9CCCF5D100C5B66E29 /* Pods-Blahker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Blahker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Blahker/Pods-Blahker.debug.xcconfig"; sourceTree = "<group>"; };
-		ACC218B2C4A08FEEE8A7AF20 /* Pods_Blahker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Blahker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B1BD962580DF9273D253C6AA /* Pods-Blahker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Blahker.release.xcconfig"; path = "Pods/Target Support Files/Pods-Blahker/Pods-Blahker.release.xcconfig"; sourceTree = "<group>"; };
-		BF7C19405A324921FD47DE2B /* Pods-ContentBlocker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContentBlocker.release.xcconfig"; path = "Pods/Target Support Files/Pods-ContentBlocker/Pods-ContentBlocker.release.xcconfig"; sourceTree = "<group>"; };
-		FEED10DC33075F1DE2638930 /* Pods-ContentBlocker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContentBlocker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ContentBlocker/Pods-ContentBlocker.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +100,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84B6F1E25AA1B6DAEB22E309 /* Pods_Blahker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,23 +121,33 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3EDE7F71B98970DC05771382 /* Pods_ContentBlocker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6C50E20D2116AFC600A8B495 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				6C50E20E2116B88600A8B495 /* Rule.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
 		6C83595D1DE312FD0033A1BC = {
 			isa = PBXGroup;
 			children = (
+				6C4721852116CF570031A64E /* README.md */,
+				6C4721832116CF560031A64E /* CHANGELOG.md */,
+				6C4721842116CF560031A64E /* CONTRIBUTING.md */,
+				6C50E20D2116AFC600A8B495 /* Shared */,
 				6C8359681DE312FD0033A1BC /* Blahker */,
 				6C83597D1DE312FE0033A1BC /* BlahkerTests */,
 				6C8359881DE312FE0033A1BC /* BlahkerUITests */,
 				6CF96A7F1DE9317500043471 /* ContentBlocker */,
 				6C8359671DE312FD0033A1BC /* Products */,
 				A9F0680BACD2550082B0390C /* Frameworks */,
-				9FD3B031DD9FF6E2CC737FD6 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -159,9 +168,10 @@
 				6C8359691DE312FD0033A1BC /* AppDelegate.swift */,
 				6C83596B1DE312FD0033A1BC /* SetupViewController.swift */,
 				6CF743F41DF2D9C6008CA1CC /* AboutViewController.swift */,
-				6C1E61F81DF405F9002BA1B5 /* ListViewController.swift */,
+				6C1E61F81DF405F9002BA1B5 /* BlockerListViewController.swift */,
 				6C12CBF51DF34B35003E129D /* PurchaseManager.swift */,
 				6C83596D1DE312FD0033A1BC /* Main.storyboard */,
+				6C50E2112116C7AF00A8B495 /* BlockerList.storyboard */,
 				6C8359701DE312FD0033A1BC /* Assets.xcassets */,
 				6C8359751DE312FD0033A1BC /* Info.plist */,
 			);
@@ -198,23 +208,10 @@
 			path = ContentBlocker;
 			sourceTree = "<group>";
 		};
-		9FD3B031DD9FF6E2CC737FD6 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				837D0D9CCCF5D100C5B66E29 /* Pods-Blahker.debug.xcconfig */,
-				B1BD962580DF9273D253C6AA /* Pods-Blahker.release.xcconfig */,
-				FEED10DC33075F1DE2638930 /* Pods-ContentBlocker.debug.xcconfig */,
-				BF7C19405A324921FD47DE2B /* Pods-ContentBlocker.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		A9F0680BACD2550082B0390C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				6CB80FEB1DE731770041AF1E /* Cocoa.framework */,
-				ACC218B2C4A08FEEE8A7AF20 /* Pods_Blahker.framework */,
-				73AEBA8BD5DBF6439451D300 /* Pods_ContentBlocker.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -226,13 +223,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6C83598E1DE312FE0033A1BC /* Build configuration list for PBXNativeTarget "Blahker" */;
 			buildPhases = (
-				0615FFDE564B7EDDB9715310 /* [CP] Check Pods Manifest.lock */,
 				6C8359621DE312FD0033A1BC /* Sources */,
 				6C8359631DE312FD0033A1BC /* Frameworks */,
 				6C8359641DE312FD0033A1BC /* Resources */,
 				6CC9F0D01DE31341004142AC /* Embed App Extensions */,
-				D8C8684EA30B15837FA1E4D6 /* [CP] Embed Pods Frameworks */,
-				39D7B851606E06DA79BF4338 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -284,11 +278,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6CC9F0CF1DE31341004142AC /* Build configuration list for PBXNativeTarget "ContentBlocker" */;
 			buildPhases = (
-				A973B7FA4030BD6CB5B458B8 /* [CP] Check Pods Manifest.lock */,
 				6CC9F0BF1DE31340004142AC /* Sources */,
 				6CC9F0C01DE31340004142AC /* Frameworks */,
 				6CC9F0C11DE31340004142AC /* Resources */,
-				FC490CC0539C048F702D5F2D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -306,7 +298,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Elaborapp Co., Ltd.";
 				TargetAttributes = {
 					6C8359651DE312FD0033A1BC = {
@@ -366,6 +358,7 @@
 			files = (
 				6C8359711DE312FD0033A1BC /* Assets.xcassets in Resources */,
 				6C83596F1DE312FD0033A1BC /* Main.storyboard in Resources */,
+				6C50E2122116C7AF00A8B495 /* BlockerList.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,101 +386,15 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		0615FFDE564B7EDDB9715310 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Blahker-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		39D7B851606E06DA79BF4338 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Blahker/Pods-Blahker-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A973B7FA4030BD6CB5B458B8 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ContentBlocker-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D8C8684EA30B15837FA1E4D6 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Blahker/Pods-Blahker-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Blahker/Pods-Blahker-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FC490CC0539C048F702D5F2D /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ContentBlocker/Pods-ContentBlocker-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		6C8359621DE312FD0033A1BC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C50E20F2116B88600A8B495 /* Rule.swift in Sources */,
 				6C83596C1DE312FD0033A1BC /* SetupViewController.swift in Sources */,
 				6C83596A1DE312FD0033A1BC /* AppDelegate.swift in Sources */,
-				6C1E61F91DF405F9002BA1B5 /* ListViewController.swift in Sources */,
+				6C1E61F91DF405F9002BA1B5 /* BlockerListViewController.swift in Sources */,
 				6CF743F51DF2D9C6008CA1CC /* AboutViewController.swift in Sources */,
 				6CF96A861DE931A100043471 /* ContentBlockerRequestHandlerError.swift in Sources */,
 				6C12CBF61DF34B35003E129D /* PurchaseManager.swift in Sources */,
@@ -516,6 +423,7 @@
 			files = (
 				6CF96A841DE9317500043471 /* ContentBlockerRequestHandlerError.swift in Sources */,
 				6CF96A831DE9317500043471 /* ContentBlockerRequestHandler.swift in Sources */,
+				6C50E2102116BEF300A8B495 /* Rule.swift in Sources */,
 				6C04CC2B1DEF4967006B23D4 /* BlockerListLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -565,6 +473,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -572,6 +481,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -625,6 +535,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -632,6 +543,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -667,10 +579,8 @@
 		};
 		6C83598F1DE312FE0033A1BC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 837D0D9CCCF5D100C5B66E29 /* Pods-Blahker.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
@@ -681,7 +591,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "c661c902-2fd3-4b7c-8b91-731a346e14f1";
 				PROVISIONING_PROFILE_SPECIFIER = "match Development com.elaborapp.Blahker";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -690,10 +601,8 @@
 		};
 		6C8359901DE312FE0033A1BC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B1BD962580DF9273D253C6AA /* Pods-Blahker.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
@@ -771,9 +680,7 @@
 		};
 		6CC9F0CD1DE31341004142AC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FEED10DC33075F1DE2638930 /* Pods-ContentBlocker.debug.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -795,9 +702,7 @@
 		};
 		6CC9F0CE1DE31341004142AC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BF7C19405A324921FD47DE2B /* Pods-ContentBlocker.release.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";

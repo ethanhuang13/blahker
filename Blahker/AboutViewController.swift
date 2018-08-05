@@ -39,28 +39,11 @@ class AboutViewController: UITableViewController {
             let identifier = cell.reuseIdentifier {
 
             switch identifier {
-                /*
             case "list":
-                let alertController = UIAlertController(title: "已阻擋的蓋版廣告網站", message: "Blahker 阻擋台灣常見的數十個網站，並且會自動更新。未來將會把完整的列表列出。", preferredStyle: .alert)
-                alertController.addAction(UIAlertAction(title: "取消", style: .cancel, handler:  { (action) in
-                }))
-                alertController.addAction(UIAlertAction(title: "觀看原始碼", style: .default, handler:  { (action) in
-                    guard let url = URL(string: "https://github.com/ethanhuang13/blahker/blob/master/Blahker.safariextension/blockerList.json") else { return }
-                    let vc = SFSafariViewController(url: url)
-                    vc.title = "已阻擋的蓋版網站清單"
-
-                    if #available(iOS 10.0, *) {
-                        vc.preferredBarTintColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
-                        vc.preferredControlTintColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
-                    }
-
-                    self.show(vc, sender: self)
-                }))
-                alertController.addAction(UIAlertAction(title: "我要回報廣告網站", style: .default, handler:  { (action) in
-                    self.report()
-                }))
-                self.present(alertController, animated: true, completion: nil)
-                 */
+                let storyboard = UIStoryboard(name: "BlockerList", bundle: nil)
+                if let vc = storyboard.instantiateInitialViewController() as? BlockerListViewController {
+                    navigationController?.show(vc, sender: self)
+                }
 
             case "report":
                 self.report()
@@ -82,7 +65,6 @@ class AboutViewController: UITableViewController {
                 guard let url = URL(string: "https://www.facebook.com/blahker/") else { return }
                 UIApplication.shared.openURL(url)
 
-
             case "about":
                 guard let url = URL(string: "https://github.com/ethanhuang13/blahker/blob/master/README.md") else { return }
                 let vc = SFSafariViewController(url: url)
@@ -93,7 +75,7 @@ class AboutViewController: UITableViewController {
                     vc.preferredControlTintColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
                 }
 
-                self.show(vc, sender: self)
+                self.present(vc, animated: true, completion: { })
                 
             default:
                 break
