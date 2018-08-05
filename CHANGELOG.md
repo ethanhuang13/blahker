@@ -2,6 +2,7 @@
 # Blahker
 - Replace SwiftyJSON with Codable #172
 - Add unit tests for blockerLists.json #173
+- TravisCI integration #174
 
 ## 2018-08-03
 - Add hinetwork (xuite.net)
