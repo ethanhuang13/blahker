@@ -104,7 +104,7 @@ App 將會自動取得最新擋廣告網站清單，你也可以透過左上角�
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.10000000000000001" alpha="1" colorSpace="calibratedWhite"/>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="report" textLabel="UhO-fw-2RY" style="IBUITableViewCellStyleDefault" id="Wgb-JO-apx">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="report" textLabel="UhO-fw-2RY" detailTextLabel="M6v-CJ-4Vg" style="IBUITableViewCellStyleSubtitle" id="Wgb-JO-apx">
                                         <rect key="frame" x="0.0" y="85" width="414" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Wgb-JO-apx" id="yCa-RD-2Kl">
@@ -112,9 +112,16 @@ App 將會自動取得最新擋廣告網站清單，你也可以透過左上角�
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="回報廣告網站或問題" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="UhO-fw-2RY">
-                                                    <rect key="frame" x="20" y="0.0" width="356" height="49.666666666666664"/>
+                                                    <rect key="frame" x="20" y="7.9999999999999982" width="156" height="20.333333333333332"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="請附上螢幕截圖，以利判斷" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="M6v-CJ-4Vg">
+                                                    <rect key="frame" x="20" y="28.333333333333332" width="147.33333333333334" height="14.333333333333334"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>

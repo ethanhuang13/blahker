@@ -19,9 +19,14 @@ class BlockerListViewController: UITableViewController {
 
         let refreshControl = UIRefreshControl()
         refreshControl.addTarget(self, action: #selector(reloadData), for: .valueChanged)
-        self.refreshControl = refreshControl
+        refreshControl.attributedTitle = NSAttributedString(string: "更新擋廣告網站清單", attributes: [NSAttributedStringKey.foregroundColor: UIColor.white])
 
-        tableView.backgroundView?.addSubview(refreshControl)
+        if #available(iOS 10.0, *) {
+            tableView.refreshControl = refreshControl
+        } else {
+            tableView.addSubview(refreshControl)
+        }
+
         tableView.indicatorStyle = .white
     }
 
@@ -35,7 +40,9 @@ class BlockerListViewController: UITableViewController {
         let request = URLRequest(url: url)
         let task = session.dataTask(with: request) { (data, response, connectionError) in
             DispatchQueue.main.async {
-                self.refreshControl?.endRefreshing()
+                if #available(iOS 10.0, *) {
+                    self.tableView.refreshControl?.endRefreshing()
+                }
                 UIApplication.shared.isNetworkActivityIndicatorVisible = false
             }
 
