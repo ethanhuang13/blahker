@@ -1,5 +1,7 @@
 # CHANGELOG
 # Blahker
+
+## [iOS 1.0.2(7)] - 2018-08-05
 - Replace SwiftyJSON with Codable #172
 - Add unit tests for blockerLists.json #173
 - TravisCI integration #174
