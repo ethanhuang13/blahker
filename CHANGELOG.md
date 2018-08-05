@@ -1,6 +1,7 @@
 # CHANGELOG
 # Blahker
 - Replace SwiftyJSON with Codable #172
+- Add unit tests for blockerLists.json #173
 
 ## 2018-08-03
 - Add hinetwork (xuite.net)

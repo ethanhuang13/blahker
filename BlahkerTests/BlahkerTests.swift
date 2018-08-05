@@ -10,27 +10,43 @@ import XCTest
 @testable import Blahker
 
 class BlahkerTests: XCTestCase {
+    var rules: [Rule] = []
     
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
+        testParseBlockerRules()
     }
     
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
-    
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+
+    func testParseBlockerRules() {
+        guard let fileURL = Bundle(for: type(of: self)).url(forResource: "blockerList", withExtension: "json") else {
+            fatalError("Missing file URL: blockerList.json")
+        }
+
+        do {
+            let data = try Data(contentsOf: fileURL)
+            let rules = try JSONDecoder().decode([Rule].self, from: data)
+            self.rules = rules
+        } catch {
+            XCTFail("Parse blockerList.json failed: \(error.localizedDescription)")
         }
     }
     
+    func testRuleInternalLogic() {
+        for rule in rules {
+            XCTAssert(rule.trigger.urlFilter.isEmpty == false, "url-filter must not be empty.")
+            XCTAssertFalse(rule.trigger.ifDomain != nil && rule.trigger.unlessDomain != nil, "Triggers cannot have both unless- and if-domain fields.")
+            // TODO: Domain values must be lowercase ASCII. Use punycode to encode non-ASCII characters.
+            XCTAssertFalse(rule.trigger.ifTopURL != nil && rule.trigger.unlessTopURL != nil, " Triggers cannot have both unless- and if-top-url fields.")
+
+            if rule.action.type == .cssDisplayNone {
+                XCTAssert(rule.action.selector != nil, "Selector is required when the action type is css-display-none.")
+            }
+        }
+    }
 }
