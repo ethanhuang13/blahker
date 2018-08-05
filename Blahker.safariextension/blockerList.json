@@ -2705,7 +2705,7 @@
     "trigger": {
       "url-filter": ".*",
       "if-domain": [
-        ".*mook.com.tw"
+        "*mook.com.tw"
       ]
     },
     "action": {
@@ -2717,7 +2717,7 @@
     "trigger": {
       "url-filter": ".*",
       "if-domain": [
-        ".*mook.com.tw"
+        "*mook.com.tw"
       ]
     },
     "action": {
@@ -2729,7 +2729,7 @@
     "trigger": {
       "url-filter": ".*",
       "if-domain": [
-        ".*upmedia.mg"
+        "*upmedia.mg"
       ]
     },
     "action": {
@@ -2741,7 +2741,7 @@
     "trigger": {
       "url-filter": ".*",
       "if-domain": [
-        ".*upmedia.mg"
+        "*upmedia.mg"
       ]
     },
     "action": {
