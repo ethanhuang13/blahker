@@ -1,6 +1,10 @@
 # CHANGELOG
 # Blahker
 
+## [iOS 1.0.3(8)] - 2018-09-21
+- Support iOS 12 #176
+
+## 2018-08-14
 - Add .sitemaji_inters (moneyaaa.com)
 
 ## [iOS 1.0.2(7)] - 2018-08-05
