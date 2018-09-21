@@ -54,7 +54,7 @@ class SetupViewController: UIViewController {
             """
         }
 
-        NotificationCenter.default.addObserver(self, selector: #selector(checkContentBlockerState), name: .UIApplicationWillEnterForeground, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(checkContentBlockerState), name: UIApplication.willEnterForegroundNotification, object: nil)
     }
 
     @objc private func checkContentBlockerState() {
@@ -74,14 +74,13 @@ class SetupViewController: UIViewController {
 
                         let title = (error == nil) ? "更新成功" : "更新失敗"
                         let message = (error == nil) ? "已下載最新擋廣告網站清單" : "請檢查網路設定"
-                        let feedbackType: UINotificationFeedbackType = (error == nil) ? .success : .error
 
                         let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
                         alertController.addAction(UIAlertAction(title: "確定", style: .cancel, handler:  { (action) in }))
                         self.present(alertController, animated: true, completion: nil)
 
-
                         if #available(iOS 10.0, *) {
+                            let feedbackType: UINotificationFeedbackGenerator.FeedbackType = (error == nil) ? .success : .error
                             let generator = UINotificationFeedbackGenerator()
                             generator.notificationOccurred(feedbackType)
                         }

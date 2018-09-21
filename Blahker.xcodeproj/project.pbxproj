@@ -258,6 +258,7 @@
 					6C8359651DE312FD0033A1BC = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = SE9N6X5V7C;
+						LastSwiftMigration = 1000;
 						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
@@ -268,12 +269,14 @@
 					6C8359791DE312FE0033A1BC = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = SE9N6X5V7C;
+						LastSwiftMigration = 1000;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 6C8359651DE312FD0033A1BC;
 					};
 					6CC9F0C21DE31340004142AC = {
 						CreatedOnToolsVersion = 8.2;
 						DevelopmentTeam = SE9N6X5V7C;
+						LastSwiftMigration = 1000;
 						ProvisioningStyle = Manual;
 					};
 				};
@@ -523,7 +526,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "match Development com.elaborapp.Blahker";
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -544,7 +547,7 @@
 				PROVISIONING_PROFILE = "b8cb5c0e-62e8-44a6-988a-22b8ad69063d";
 				PROVISIONING_PROFILE_SPECIFIER = "match AppStore com.elaborapp.Blahker";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -560,7 +563,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.elaborapp.BlahkerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Blahker.app/Blahker";
 			};
 			name = Debug;
@@ -575,7 +578,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.elaborapp.BlahkerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Blahker.app/Blahker";
 			};
 			name = Release;
@@ -597,7 +600,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "match Development com.elaborapp.Blahker.ContentBlocker";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -619,7 +622,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "match AppStore com.elaborapp.Blahker.ContentBlocker";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;

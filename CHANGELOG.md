@@ -1,6 +1,8 @@
 # CHANGELOG
 # Blahker
 
+- Update to Swift 4.2 #177
+
 ## [iOS 1.0.3(8)] - 2018-09-21
 - Support iOS 12 #176
 

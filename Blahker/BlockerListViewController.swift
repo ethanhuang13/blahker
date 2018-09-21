@@ -19,7 +19,7 @@ class BlockerListViewController: UITableViewController {
 
         let refreshControl = UIRefreshControl()
         refreshControl.addTarget(self, action: #selector(reloadData), for: .valueChanged)
-        refreshControl.attributedTitle = NSAttributedString(string: "更新擋廣告網站清單", attributes: [NSAttributedStringKey.foregroundColor: UIColor.white])
+        refreshControl.attributedTitle = NSAttributedString(string: "更新擋廣告網站清單", attributes: [NSAttributedString.Key.foregroundColor: UIColor.white])
 
         if #available(iOS 10.0, *) {
             tableView.refreshControl = refreshControl
