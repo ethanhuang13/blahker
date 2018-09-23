@@ -1,5 +1,6 @@
 # CHANGELOG
 # Blahker
+- Add .advertising_lightbox (tvbs.com.tw)
 
 ## [iOS 1.0.3(9)] - 2018-09-21
 - Update to Swift 4.2 #177

@@ -1100,6 +1100,18 @@
     "trigger": {
       "url-filter": ".*",
       "if-domain": [
+        "*tvbs.com.tw"
+      ]
+    },
+    "action": {
+      "type": "css-display-none",
+      "selector": ".advertising_lightbox"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": [
         "*talk.tw"
       ]
     },
