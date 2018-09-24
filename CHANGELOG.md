@@ -1,6 +1,7 @@
 # CHANGELOG
 # Blahker
 - Add .advertising_lightbox (tvbs.com.tw)
+- Add #popup201803 (ck101.com)
 
 ## [iOS 1.0.3(9)] - 2018-09-21
 - Update to Swift 4.2 #177
