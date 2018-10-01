@@ -2149,6 +2149,18 @@
     "trigger": {
       "url-filter": ".*",
       "if-domain": [
+        "*yahoo.com"
+      ]
+    },
+    "action": {
+      "type": "css-display-none",
+      "selector": "#crazyAD"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": [
         "*yam.com"
       ]
     },
