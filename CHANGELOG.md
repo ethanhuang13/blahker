@@ -3,6 +3,7 @@
 - Add .advertising_lightbox (tvbs.com.tw)
 - Add #popup201803 (ck101.com)
 - Add #crazyAD (yahoo.com)
+- Add div[id^="div-gpt-ad-"] (cheers.com.tw)
 
 ## [iOS 1.0.3(9)] - 2018-09-21
 - Update to Swift 4.2 #177

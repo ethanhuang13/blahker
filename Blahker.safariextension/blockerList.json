@@ -1703,6 +1703,18 @@
     "trigger": {
       "url-filter": ".*",
       "if-domain": [
+        "*cheers.com.tw"
+      ]
+    },
+    "action": {
+      "type": "css-display-none",
+      "selector": "div[id^=\"div-gpt-ad-\"]"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": [
         "*soft4fun.net"
       ]
     },
