@@ -1703,7 +1703,7 @@
     "trigger": {
       "url-filter": ".*",
       "if-domain": [
-        "*cheers.com.tw"
+        "*cheers.com.tw", "*udn.com"
       ]
     },
     "action": {

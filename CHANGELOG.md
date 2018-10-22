@@ -1,5 +1,10 @@
 # CHANGELOG
 # Blahker
+
+## 2018-10-22
+- Add div[id^="div-gpt-ad-"] (udn.com)
+
+## 2018-10-01
 - Add .advertising_lightbox (tvbs.com.tw)
 - Add #popup201803 (ck101.com)
 - Add #crazyAD (yahoo.com)
