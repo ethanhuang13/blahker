@@ -2899,5 +2899,17 @@
       "type": "css-display-none",
       "selector": ".sitemaji_inters"
     }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": [
+        "*ebc.net.tw"
+      ]
+    },
+    "action": {
+      "type": "css-display-none",
+      "selector": "#mobile-cover"
+    }
   }
 ]

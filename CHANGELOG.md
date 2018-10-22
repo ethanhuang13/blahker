@@ -3,6 +3,7 @@
 
 ## 2018-10-22
 - Add div[id^="div-gpt-ad-"] (udn.com)
+- Add ##mobile-cover (ebc.net.tw)
 
 ## 2018-10-01
 - Add .advertising_lightbox (tvbs.com.tw)
