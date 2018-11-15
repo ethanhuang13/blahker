@@ -1,7 +1,10 @@
 # CHANGELOG
 # Blahker
 
+## 2018-11-16
+- Update Blahker.safariextz to 1.0.2(3) with new certificate
 - Add .div_pagead_bg (chinatimes.com)
+- Add vmfive-ad-unit, .adGeek-popup (cool-style.com.tw)
 
 ## 2018-10-22
 - Add div[id^="div-gpt-ad-"] (udn.com)
