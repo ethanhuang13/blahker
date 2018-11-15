@@ -307,6 +307,18 @@
     "trigger": {
       "url-filter": ".*",
       "if-domain": [
+        "*chinatimes.com"
+      ]
+    },
+    "action": {
+      "type": "css-display-none",
+      "selector": "#div_pagead_bg"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": [
         "*cna.com.tw"
       ]
     },

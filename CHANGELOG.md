@@ -1,6 +1,8 @@
 # CHANGELOG
 # Blahker
 
+- Add .div_pagead_bg (chinatimes.com)
+
 ## 2018-10-22
 - Add div[id^="div-gpt-ad-"] (udn.com)
 - Add ##mobile-cover (ebc.net.tw)
