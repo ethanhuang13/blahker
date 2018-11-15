@@ -5,7 +5,7 @@
 	<key>Author</key>
 	<string>Elaborapp Co., Ltd.</string>
 	<key>Builder Version</key>
-	<string>12604.1.38.1.7</string>
+	<string>14606.2.104.1.1</string>
 	<key>CFBundleDisplayName</key>
 	<string>Blahker</string>
 	<key>CFBundleIdentifier</key>
@@ -13,9 +13,9 @@
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0.1</string>
+	<string>1.0.2</string>
 	<key>CFBundleVersion</key>
-	<string>2</string>
+	<string>3</string>
 	<key>Chrome</key>
 	<dict>
 		<key>Global Page</key>
