@@ -1,6 +1,10 @@
 # Blahker 🈲
 ![](https://travis-ci.org/ethanhuang13/blahker.svg?branch=master) [![GitHub release](https://img.shields.io/github/release/ethanhuang13/blahker.svg)](https://itunes.apple.com/tw/app/blahker-ba-la-ke-gai-ban-guang/id1182699267?mt=8&at=1l3vpBq&pt=99170802&ct=readme) ![GitHub top language](https://img.shields.io/github/languages/top/ethanhuang13/blahker.svg) [![GitHub](https://img.shields.io/github/license/ethanhuang13/blahker.svg)](https://github.com/ethanhuang13/blahker/blob/master/LICENSE) 
 
+Blahker is a Safari content blocker for interstitial ads in Taiwan's websites. You can download the [iOS app](https://itunes.apple.com/tw/app/blahker-ba-la-ke-gai-ban-guang/id1182699267?mt=8&at=1l3vpBq&pt=99170802&ct=readme) and the [macOS extension](https://github.com/ethanhuang13/blahker/blob/master/Blahker.safariextz). The blocking rules are listed [here](https://github.com/ethanhuang13/blahker/blob/master/Blahker.safariextension/blockerList.json).
+
+---
+
 「[Blahker 巴拉剋 - 蓋版廣告消除器](https://github.com/ethanhuang13/blahker)」是一款 Safari 瀏覽器所用的擋廣告延伸插件，同時支援 macOS 與 iOS。
 
 使用者瀏覽網站時遇到蓋版網站，往往很突然，與內文無關，又很難關閉。感覺就像是前往目的地的途中，遇到不相干的人拉住你，跟你 blah blah blah 推銷個不停，又很難中斷人家，非常煩人。於是將 "blah" 與 "blocker" 合併創出 Blahker 這個名稱，中文音譯為「巴拉剋」。
