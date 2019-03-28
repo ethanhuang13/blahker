@@ -2983,5 +2983,17 @@
       "type": "css-display-none",
       "selector": "#mobile_inters_holder"
     }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": [
+        "*cmmedia.com.tw"
+      ]
+    },
+    "action": {
+      "type": "css-display-none",
+      "selector": ".adGeek-popup"
+    }
   }
 ]
