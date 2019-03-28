@@ -2947,5 +2947,17 @@
       "type": "css-display-none",
       "selector": ".adGeek-popup"
     }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": [
+        "*nownews.com"
+      ]
+    },
+    "action": {
+      "type": "css-display-none",
+      "selector": ".pum-overlay "
+    }
   }
 ]

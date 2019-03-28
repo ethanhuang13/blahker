@@ -1,6 +1,9 @@
 # CHANGELOG
 # Blahker
 
+## 2019-03-28
+- Add .pum-overlay (nownews.com)
+
 ## 2018-11-16
 - Update Blahker.safariextz to 1.0.2(3) with new certificate
 - Add .div_pagead_bg (chinatimes.com)
