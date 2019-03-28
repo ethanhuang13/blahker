@@ -2959,5 +2959,29 @@
       "type": "css-display-none",
       "selector": ".pum-overlay "
     }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": [
+        "*cheers.com.tw"
+      ]
+    },
+    "action": {
+      "type": "css-display-none",
+      "selector": "#mobile_inters"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": [
+        "*cheers.com.tw"
+      ]
+    },
+    "action": {
+      "type": "css-display-none",
+      "selector": "#mobile_inters_holder"
+    }
   }
 ]

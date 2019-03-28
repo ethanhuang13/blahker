@@ -3,6 +3,7 @@
 
 ## 2019-03-28
 - Add .pum-overlay (nownews.com)
+- Add #mobile_inters, #mobile_inters_holder (cheers.com.tw)
 
 ## 2018-11-16
 - Update Blahker.safariextz to 1.0.2(3) with new certificate
