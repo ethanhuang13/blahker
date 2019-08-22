@@ -1,6 +1,9 @@
 # CHANGELOG
 # Blahker
 
+## [iOS 1.0.4(10)] - 2019-08-22
+- iOS 13 beta version
+
 ## 2019-03-28
 - Add .pum-overlay (nownews.com)
 - Add #mobile_inters, #mobile_inters_holder (cheers.com.tw)

@@ -18,14 +18,14 @@ default_platform :ios
 platform :ios do
   before_all do
     # ENV["SLACK_URL"] = "https://hooks.slack.com/services/..."
-    xcode_select "/Applications/Xcode.app"
+    # xcode_select "/Applications/Xcode.app"
     bundle_install
   end
 
   desc "Apply version & build number"
   lane :vb do
-    version_number = "1.0.3" # Change version number here
-    build_number = "9" # Change build number here
+    version_number = "1.0.4" # Change version number here
+    build_number = "10" # Change build number here
 
     ensure_git_branch(branch: 'master')
     git_pull

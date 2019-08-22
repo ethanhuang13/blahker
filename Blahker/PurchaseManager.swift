@@ -74,6 +74,8 @@ class PurchaseManager: NSObject, SKProductsRequestDelegate,  SKPaymentTransactio
 
                 let productType = ProductType(rawValue: transaction.payment.productIdentifier)
                 self.delegate?.purchaseSucceed(productType: productType)
+            @unknown default:
+                break
             }
         }
     }
