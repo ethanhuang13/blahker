@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="9vS-WE-8fE">
-    <device id="retina5_5" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="9vS-WE-8fE">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -23,7 +20,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ytO-Xj-VCQ">
-                                <rect key="frame" x="40" y="84" width="334" height="172"/>
+                                <rect key="frame" x="40" y="64" width="334" height="172"/>
                                 <string key="text">Blahker 致力於消除網站中的蓋版廣告，支援 Safari 瀏覽器。請打開「設定」 &gt; 「Safari」 &gt; 「內容阻擋器」，並啟用 Blahker。
 
 App 將會自動取得最新擋廣告網站清單，你也可以透過左上角按鈕手動更新。
@@ -87,14 +84,14 @@ App 將會自動取得最新擋廣告網站清單，你也可以透過左上角�
                             <tableViewSection id="jsP-ih-gbk">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="list" textLabel="Nhl-Td-hOM" style="IBUITableViewCellStyleDefault" id="Erd-A4-Ifg">
-                                        <rect key="frame" x="0.0" y="35" width="414" height="50"/>
+                                        <rect key="frame" x="0.0" y="18" width="414" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Erd-A4-Ifg" id="RwM-0d-Wmu">
-                                            <rect key="frame" x="0.0" y="0.0" width="376" height="49.666666666666664"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="382.66666666666669" height="50"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="已阻擋的蓋版廣告網站" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Nhl-Td-hOM">
-                                                    <rect key="frame" x="20" y="0.0" width="356" height="49.666666666666664"/>
+                                                    <rect key="frame" x="20" y="0.0" width="354.66666666666669" height="50"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -105,10 +102,10 @@ App 將會自動取得最新擋廣告網站清單，你也可以透過左上角�
                                         <color key="backgroundColor" white="0.10000000000000001" alpha="1" colorSpace="calibratedWhite"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="report" textLabel="UhO-fw-2RY" detailTextLabel="M6v-CJ-4Vg" style="IBUITableViewCellStyleSubtitle" id="Wgb-JO-apx">
-                                        <rect key="frame" x="0.0" y="85" width="414" height="50"/>
+                                        <rect key="frame" x="0.0" y="68" width="414" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Wgb-JO-apx" id="yCa-RD-2Kl">
-                                            <rect key="frame" x="0.0" y="0.0" width="376" height="49.666666666666664"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="382.66666666666669" height="50"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="回報廣告網站或問題" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="UhO-fw-2RY">
@@ -134,14 +131,14 @@ App 將會自動取得最新擋廣告網站清單，你也可以透過左上角�
                             <tableViewSection id="j0o-2B-BVl">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="rate" textLabel="LSZ-PC-v7a" style="IBUITableViewCellStyleDefault" id="xP3-VN-XCB">
-                                        <rect key="frame" x="0.0" y="171" width="414" height="50"/>
+                                        <rect key="frame" x="0.0" y="154" width="414" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xP3-VN-XCB" id="d1n-Yt-Oci">
-                                            <rect key="frame" x="0.0" y="0.0" width="376" height="49.666666666666664"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="382.66666666666669" height="50"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="為我們評分" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="LSZ-PC-v7a">
-                                                    <rect key="frame" x="20" y="0.0" width="356" height="49.666666666666664"/>
+                                                    <rect key="frame" x="20" y="0.0" width="354.66666666666669" height="50"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -152,32 +149,14 @@ App 將會自動取得最新擋廣告網站清單，你也可以透過左上角�
                                         <color key="backgroundColor" white="0.10000000000000001" alpha="1" colorSpace="calibratedWhite"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="share" textLabel="GLj-A8-ONv" style="IBUITableViewCellStyleDefault" id="j69-3k-s3R">
-                                        <rect key="frame" x="0.0" y="221" width="414" height="50"/>
+                                        <rect key="frame" x="0.0" y="204" width="414" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="j69-3k-s3R" id="Kxi-48-Qzo">
-                                            <rect key="frame" x="0.0" y="0.0" width="376" height="49.666666666666664"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="382.66666666666669" height="50"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="推薦給朋友" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="GLj-A8-ONv">
-                                                    <rect key="frame" x="20" y="0.0" width="356" height="49.666666666666664"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                        <color key="backgroundColor" white="0.10000000000000001" alpha="1" colorSpace="calibratedWhite"/>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="facebook" textLabel="q0x-Sa-DHm" style="IBUITableViewCellStyleDefault" id="Wwo-KJ-PC9">
-                                        <rect key="frame" x="0.0" y="271" width="414" height="50"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Wwo-KJ-PC9" id="Nua-A8-MR3">
-                                            <rect key="frame" x="0.0" y="0.0" width="376" height="49.666666666666664"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Facebook 粉絲專頁" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="q0x-Sa-DHm">
-                                                    <rect key="frame" x="20" y="0.0" width="356" height="49.666666666666664"/>
+                                                    <rect key="frame" x="20" y="0.0" width="354.66666666666669" height="50"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -188,10 +167,10 @@ App 將會自動取得最新擋廣告網站清單，你也可以透過左上角�
                                         <color key="backgroundColor" white="0.10000000000000001" alpha="1" colorSpace="calibratedWhite"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="about" textLabel="OVx-a3-dmA" detailTextLabel="ohZ-Q1-JTE" style="IBUITableViewCellStyleSubtitle" id="9tJ-KY-VkF">
-                                        <rect key="frame" x="0.0" y="321" width="414" height="50"/>
+                                        <rect key="frame" x="0.0" y="254" width="414" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9tJ-KY-VkF" id="2zB-C8-H1k">
-                                            <rect key="frame" x="0.0" y="0.0" width="376" height="49.666666666666664"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="382.66666666666669" height="50"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="關於 Blahker 與常見問題" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="OVx-a3-dmA">
@@ -232,7 +211,7 @@ App 將會自動取得最新擋廣告網站清單，你也可以透過左上角�
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9vS-WE-8fE" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="PIN-dc-Lw6">
-                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="sRGB"/>

@@ -60,10 +60,6 @@ class AboutViewController: UITableViewController {
                 popPC?.sourceRect = cell.bounds
 
                 self.present(vc, animated: true, completion: nil)
-                
-            case "facebook":
-                guard let url = URL(string: "https://www.facebook.com/blahker/") else { return }
-                UIApplication.shared.openURL(url)
 
             case "about":
                 guard let url = URL(string: "https://github.com/ethanhuang13/blahker/blob/master/README.md") else { return }
