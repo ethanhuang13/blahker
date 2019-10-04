@@ -44,11 +44,11 @@ class SetupViewController: UIViewController {
             """
         } else {
             tutorialLabel.text = """
-            Blahker 致力於消除網站中的蓋版廣告，支援 Safari 瀏覽器。"
+            Blahker 致力於消除網站中的蓋版廣告，支援 Safari 瀏覽器。
 
-            請確定「設定」 > 「Safari」 > 「內容阻擋器」，已經啟用 Blahker。"
+            請確定「設定」 > 「Safari」 > 「內容阻擋器」，已經啟用 Blahker。
 
-            App 將會自動取得最新擋廣告網站清單，你也可以透過左上角按鈕手動更新。"
+            App 將會自動取得最新擋廣告網站清單，你也可以透過左上角按鈕手動更新。
 
             欲回報廣告網站或者了解更多資訊，請參閱「關於」頁面。
             """

@@ -15,11 +15,19 @@
 		6C50E20F2116B88600A8B495 /* Rule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C50E20E2116B88600A8B495 /* Rule.swift */; };
 		6C50E2102116BEF300A8B495 /* Rule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C50E20E2116B88600A8B495 /* Rule.swift */; };
 		6C50E2122116C7AF00A8B495 /* BlockerList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C50E2112116C7AF00A8B495 /* BlockerList.storyboard */; };
+		6C6308A723472C7700646E6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6308A623472C7700646E6B /* AppDelegate.swift */; };
+		6C6308A923472C7700646E6B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6308A823472C7700646E6B /* ViewController.swift */; };
+		6C6308AB23472C7900646E6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C6308AA23472C7900646E6B /* Assets.xcassets */; };
+		6C6308AE23472C7900646E6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C6308AC23472C7900646E6B /* Main.storyboard */; };
+		6C6308B423472EDB00646E6B /* ContentBlockerMac.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6C88777D23445ED700A02EBC /* ContentBlockerMac.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		6C83596A1DE312FD0033A1BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8359691DE312FD0033A1BC /* AppDelegate.swift */; };
 		6C83596C1DE312FD0033A1BC /* SetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C83596B1DE312FD0033A1BC /* SetupViewController.swift */; };
 		6C83596F1DE312FD0033A1BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C83596D1DE312FD0033A1BC /* Main.storyboard */; };
 		6C8359711DE312FD0033A1BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C8359701DE312FD0033A1BC /* Assets.xcassets */; };
 		6C83597F1DE312FE0033A1BC /* BlahkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C83597E1DE312FE0033A1BC /* BlahkerTests.swift */; };
+		6C88777E23445ED700A02EBC /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CB80FEB1DE731770041AF1E /* Cocoa.framework */; };
+		6C88778323445ED700A02EBC /* ContentBlockerRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C88778223445ED700A02EBC /* ContentBlockerRequestHandler.swift */; };
+		6C88778D23445EF000A02EBC /* blockerList.json in Resources */ = {isa = PBXBuildFile; fileRef = 6C50B15E1E1BFA4A00D2C338 /* blockerList.json */; };
 		6CC9F0CC1DE31341004142AC /* ContentBlocker.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6CC9F0C31DE31340004142AC /* ContentBlocker.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		6CF743F51DF2D9C6008CA1CC /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF743F41DF2D9C6008CA1CC /* AboutViewController.swift */; };
 		6CF96A831DE9317500043471 /* ContentBlockerRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF96A801DE9317500043471 /* ContentBlockerRequestHandler.swift */; };
@@ -28,6 +36,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		6C6308B523472EDB00646E6B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6C83595E1DE312FD0033A1BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6C88777C23445ED700A02EBC;
+			remoteInfo = ContentBlockerMac;
+		};
 		6C83597B1DE312FE0033A1BC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 6C83595E1DE312FD0033A1BC /* Project object */;
@@ -45,6 +60,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		6C6308B723472EDB00646E6B /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				6C6308B423472EDB00646E6B /* ContentBlockerMac.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6CC9F0D01DE31341004142AC /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -68,6 +94,13 @@
 		6C50B15E1E1BFA4A00D2C338 /* blockerList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = blockerList.json; path = Blahker.safariextension/blockerList.json; sourceTree = SOURCE_ROOT; };
 		6C50E20E2116B88600A8B495 /* Rule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rule.swift; sourceTree = "<group>"; };
 		6C50E2112116C7AF00A8B495 /* BlockerList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BlockerList.storyboard; sourceTree = "<group>"; };
+		6C6308A423472C7700646E6B /* Blahker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blahker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C6308A623472C7700646E6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6C6308A823472C7700646E6B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6C6308AA23472C7900646E6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6C6308AD23472C7900646E6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6C6308AF23472C7900646E6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C6308B023472C7900646E6B /* BlahkerMac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BlahkerMac.entitlements; sourceTree = "<group>"; };
 		6C8359661DE312FD0033A1BC /* Blahker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blahker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C8359691DE312FD0033A1BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6C83596B1DE312FD0033A1BC /* SetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupViewController.swift; sourceTree = "<group>"; };
@@ -77,6 +110,10 @@
 		6C83597A1DE312FE0033A1BC /* BlahkerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlahkerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C83597E1DE312FE0033A1BC /* BlahkerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlahkerTests.swift; sourceTree = "<group>"; };
 		6C8359801DE312FE0033A1BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C88777D23445ED700A02EBC /* ContentBlockerMac.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ContentBlockerMac.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C88778223445ED700A02EBC /* ContentBlockerRequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentBlockerRequestHandler.swift; sourceTree = "<group>"; };
+		6C88778423445ED700A02EBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C88778523445ED700A02EBC /* ContentBlockerMac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ContentBlockerMac.entitlements; sourceTree = "<group>"; };
 		6CB80FEB1DE731770041AF1E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
 		6CC9F0C31DE31340004142AC /* ContentBlocker.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ContentBlocker.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CF743F41DF2D9C6008CA1CC /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
@@ -86,6 +123,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		6C6308A123472C7700646E6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6C8359631DE312FD0033A1BC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -97,6 +141,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C88777A23445ED700A02EBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C88777E23445ED700A02EBC /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,6 +170,19 @@
 			path = Shared;
 			sourceTree = "<group>";
 		};
+		6C6308A523472C7700646E6B /* BlahkerMac */ = {
+			isa = PBXGroup;
+			children = (
+				6C6308A623472C7700646E6B /* AppDelegate.swift */,
+				6C6308A823472C7700646E6B /* ViewController.swift */,
+				6C6308AA23472C7900646E6B /* Assets.xcassets */,
+				6C6308AC23472C7900646E6B /* Main.storyboard */,
+				6C6308AF23472C7900646E6B /* Info.plist */,
+				6C6308B023472C7900646E6B /* BlahkerMac.entitlements */,
+			);
+			path = BlahkerMac;
+			sourceTree = "<group>";
+		};
 		6C83595D1DE312FD0033A1BC = {
 			isa = PBXGroup;
 			children = (
@@ -128,6 +193,8 @@
 				6C8359681DE312FD0033A1BC /* Blahker */,
 				6C83597D1DE312FE0033A1BC /* BlahkerTests */,
 				6CF96A7F1DE9317500043471 /* ContentBlocker */,
+				6C6308A523472C7700646E6B /* BlahkerMac */,
+				6C88777F23445ED700A02EBC /* ContentBlockerMac */,
 				6C8359671DE312FD0033A1BC /* Products */,
 				A9F0680BACD2550082B0390C /* Frameworks */,
 			);
@@ -139,6 +206,8 @@
 				6C8359661DE312FD0033A1BC /* Blahker.app */,
 				6C83597A1DE312FE0033A1BC /* BlahkerTests.xctest */,
 				6CC9F0C31DE31340004142AC /* ContentBlocker.appex */,
+				6C88777D23445ED700A02EBC /* ContentBlockerMac.appex */,
+				6C6308A423472C7700646E6B /* Blahker.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -168,6 +237,16 @@
 			path = BlahkerTests;
 			sourceTree = "<group>";
 		};
+		6C88777F23445ED700A02EBC /* ContentBlockerMac */ = {
+			isa = PBXGroup;
+			children = (
+				6C88778223445ED700A02EBC /* ContentBlockerRequestHandler.swift */,
+				6C88778423445ED700A02EBC /* Info.plist */,
+				6C88778523445ED700A02EBC /* ContentBlockerMac.entitlements */,
+			);
+			path = ContentBlockerMac;
+			sourceTree = "<group>";
+		};
 		6CF96A7F1DE9317500043471 /* ContentBlocker */ = {
 			isa = PBXGroup;
 			children = (
@@ -191,6 +270,25 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		6C6308A323472C7700646E6B /* BlahkerMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C6308B123472C7900646E6B /* Build configuration list for PBXNativeTarget "BlahkerMac" */;
+			buildPhases = (
+				6C6308A023472C7700646E6B /* Sources */,
+				6C6308A123472C7700646E6B /* Frameworks */,
+				6C6308A223472C7700646E6B /* Resources */,
+				6C6308B723472EDB00646E6B /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6C6308B623472EDB00646E6B /* PBXTargetDependency */,
+			);
+			name = BlahkerMac;
+			productName = BlahkerMac;
+			productReference = 6C6308A423472C7700646E6B /* Blahker.app */;
+			productType = "com.apple.product-type.application";
+		};
 		6C8359651DE312FD0033A1BC /* Blahker */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6C83598E1DE312FE0033A1BC /* Build configuration list for PBXNativeTarget "Blahker" */;
@@ -228,6 +326,23 @@
 			productReference = 6C83597A1DE312FE0033A1BC /* BlahkerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		6C88777C23445ED700A02EBC /* ContentBlockerMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C88778923445ED800A02EBC /* Build configuration list for PBXNativeTarget "ContentBlockerMac" */;
+			buildPhases = (
+				6C88777923445ED700A02EBC /* Sources */,
+				6C88777A23445ED700A02EBC /* Frameworks */,
+				6C88777B23445ED700A02EBC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ContentBlockerMac;
+			productName = ContentBlockerMac;
+			productReference = 6C88777D23445ED700A02EBC /* ContentBlockerMac.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		6CC9F0C21DE31340004142AC /* ContentBlocker */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6CC9F0CF1DE31341004142AC /* Build configuration list for PBXNativeTarget "ContentBlocker" */;
@@ -251,10 +366,16 @@
 		6C83595E1DE312FD0033A1BC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0810;
+				DefaultBuildSystemTypeForWorkspace = Latest;
+				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1100;
 				ORGANIZATIONNAME = "Elaborapp Co., Ltd.";
 				TargetAttributes = {
+					6C6308A323472C7700646E6B = {
+						CreatedOnToolsVersion = 11.0;
+						DevelopmentTeam = SE9N6X5V7C;
+						ProvisioningStyle = Automatic;
+					};
 					6C8359651DE312FD0033A1BC = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = SE9N6X5V7C;
@@ -272,6 +393,11 @@
 						LastSwiftMigration = 1100;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 6C8359651DE312FD0033A1BC;
+					};
+					6C88777C23445ED700A02EBC = {
+						CreatedOnToolsVersion = 11.0;
+						DevelopmentTeam = SE9N6X5V7C;
+						ProvisioningStyle = Automatic;
 					};
 					6CC9F0C21DE31340004142AC = {
 						CreatedOnToolsVersion = 8.2;
@@ -298,11 +424,22 @@
 				6C8359651DE312FD0033A1BC /* Blahker */,
 				6C8359791DE312FE0033A1BC /* BlahkerTests */,
 				6CC9F0C21DE31340004142AC /* ContentBlocker */,
+				6C6308A323472C7700646E6B /* BlahkerMac */,
+				6C88777C23445ED700A02EBC /* ContentBlockerMac */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		6C6308A223472C7700646E6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C6308AB23472C7900646E6B /* Assets.xcassets in Resources */,
+				6C6308AE23472C7900646E6B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6C8359641DE312FD0033A1BC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -321,6 +458,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6C88777B23445ED700A02EBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C88778D23445EF000A02EBC /* blockerList.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6CC9F0C11DE31340004142AC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -332,6 +477,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		6C6308A023472C7700646E6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C6308A923472C7700646E6B /* ViewController.swift in Sources */,
+				6C6308A723472C7700646E6B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6C8359621DE312FD0033A1BC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -354,6 +508,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6C88777923445ED700A02EBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C88778323445ED700A02EBC /* ContentBlockerRequestHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6CC9F0BF1DE31340004142AC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -368,6 +530,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		6C6308B623472EDB00646E6B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6C88777C23445ED700A02EBC /* ContentBlockerMac */;
+			targetProxy = 6C6308B523472EDB00646E6B /* PBXContainerItemProxy */;
+		};
 		6C83597C1DE312FE0033A1BC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 6C8359651DE312FD0033A1BC /* Blahker */;
@@ -381,6 +548,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		6C6308AC23472C7900646E6B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6C6308AD23472C7900646E6B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
 		6C83596D1DE312FD0033A1BC /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -392,6 +567,61 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		6C6308B223472C7900646E6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = BlahkerMac/BlahkerMac.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 11;
+				DEVELOPMENT_TEAM = SE9N6X5V7C;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = BlahkerMac/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MARKETING_VERSION = 1.1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.elaborapp.BlahkerMac;
+				PRODUCT_NAME = Blahker;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		6C6308B323472C7900646E6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = BlahkerMac/BlahkerMac.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 11;
+				DEVELOPMENT_TEAM = SE9N6X5V7C;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = BlahkerMac/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MARKETING_VERSION = 1.1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.elaborapp.BlahkerMac;
+				PRODUCT_NAME = Blahker;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		6C83598C1DE312FE0033A1BC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -451,7 +681,6 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALID_ARCHS = arm64;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -508,7 +737,6 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
-				VALID_ARCHS = arm64;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
@@ -521,11 +749,11 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 10;
+				CURRENT_PROJECT_VERSION = 11;
 				DEVELOPMENT_TEAM = SE9N6X5V7C;
 				INFOPLIST_FILE = Blahker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 1.0.4;
+				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.elaborapp.Blahker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -543,11 +771,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 10;
+				CURRENT_PROJECT_VERSION = 11;
 				DEVELOPMENT_TEAM = SE9N6X5V7C;
 				INFOPLIST_FILE = Blahker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 1.0.4;
+				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.elaborapp.Blahker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "match AppStore com.elaborapp.Blahker";
@@ -588,6 +816,59 @@
 			};
 			name = Release;
 		};
+		6C88778A23445ED800A02EBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = ContentBlockerMac/ContentBlockerMac.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 11;
+				DEVELOPMENT_TEAM = SE9N6X5V7C;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = ContentBlockerMac/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MARKETING_VERSION = 1.1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.elaborapp.BlahkerMac.ContentBlockerMac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		6C88778B23445ED800A02EBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = ContentBlockerMac/ContentBlockerMac.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 11;
+				DEVELOPMENT_TEAM = SE9N6X5V7C;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = ContentBlockerMac/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MARKETING_VERSION = 1.1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.elaborapp.BlahkerMac.ContentBlockerMac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		6CC9F0CD1DE31341004142AC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -595,10 +876,12 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 11;
 				DEVELOPMENT_TEAM = SE9N6X5V7C;
 				INFOPLIST_FILE = ContentBlocker/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.elaborapp.Blahker.ContentBlocker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -616,10 +899,12 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 11;
 				DEVELOPMENT_TEAM = SE9N6X5V7C;
 				INFOPLIST_FILE = ContentBlocker/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.elaborapp.Blahker.ContentBlocker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "match AppStore com.elaborapp.Blahker.ContentBlocker";
@@ -633,6 +918,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		6C6308B123472C7900646E6B /* Build configuration list for PBXNativeTarget "BlahkerMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C6308B223472C7900646E6B /* Debug */,
+				6C6308B323472C7900646E6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		6C8359611DE312FD0033A1BC /* Build configuration list for PBXProject "Blahker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -656,6 +950,15 @@
 			buildConfigurations = (
 				6C8359921DE312FE0033A1BC /* Debug */,
 				6C8359931DE312FE0033A1BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6C88778923445ED800A02EBC /* Build configuration list for PBXNativeTarget "ContentBlockerMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C88778A23445ED800A02EBC /* Debug */,
+				6C88778B23445ED800A02EBC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
