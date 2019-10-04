@@ -1,11 +1,11 @@
 # CHANGELOG
 # Blahker
 
+## [macOS 1.1.0(13)] - 2019-10-04
+- Add macOS Safari App Extension
+
 ## [iOS 1.1.0(12)] - 2019-10-04
 - Support iOS 13
-
-## [macOS 1.1.0(12)] - 2019-10-04
-- Add macOS Safari App Extension
 
 ## [iOS 1.0.4(10)] - 2019-08-22
 - iOS 13 beta version
