@@ -5,7 +5,7 @@ Blahker is a Safari content blocker for interstitial ads in Taiwan's websites. Y
 
 ---
 
-「[Blahker 巴拉剋 - 蓋版廣告消除器](https://github.com/ethanhuang13/blahker)」是一款 Safari 瀏覽器所用的擋廣告延伸插件，同時支援 macOS 與 iOS。
+「[Blahker 巴拉剋 - 蓋版廣告消除器](https://github.com/ethanhuang13/blahker)」是一款 Safari 瀏覽器所用的擋廣告延伸插件，同時支援 iOS 與 macOS。
 
 使用者瀏覽網站時遇到蓋版網站，往往很突然，與內文無關，又很難關閉。感覺就像是前往目的地的途中，遇到不相干的人拉住你，跟你 blah blah blah 推銷個不停，又很難中斷人家，非常煩人。於是將 "blah" 與 "blocker" 合併創出 Blahker 這個名稱，中文音譯為「巴拉剋」。
 
@@ -25,18 +25,14 @@ Blahker 是開源的，且以後將會採用適當的授權方式開放協作。
 
 總而言之，Blahker 用以阻擋廣告所使用的方法是絕對不會侵犯隱私的，並且原始碼公開在此 [GitHub 網站](https://github.com/ethanhuang13/blahker)。
 
-## macOS 版
+---
+
+## iOS 版
 
 ### 系統需求
-- macOS 10.10 (OS X Yosemite) 以上
-- Safari 9.0 以上
+- iOS 9.0 以上
 
 ### 安裝方式
-- 從 Apple 官方的 [Safari 延伸功能網站](https://safari-extensions.apple.com/?q=blahker)直接安裝
-- 或是下載 [Blahker.safariextz](https://github.com/ethanhuang13/blahker/blob/master/Blahker.safariextz)，點擊並安裝至 Safari 即可
-
----
-## iOS 版
 
 - 下載 [Blahker](https://itunes.apple.com/tw/app/blahker-ba-la-ke-gai-ban-guang/id1182699267?mt=8&at=1l3vpBq&pt=99170802&ct=readme)
 - 如果你具備 Apple 開發者身分，可以將原始碼下載後安裝到自己的裝置上使用
@@ -44,8 +40,33 @@ Blahker 是開源的，且以後將會採用適當的授權方式開放協作。
 
 安裝 app 之後，在「設定 > Safari > 內容阻擋器」啟用 app 中所附的插件。
 
+---
+
+## macOS Safari App 版
+
+自從 Safari 13 以後 Apple 要求所有的延伸功能使用新的「Safari App」方式發行。為此 Blahker 也開發了 Safari App，上架至 Mac App Store，並且可以向下相容。
+
 ### 系統需求
-- iOS 9.0 以上
+
+- macOS 10.12 Sierra 或以上
+- Safari 10 或以上
+
+### 安裝方式
+
+待上架後提供連結。
+
+---
+
+## macOS 舊版
+
+僅適用於 Safari 9~12。建議使用新的 Safari App 版。
+
+### 系統需求
+- macOS 10.10 (OS X Yosemite) 或以上
+- Safari 9 或以上
+
+### 安裝方式
+- 下載 [Blahker.safariextz](https://github.com/ethanhuang13/blahker/blob/master/Blahker.safariextz)，點擊並安裝至 Safari 即可
 
 ---
 ## 相關資訊
