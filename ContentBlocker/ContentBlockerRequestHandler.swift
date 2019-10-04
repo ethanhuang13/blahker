@@ -6,19 +6,18 @@
 //  Copyright © 2016年 Elaborapp Co., Ltd. All rights reserved.
 //
 
-import UIKit
-import MobileCoreServices
+import Foundation
 
 class ContentBlockerRequestHandler: NSObject, NSExtensionRequestHandling, BlockerListLoader {
     func beginRequest(with context: NSExtensionContext) {
-        self.loadBlockerList { (items, error) in
+        self.loadBlockerList { items, error in
             if let items = items {
-                context.completeRequest(returningItems: items, completionHandler: { (expired) in
-                    print("loadBlockerList: Complete request")
+                context.completeRequest(returningItems: items, completionHandler: { expired in
+                    NSLog("loadBlockerList: Complete request")
                 })
             } else if let error = error {
                 context.cancelRequest(withError: error)
-                print("loadBlockerList failed: \(error)")
+                NSLog("loadBlockerList failed: \(error)")
             }
         }
     }

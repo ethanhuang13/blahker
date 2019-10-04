@@ -6,13 +6,16 @@
 //  Copyright © 2016年 Elaborapp Co., Ltd. All rights reserved.
 //
 
-import Foundation
+#if os(macOS)
+import CoreServices
+#elseif os(iOS)
 import MobileCoreServices
+#endif
+import Foundation
 
 protocol BlockerListLoader {
     func loadBlockerList(completion: @escaping (([NSExtensionItem]?, Error?) -> Void))
 }
-
 
 fileprivate let blockerListUrl: URL? = {
     #if DEBUG
