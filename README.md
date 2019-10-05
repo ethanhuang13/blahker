@@ -35,10 +35,7 @@ Blahker 是開源的，且以後將會採用適當的授權方式開放協作。
 ### 安裝方式
 
 - 下載 [Blahker](https://itunes.apple.com/tw/app/blahker-ba-la-ke-gai-ban-guang/id1182699267?mt=8&at=1l3vpBq&pt=99170802&ct=readme)
-- 如果你具備 Apple 開發者身分，可以將原始碼下載後安裝到自己的裝置上使用
-- iOS 版的阻擋規則是讀取自 GitHub 上的 [blockerList.json](https://github.com/ethanhuang13/blahker/blob/master/Blahker.safariextension/blockerList.json)，所以可以在不更新 app 的情況下自動更新阻擋規則
-
-安裝 app 之後，在「設定 > Safari > 內容阻擋器」啟用 app 中所附的插件。
+- 安裝 app 之後，在「設定 > Safari > 內容阻擋器」啟用 app 中所附的插件。
 
 ---
 
@@ -53,7 +50,9 @@ Blahker 是開源的，且以後將會採用適當的授權方式開放協作。
 
 ### 安裝方式
 
-待上架後提供連結。
+- 從 Mac App Store [下載](https://apps.apple.com/us/app/blahker-巴拉剋/id1482371114?l=zh&ls=1&mt=12)
+- 安裝 app 之後，只要打開過一次，就可以關閉
+- 到「Safari > 偏好設定 > 延伸功能」啟用 app 中所附的插件
 
 ---
 
@@ -67,6 +66,13 @@ Blahker 是開源的，且以後將會採用適當的授權方式開放協作。
 
 ### 安裝方式
 - 下載 [Blahker.safariextz](https://github.com/ethanhuang13/blahker/blob/master/Blahker.safariextz)，點擊並安裝至 Safari 即可
+
+---
+
+## 開源專案
+
+- 如果你具備 Apple 開發者身分，可以將原始碼下載後安裝到自己的裝置上使用
+- 不論是 iOS 或 Mac 版，阻擋規則皆是讀取自 GitHub 上的 [blockerList.json](https://github.com/ethanhuang13/blahker/blob/master/Blahker.safariextension/blockerList.json)，所以可以在不更新 app 的情況下自動更新阻擋規則
 
 ---
 ## 相關資訊
