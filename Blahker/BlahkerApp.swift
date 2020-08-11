@@ -8,14 +8,13 @@
 
 import SwiftUI
 
-struct BlahkerApp: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
-
-struct BlahkerApp_Previews: PreviewProvider {
-    static var previews: some View {
-        BlahkerApp()
+@main
+struct BlahkerApp: App {
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    
+    var body: some Scene {
+        WindowGroup {
+            SetupView()
+        }
     }
 }

@@ -31,6 +31,7 @@
 		6C88777E23445ED700A02EBC /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CB80FEB1DE731770041AF1E /* Cocoa.framework */; };
 		6C88778D23445EF000A02EBC /* blockerList.json in Resources */ = {isa = PBXBuildFile; fileRef = 6C50B15E1E1BFA4A00D2C338 /* blockerList.json */; };
 		6CC9F0CC1DE31341004142AC /* ContentBlocker.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6CC9F0C31DE31340004142AC /* ContentBlocker.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6CCDED9D24E2261C0094300E /* BlahkerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCDED9C24E2261C0094300E /* BlahkerApp.swift */; };
 		6CF743F51DF2D9C6008CA1CC /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF743F41DF2D9C6008CA1CC /* AboutViewController.swift */; };
 		6CF96A831DE9317500043471 /* ContentBlockerRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF96A801DE9317500043471 /* ContentBlockerRequestHandler.swift */; };
 		6CF96A841DE9317500043471 /* ContentBlockerRequestHandlerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF96A811DE9317500043471 /* ContentBlockerRequestHandlerError.swift */; };
@@ -119,6 +120,7 @@
 		6CC9F0C31DE31340004142AC /* ContentBlocker.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ContentBlocker.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CCDED9A24E223630094300E /* Blahker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Blahker.entitlements; sourceTree = "<group>"; };
 		6CCDED9B24E223640094300E /* ContentBlocker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ContentBlocker.entitlements; sourceTree = "<group>"; };
+		6CCDED9C24E2261C0094300E /* BlahkerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlahkerApp.swift; sourceTree = "<group>"; };
 		6CF743F41DF2D9C6008CA1CC /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		6CF96A801DE9317500043471 /* ContentBlockerRequestHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentBlockerRequestHandler.swift; sourceTree = "<group>"; };
 		6CF96A811DE9317500043471 /* ContentBlockerRequestHandlerError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentBlockerRequestHandlerError.swift; sourceTree = "<group>"; };
@@ -220,6 +222,7 @@
 			children = (
 				6CCDED9A24E223630094300E /* Blahker.entitlements */,
 				6C8359691DE312FD0033A1BC /* AppDelegate.swift */,
+				6CCDED9C24E2261C0094300E /* BlahkerApp.swift */,
 				6C83596B1DE312FD0033A1BC /* SetupViewController.swift */,
 				6CF743F41DF2D9C6008CA1CC /* AboutViewController.swift */,
 				6C1E61F81DF405F9002BA1B5 /* BlockerListViewController.swift */,
@@ -498,6 +501,7 @@
 				6C83596A1DE312FD0033A1BC /* AppDelegate.swift in Sources */,
 				6C1E61F91DF405F9002BA1B5 /* BlockerListViewController.swift in Sources */,
 				6CF743F51DF2D9C6008CA1CC /* AboutViewController.swift in Sources */,
+				6CCDED9D24E2261C0094300E /* BlahkerApp.swift in Sources */,
 				6CF96A861DE931A100043471 /* ContentBlockerRequestHandlerError.swift in Sources */,
 				6C12CBF61DF34B35003E129D /* PurchaseManager.swift in Sources */,
 			);
