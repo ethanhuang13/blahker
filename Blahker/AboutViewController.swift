@@ -65,11 +65,8 @@ class AboutViewController: UITableViewController {
                 guard let url = URL(string: "https://github.com/ethanhuang13/blahker/blob/master/README.md") else { return }
                 let vc = SFSafariViewController(url: url)
                 vc.title = "關於"
-
-                if #available(iOS 10.0, *) {
-                    vc.preferredBarTintColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
-                    vc.preferredControlTintColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
-                }
+                vc.preferredBarTintColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+                vc.preferredControlTintColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
 
                 self.present(vc, animated: true, completion: { })
                 
