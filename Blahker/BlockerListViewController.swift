@@ -35,7 +35,7 @@ class BlockerListViewController: UITableViewController {
             return
         }
 
-        UIApplication.shared.isNetworkActivityIndicatorVisible = true
+//        UIApplication.shared.isNetworkActivityIndicatorVisible = true
         let session = URLSession(configuration: .default)
         let request = URLRequest(url: url)
         let task = session.dataTask(with: request) { (data, response, connectionError) in
@@ -43,7 +43,7 @@ class BlockerListViewController: UITableViewController {
                 if #available(iOS 10.0, *) {
                     self.tableView.refreshControl?.endRefreshing()
                 }
-                UIApplication.shared.isNetworkActivityIndicatorVisible = false
+//                UIApplication.shared.isNetworkActivityIndicatorVisible = false
             }
 
             guard let data = data,

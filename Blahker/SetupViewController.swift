@@ -22,7 +22,7 @@ class SetupViewController: UIViewController {
         didSet {
             let isLoading = isLoadingBlockerList
             DispatchQueue.main.async {
-                UIApplication.shared.isNetworkActivityIndicatorVisible = isLoading
+//                UIApplication.shared.isNetworkActivityIndicatorVisible = isLoading
                 self.reloadButton.isEnabled = !isLoading
             }
         }
@@ -79,11 +79,9 @@ class SetupViewController: UIViewController {
                         alertController.addAction(UIAlertAction(title: "確定", style: .cancel, handler:  { (action) in }))
                         self.present(alertController, animated: true, completion: nil)
 
-                        if #available(iOS 10.0, *) {
-                            let feedbackType: UINotificationFeedbackGenerator.FeedbackType = (error == nil) ? .success : .error
-                            let generator = UINotificationFeedbackGenerator()
-                            generator.notificationOccurred(feedbackType)
-                        }
+                        let feedbackType: UINotificationFeedbackGenerator.FeedbackType = (error == nil) ? .success : .error
+                        let generator = UINotificationFeedbackGenerator()
+                        generator.notificationOccurred(feedbackType)
                     }
 
                     if error == nil {
@@ -150,7 +148,7 @@ class SetupViewController: UIViewController {
 
         alertController.addAction(UIAlertAction(title: "我不出錢，給個五星評分總行了吧", style: .default, handler:  { (action) in
             guard let url = URL(string: "https://itunes.apple.com/us/app/blahker-ba-la-ke-gai-ban-guang/id1182699267?l=zh&ls=1&mt=8&at=1l3vpBq&pt=99170802&ct=inappnotdonate") else { return }
-            UIApplication.shared.openURL(url)
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
         }))
 
         alertController.addAction(UIAlertAction(title: "算了吧，不值得", style: .cancel, handler: nil))
