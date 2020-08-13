@@ -13,8 +13,11 @@ struct SetupView: View {
     struct AlertIdentifier: Identifiable {
         enum Choice {
             case pleaseSetup
-            case loaded
-            case loadingFailed
+            case reloaded
+            case reloadFailed
+            case purchased
+            case purchaseFailed
+            case purchaseFailedCantMakePayments
         }
 
         var id: Choice
@@ -23,6 +26,7 @@ struct SetupView: View {
     @State private var isLoadingBlockerList: Bool = false
     @State private var isLoadedFailedBefore: Bool = false
     @State private var alertIdentifier: AlertIdentifier?
+    @State private var isDonateActionSheetPresented: Bool = false
     
     private var setupText = """
             Blahker 致力於消除網站中的蓋版廣告，支援 Safari 瀏覽器。
@@ -36,11 +40,49 @@ struct SetupView: View {
     private let didEnterBackgroundPublisher = NotificationCenter.default.publisher(for: UIApplication.didEnterBackgroundNotification)
     
     @ViewBuilder
-    var loadingOverlay: some View {
+    private var loadingOverlay: some View {
         if isLoadingBlockerList {
             ProgressView()
                 .progressViewStyle(CircularProgressViewStyle())
         }
+    }
+    
+    private var donateActionSheet: ActionSheet {
+        let purchaseCompletion: PurchaseCompletion = { result in
+            switch result {
+            case .success:
+                self.alertIdentifier = AlertIdentifier(id: .purchased)
+            case .failure(let reason):
+                switch reason {
+                case .userCancelled:
+                    break
+                case .failure(underlyingError: let error):
+                    print("交易失敗：\(error.localizedDescription)")
+                    self.alertIdentifier = AlertIdentifier(id: .purchaseFailed)
+                case .cantMakePayments:
+                    self.alertIdentifier = AlertIdentifier(id: .purchaseFailedCantMakePayments)
+                }
+            }
+        }
+        
+        return ActionSheet(title: Text("支持開發者"),
+                    message: Text("Blahker 的維護包含不斷更新擋廣告清單。如果有你的支持一定會更好～"),
+                    buttons: [
+                        .default(Text("打賞小小費"), action: {
+                            PurchaseManager.shared.startPurchase(productType: .tips1, completion: purchaseCompletion)
+                        }),
+                        .default(Text("打賞小費"), action: {
+                            PurchaseManager.shared.startPurchase(productType: .tips2, completion: purchaseCompletion)
+                        }),
+                        .default(Text("破費"), action: {
+                            PurchaseManager.shared.startPurchase(productType: .tips3, completion: purchaseCompletion)
+                        }),
+                        .default(Text("我不出錢，給個五星評分總行了吧"), action: {
+                            guard let url = URL(string: "https://itunes.apple.com/us/app/blahker-ba-la-ke-gai-ban-guang/id1182699267?l=zh&ls=1&mt=8&at=1l3vpBq&pt=99170802&ct=inappnotdonate") else { return }
+                            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+                        }),
+                        .cancel(Text("算了吧，不值得"))
+                    ])
     }
     
     var body: some View {
@@ -48,25 +90,41 @@ struct SetupView: View {
             VStack {
                 Text(setupText)
                     .padding()
+                
                 Spacer()
-                Button(action: {}, label: {
+                
+                Button(action: {
+                    isDonateActionSheetPresented = true
+                }, label: {
                     Text("拜託別按我")
-                        .font(.title)
+                        .font(Font.title.weight(.bold))
+                        .foregroundColor(.primary)
+                        .background(Color.secondary
+                                        .clipShape(Capsule(style: .continuous))
+                                        .padding(-14)
+                                        .opacity(0.4))
                 })
-                .padding()
+                .padding(.bottom, 80)
+                .actionSheet(isPresented: $isDonateActionSheetPresented) {
+                    donateActionSheet
+                }
             }
-            .navigationTitle(Text("Blahker"))
+            .navigationBarTitle(Text("Blahker"), displayMode: .large)
             .toolbar(items: {
                 ToolbarItem(placement: .navigationBarLeading) {
                     Button(action: { self.reload(manually: true) }, label: {
-                        Image(systemName: "arrow.clockwise")
+                        Text("重新整理")
+                            .font(Font.body.weight(.bold))
                     })
+                    .foregroundColor(.primary)
                     .disabled(isLoadingBlockerList)
                 }
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
-                        Image(systemName: "info")
+                        Text("關於")
+                            .font(Font.body.weight(.bold))
                     })
+                    .foregroundColor(.primary)
                 }
             })
             .overlay(loadingOverlay)
@@ -85,14 +143,26 @@ struct SetupView: View {
                              dismissButton: .default(Text("已啟用，請重新檢查"), action: {
                                 self.checkContentBlockerState(manually: true)
                              }))
-            case .loaded:
+            case .reloaded:
                 return Alert(title: Text("更新成功"),
                              message: Text("已下載最新擋廣告網站清單"),
-                             dismissButton: .default(Text("確定")))
-            case .loadingFailed:
+                             dismissButton: .cancel(Text("確定")))
+            case .reloadFailed:
                 return Alert(title: Text("更新失敗"),
                       message: Text("請檢查網路設定"),
-                      dismissButton: .default(Text("確定")))
+                      dismissButton: .cancel(Text("確定")))
+            case .purchased:
+                return Alert(title: Text("打賞成功！"),
+                             message: Text("感激不盡，Blahker 有你的支持將會越來越好"),
+                             dismissButton: .cancel(Text("不客氣")))
+            case .purchaseFailed:
+                return Alert(title: Text("唉呀"),
+                             message: Text("謝謝你，但是交易失敗了。請稍候再試"),
+                             dismissButton: .cancel(Text("好吧")))
+            case .purchaseFailedCantMakePayments:
+                return Alert(title: Text("唉呀"),
+                             message: Text("謝謝你，但是你沒有辦法付費耶。請檢查 iTunes 帳號的付費權限喔"),
+                             dismissButton: .cancel(Text("好吧")))
             }
         })
         .onAppear(perform: { checkContentBlockerState(manually: false) })
@@ -120,15 +190,15 @@ struct SetupView: View {
     
     private func reload(manually: Bool) {
         isLoadingBlockerList = true
-        SFContentBlockerManager.reloadContentBlocker(withIdentifier: contentBlockerExteiosnIdentifier, completionHandler: { error -> Void in
+        SFContentBlockerManager.reloadContentBlocker(withIdentifier: contentBlockerExteiosnIdentifier) { error in
             DispatchQueue.main.async {
                 self.isLoadingBlockerList = false
                 
                 if manually || self.isLoadedFailedBefore {
                     if error == nil {
-                        alertIdentifier = AlertIdentifier(id: .loaded)
+                        alertIdentifier = AlertIdentifier(id: .reloaded)
                     } else {
-                        alertIdentifier = AlertIdentifier(id: .loadingFailed)
+                        alertIdentifier = AlertIdentifier(id: .reloadFailed)
                     }
                     
                     let feedbackType: UINotificationFeedbackGenerator.FeedbackType = (error == nil) ? .success : .error
@@ -144,12 +214,17 @@ struct SetupView: View {
                     self.isLoadedFailedBefore = true
                 }
             }
-        })
+        }
     }
 }
 
 struct SetupView_Previews: PreviewProvider {
     static var previews: some View {
-        SetupView()
+        Group {
+            SetupView()
+                .preferredColorScheme(.dark)
+            SetupView()
+                .preferredColorScheme(.light)
+        }
     }
 }

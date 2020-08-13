@@ -15,28 +15,27 @@ enum ProductType: String {
     case tips3 = "com.elaborapp.Blahker.IAP.Tips3"
 }
 
-enum PurchaseManagerFailReason {
+enum PurchaseManagerFailReason: Error {
     case cantMakePayments
+    case failure(underlyingError: Error)
     case userCancelled
 }
 
-protocol PurchaseManagerDelegate {
-    func purchaseFailed(productType: ProductType?, reason: PurchaseManagerFailReason)
-    func purchaseSucceed(productType: ProductType?)
-}
+typealias PurchaseCompletion = (Result<Void, PurchaseManagerFailReason>) -> Void
 
-class PurchaseManager: NSObject, SKProductsRequestDelegate,  SKPaymentTransactionObserver {
+class PurchaseManager: NSObject, SKProductsRequestDelegate, SKPaymentTransactionObserver {
     static let shared = PurchaseManager()
-    var delegate: PurchaseManagerDelegate?
+    private var completion: PurchaseCompletion?
 
     override init() {
         super.init()
         SKPaymentQueue.default().add(self)
     }
 
-    func startPurchase(productType: ProductType) {
+    func startPurchase(productType: ProductType, completion: @escaping PurchaseCompletion) {
+        self.completion = completion
         guard SKPaymentQueue.canMakePayments() else {
-            self.delegate?.purchaseFailed(productType: productType, reason: .cantMakePayments)
+            completion(.failure(.cantMakePayments))
             return
         }
 
@@ -63,17 +62,20 @@ class PurchaseManager: NSObject, SKProductsRequestDelegate,  SKPaymentTransactio
                 continue
             case .failed:
                 queue.finishTransaction(transaction)
-
-                let productType = ProductType(rawValue: transaction.payment.productIdentifier)
-                self.delegate?.purchaseFailed(productType: productType, reason: .userCancelled)
-
+                if let error = transaction.error as? SKError,
+                   error.code != SKError.Code.paymentCancelled {
+                    let reason = PurchaseManagerFailReason.failure(underlyingError: error)
+                    completion?(.failure(reason))
+                } else {
+                    let reason = PurchaseManagerFailReason.userCancelled
+                    completion?(.failure(reason))
+                }
+                
             case .purchasing:
                 continue
             case .purchased, .restored:
                 queue.finishTransaction(transaction)
-
-                let productType = ProductType(rawValue: transaction.payment.productIdentifier)
-                self.delegate?.purchaseSucceed(productType: productType)
+                completion?(.success(()))
             @unknown default:
                 break
             }
