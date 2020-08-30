@@ -24,7 +24,6 @@
 		6C6308B92347421800646E6B /* ContentBlockerRequestHandlerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF96A811DE9317500043471 /* ContentBlockerRequestHandlerError.swift */; };
 		6C6308BA234742F400646E6B /* ContentBlockerRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF96A801DE9317500043471 /* ContentBlockerRequestHandler.swift */; };
 		6C83596A1DE312FD0033A1BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8359691DE312FD0033A1BC /* AppDelegate.swift */; };
-		6C83596C1DE312FD0033A1BC /* SetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C83596B1DE312FD0033A1BC /* SetupViewController.swift */; };
 		6C83596F1DE312FD0033A1BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C83596D1DE312FD0033A1BC /* Main.storyboard */; };
 		6C8359711DE312FD0033A1BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C8359701DE312FD0033A1BC /* Assets.xcassets */; };
 		6C83597F1DE312FE0033A1BC /* BlahkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C83597E1DE312FE0033A1BC /* BlahkerTests.swift */; };
@@ -33,7 +32,9 @@
 		6CC9F0CC1DE31341004142AC /* ContentBlocker.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6CC9F0C31DE31340004142AC /* ContentBlocker.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		6CCDED9D24E2261C0094300E /* BlahkerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCDED9C24E2261C0094300E /* BlahkerApp.swift */; };
 		6CCDED9F24E2265B0094300E /* SetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCDED9E24E2265B0094300E /* SetupView.swift */; };
-		6CF743F51DF2D9C6008CA1CC /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF743F41DF2D9C6008CA1CC /* AboutViewController.swift */; };
+		6CDD052924FA729C00709CA9 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CDD052824FA729C00709CA9 /* AboutView.swift */; };
+		6CDD052B24FA78DD00709CA9 /* MailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CDD052A24FA78DD00709CA9 /* MailView.swift */; };
+		6CDD052D24FA7FDF00709CA9 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CDD052C24FA7FDF00709CA9 /* SafariView.swift */; };
 		6CF96A831DE9317500043471 /* ContentBlockerRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF96A801DE9317500043471 /* ContentBlockerRequestHandler.swift */; };
 		6CF96A841DE9317500043471 /* ContentBlockerRequestHandlerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF96A811DE9317500043471 /* ContentBlockerRequestHandlerError.swift */; };
 		6CF96A861DE931A100043471 /* ContentBlockerRequestHandlerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF96A811DE9317500043471 /* ContentBlockerRequestHandlerError.swift */; };
@@ -107,7 +108,6 @@
 		6C6308B023472C7900646E6B /* BlahkerMac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BlahkerMac.entitlements; sourceTree = "<group>"; };
 		6C8359661DE312FD0033A1BC /* Blahker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blahker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C8359691DE312FD0033A1BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6C83596B1DE312FD0033A1BC /* SetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupViewController.swift; sourceTree = "<group>"; };
 		6C83596E1DE312FD0033A1BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6C8359701DE312FD0033A1BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6C8359751DE312FD0033A1BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -123,7 +123,9 @@
 		6CCDED9B24E223640094300E /* ContentBlocker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ContentBlocker.entitlements; sourceTree = "<group>"; };
 		6CCDED9C24E2261C0094300E /* BlahkerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlahkerApp.swift; sourceTree = "<group>"; };
 		6CCDED9E24E2265B0094300E /* SetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupView.swift; sourceTree = "<group>"; };
-		6CF743F41DF2D9C6008CA1CC /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		6CDD052824FA729C00709CA9 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		6CDD052A24FA78DD00709CA9 /* MailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailView.swift; sourceTree = "<group>"; };
+		6CDD052C24FA7FDF00709CA9 /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
 		6CF96A801DE9317500043471 /* ContentBlockerRequestHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentBlockerRequestHandler.swift; sourceTree = "<group>"; };
 		6CF96A811DE9317500043471 /* ContentBlockerRequestHandlerError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentBlockerRequestHandlerError.swift; sourceTree = "<group>"; };
 		6CF96A821DE9317500043471 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -193,6 +195,7 @@
 		6C83595D1DE312FD0033A1BC = {
 			isa = PBXGroup;
 			children = (
+				6CDD052C24FA7FDF00709CA9 /* SafariView.swift */,
 				6C4721852116CF570031A64E /* README.md */,
 				6C4721832116CF560031A64E /* CHANGELOG.md */,
 				6C4721842116CF560031A64E /* CONTRIBUTING.md */,
@@ -223,17 +226,17 @@
 			isa = PBXGroup;
 			children = (
 				6CCDED9A24E223630094300E /* Blahker.entitlements */,
+				6C8359751DE312FD0033A1BC /* Info.plist */,
+				6C50E2112116C7AF00A8B495 /* BlockerList.storyboard */,
+				6CDD052824FA729C00709CA9 /* AboutView.swift */,
 				6C8359691DE312FD0033A1BC /* AppDelegate.swift */,
 				6CCDED9C24E2261C0094300E /* BlahkerApp.swift */,
-				6CCDED9E24E2265B0094300E /* SetupView.swift */,
-				6C83596B1DE312FD0033A1BC /* SetupViewController.swift */,
-				6CF743F41DF2D9C6008CA1CC /* AboutViewController.swift */,
 				6C1E61F81DF405F9002BA1B5 /* BlockerListViewController.swift */,
+				6CDD052A24FA78DD00709CA9 /* MailView.swift */,
 				6C12CBF51DF34B35003E129D /* PurchaseManager.swift */,
-				6C83596D1DE312FD0033A1BC /* Main.storyboard */,
-				6C50E2112116C7AF00A8B495 /* BlockerList.storyboard */,
+				6CCDED9E24E2265B0094300E /* SetupView.swift */,
 				6C8359701DE312FD0033A1BC /* Assets.xcassets */,
-				6C8359751DE312FD0033A1BC /* Info.plist */,
+				6C83596D1DE312FD0033A1BC /* Main.storyboard */,
 			);
 			path = Blahker;
 			sourceTree = "<group>";
@@ -500,14 +503,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				6C50E20F2116B88600A8B495 /* Rule.swift in Sources */,
-				6C83596C1DE312FD0033A1BC /* SetupViewController.swift in Sources */,
+				6CDD052D24FA7FDF00709CA9 /* SafariView.swift in Sources */,
 				6C83596A1DE312FD0033A1BC /* AppDelegate.swift in Sources */,
 				6C1E61F91DF405F9002BA1B5 /* BlockerListViewController.swift in Sources */,
 				6CCDED9F24E2265B0094300E /* SetupView.swift in Sources */,
-				6CF743F51DF2D9C6008CA1CC /* AboutViewController.swift in Sources */,
+				6CDD052924FA729C00709CA9 /* AboutView.swift in Sources */,
 				6CCDED9D24E2261C0094300E /* BlahkerApp.swift in Sources */,
 				6CF96A861DE931A100043471 /* ContentBlockerRequestHandlerError.swift in Sources */,
 				6C12CBF61DF34B35003E129D /* PurchaseManager.swift in Sources */,
+				6CDD052B24FA78DD00709CA9 /* MailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
