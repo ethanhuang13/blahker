@@ -10,15 +10,13 @@ import MessageUI
 import SwiftUI
 
 struct AboutView: View {
-    struct AlertIdentifier: Identifiable {
-        enum Choice {
-            case setupMail
-        }
+    enum AlertID: String, Identifiable {
+        case setupMail
 
-        var id: Choice
+        var id: String { rawValue }
     }
 
-    @State private var alertIdentifier: AlertIdentifier?
+    @State private var alertId: AlertID?
     @State private var isShowingReportMailView = false
     @State private var mailResult: Result<MFMailComposeResult, MFMailComposeError>? = nil
     @State private var isShowingAboutSafariView = false
@@ -49,8 +47,8 @@ struct AboutView: View {
         .sheet(isPresented: $isShowingAboutSafariView, content: {
             SafariView(url: URL(string: "https://github.com/ethanhuang13/blahker/blob/master/README.md")!)
         })
-        .alert(item: $alertIdentifier) { alert in
-            switch alert.id {
+        .alert(item: $alertId) { alert in
+            switch alert {
             case .setupMail:
                 return Alert(
                     title: Text("請先啟用 iOS 郵件"),
@@ -69,7 +67,7 @@ struct AboutView: View {
             if MailView.canSendMail {
                 isShowingReportMailView = true
             } else {
-                alertIdentifier = AlertIdentifier(id: .setupMail)
+                alertId = .setupMail
             }
         }, label: {
             VStack(alignment: .leading) {

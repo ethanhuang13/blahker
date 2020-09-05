@@ -10,22 +10,20 @@ import SafariServices
 import SwiftUI
 
 struct SetupView: View {
-    struct AlertIdentifier: Identifiable {
-        enum Choice {
-            case pleaseSetup
-            case reloaded
-            case reloadFailed
-            case purchased
-            case purchaseFailed
-            case purchaseFailedCantMakePayments
-        }
-
-        var id: Choice
+    enum AlertID: String, Identifiable {
+        case pleaseSetup
+        case reloaded
+        case reloadFailed
+        case purchased
+        case purchaseFailed
+        case purchaseFailedCantMakePayments
+        
+        var id: String { rawValue }
     }
     
     @State private var isLoadingBlockerList: Bool = false
     @State private var isLoadedFailedBefore: Bool = false
-    @State private var alertIdentifier: AlertIdentifier?
+    @State private var alertId: AlertID?
     @State private var isDonateActionSheetPresented: Bool = false
     @State private var showAbout = false
 
@@ -62,16 +60,16 @@ App 將會自動取得最新擋廣告網站清單，你也可以透過左上角�
         let purchaseCompletion: PurchaseCompletion = { result in
             switch result {
             case .success:
-                alertIdentifier = AlertIdentifier(id: .purchased)
+                alertId = .purchased
             case .failure(let reason):
                 switch reason {
                 case .userCancelled:
                     break
                 case .failure(underlyingError: let error):
                     print("交易失敗：\(error.localizedDescription)")
-                    alertIdentifier = AlertIdentifier(id: .purchaseFailed)
+                    alertId = .purchaseFailed
                 case .cantMakePayments:
-                    alertIdentifier = AlertIdentifier(id: .purchaseFailedCantMakePayments)
+                    alertId = .purchaseFailedCantMakePayments
                 }
             }
         }
@@ -154,8 +152,8 @@ App 將會自動取得最新擋廣告網站清單，你也可以透過左上角�
         .onReceive(didEnterBackgroundPublisher, perform: { _ in
             scheduleContentBlockerReload()
         })
-        .alert(item: $alertIdentifier, content: { alert in
-            switch alert.id {
+        .alert(item: $alertId, content: { alert in
+            switch alert {
             case .pleaseSetup:
                 return Alert(title: Text("請開啟內容阻擋器"),
                              message: Text("請打開「設定」 > 「Safari」 > 「內容阻擋器」，並啟用 Blahker"),
@@ -198,7 +196,7 @@ App 將會自動取得最新擋廣告網站清單，你也可以透過左上角�
                 default:
                     isLoadingBlockerList = false
                     isLoadedFailedBefore = true
-                    alertIdentifier = AlertIdentifier(id: .pleaseSetup)
+                    alertId = .pleaseSetup
                     
                     let generator = UINotificationFeedbackGenerator()
                     generator.notificationOccurred(.error)
@@ -215,9 +213,9 @@ App 將會自動取得最新擋廣告網站清單，你也可以透過左上角�
                 
                 if manually || isLoadedFailedBefore {
                     if error == nil {
-                        alertIdentifier = AlertIdentifier(id: .reloaded)
+                        alertId = .reloaded
                     } else {
-                        alertIdentifier = AlertIdentifier(id: .reloadFailed)
+                        alertId = .reloadFailed
                     }
                     
                     let feedbackType: UINotificationFeedbackGenerator.FeedbackType = (error == nil) ? .success : .error
