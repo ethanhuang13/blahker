@@ -1,6 +1,9 @@
 # CHANGELOG
 # Blahker
 
+## 2021-06-25
+- Add .interstitial-ads, .iframe-ads-link (4gamers.com.tw)
+
 ## [macOS 1.1.0(13)] - 2019-10-04
 - Add macOS Safari App Extension
 
