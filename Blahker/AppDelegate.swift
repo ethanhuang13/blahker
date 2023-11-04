@@ -9,9 +9,9 @@
 import UIKit
 import SafariServices
 
-let contentBlockerExteiosnIdentifier = "com.elaborapp.Blahker.ContentBlocker"
+let contentBlockerExtensionIdentifier = "com.elaborapp.Blahker.ContentBlocker"
 
-@UIApplicationMain
+//@UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
@@ -48,10 +48,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, performFetchWithCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
         if #available(iOS 10.0, *) {
-            SFContentBlockerManager.getStateOfContentBlocker(withIdentifier: contentBlockerExteiosnIdentifier, completionHandler: { (state, error) -> Void in
+            SFContentBlockerManager.getStateOfContentBlocker(withIdentifier: contentBlockerExtensionIdentifier, completionHandler: { (state, error) -> Void in
                 switch state?.isEnabled {
                 case .some(true):
-                    SFContentBlockerManager.reloadContentBlocker(withIdentifier: contentBlockerExteiosnIdentifier, completionHandler: { (error) -> Void in
+                    SFContentBlockerManager.reloadContentBlocker(withIdentifier: contentBlockerExtensionIdentifier, completionHandler: { (error) -> Void in
                         if error == nil {
                             print("background reloadContentBlocker complete")
                             completionHandler(.newData)
@@ -65,7 +65,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 }
             })
         } else {
-            SFContentBlockerManager.reloadContentBlocker(withIdentifier: contentBlockerExteiosnIdentifier, completionHandler: { (error) -> Void in
+            SFContentBlockerManager.reloadContentBlocker(withIdentifier: contentBlockerExtensionIdentifier, completionHandler: { (error) -> Void in
                 if error == nil {
                     print("background reloadContentBlocker complete")
                     completionHandler(.newData)

@@ -65,7 +65,7 @@ class SetupViewController: UIViewController {
         self.isLoadingBlockerList = true
 
         func reload() {
-            SFContentBlockerManager.reloadContentBlocker(withIdentifier: contentBlockerExteiosnIdentifier, completionHandler: { (error) -> Void in
+            SFContentBlockerManager.reloadContentBlocker(withIdentifier: contentBlockerExtensionIdentifier, completionHandler: { (error) -> Void in
                 DispatchQueue.main.async {
                     self.isLoadingBlockerList = false
 
@@ -98,7 +98,7 @@ class SetupViewController: UIViewController {
         }
 
         if #available(iOS 10.0, *) {
-            SFContentBlockerManager.getStateOfContentBlocker(withIdentifier: contentBlockerExteiosnIdentifier, completionHandler: { (state, error) -> Void in
+            SFContentBlockerManager.getStateOfContentBlocker(withIdentifier: contentBlockerExtensionIdentifier, completionHandler: { (state, error) -> Void in
                 DispatchQueue.main.async {
                     switch state?.isEnabled {
                     case .some(true):
