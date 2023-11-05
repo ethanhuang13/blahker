@@ -1,35 +1,35 @@
 //
-//  SafariService.swift
+//  ContentBlockerService.swift
 //
 //
 //  Created by Ethan Huang on 2023/11/5.
 //
 
-import Foundation
-//import SafariServices
+// import SafariServices
 import Dependencies
+import Foundation
 
-struct ContentBlockerService {
-  var checkUserEnabledContentBlocker: (String) async -> Bool
+public struct ContentBlockerService {
+  public var checkUserEnabledContentBlocker: (String) async -> Bool
 }
 
 extension ContentBlockerService: DependencyKey {
-  static var liveValue = ContentBlockerService(
+  public static var liveValue = ContentBlockerService(
     checkUserEnabledContentBlocker: { bundleID in
 //      SFContentBlockerManager.getStateOfContentBlocker(withIdentifier: contentBlockerExtensionIdentifier, completionHandler: { (state, error)
 //      }
-      return true
+      true
     }
   )
 }
 
 extension ContentBlockerService: TestDependencyKey {
-  static var testValue = ContentBlockerService(
+  public static var testValue = ContentBlockerService(
     checkUserEnabledContentBlocker: unimplemented("checkUserEnabledContentBlocker")
   )
 }
 
-extension DependencyValues {
+public extension DependencyValues {
   var contentBlockerService: ContentBlockerService {
     get { self[ContentBlockerService.self] }
     set { self[ContentBlockerService.self] = newValue }

@@ -1,4 +1,5 @@
 import ComposableArchitecture
+import ContentBlockerService
 import SwiftUI
 
 @main
@@ -22,7 +23,7 @@ struct AppFeature: Reducer {
     case userEnableContentBlocker(Bool)
   }
 
-  @Dependency(\.contentBlockerService) var safariService
+  @Dependency(\.contentBlockerService) var contentBlockerService
 
   func reduce(into state: inout State, action: Action) -> Effect<Action> {
     switch action {
@@ -32,7 +33,7 @@ struct AppFeature: Reducer {
     case .checkUserEnabledContentBlocker:
       return .run { send in
         let extensionID = "com.elaborapp.Blahker.ContentBlocker"
-        let isEnabled = await safariService.checkUserEnabledContentBlocker(extensionID)
+        let isEnabled = await contentBlockerService.checkUserEnabledContentBlocker(extensionID)
         await send(.userEnableContentBlocker(isEnabled))
       }
 
