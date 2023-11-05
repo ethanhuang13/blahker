@@ -22,12 +22,20 @@ struct AppFeature: Reducer {
     case userEnableContentBlocker(Bool)
   }
 
+  @Dependency(\.safariService) var safariService
+
   func reduce(into state: inout State, action: Action) -> Effect<Action> {
     switch action {
     case .scenePhaseBecomeActive:
       return .send(.checkUserEnabledContentBlocker)
+
     case .checkUserEnabledContentBlocker:
-      return .send(.userEnableContentBlocker(false))
+      return .run { send in
+        let extensionID = "com.elaborapp.Blahker.ContentBlocker"
+        let isEnabled = await safariService.checkUserEnabledContentBlocker(extensionID)
+        await send(.userEnableContentBlocker(isEnabled))
+      }
+
     case .userEnableContentBlocker(let bool):
       return .none
     }
