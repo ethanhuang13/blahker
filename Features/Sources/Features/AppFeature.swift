@@ -15,7 +15,9 @@ struct BlahkerApp: App {
 }
 
 struct AppFeature: Reducer {
-  struct State: Equatable {}
+  struct State: Equatable {
+    var isEnabledContentBlocker = false
+  }
 
   enum Action: Equatable {
     case scenePhaseBecomeActive
@@ -37,7 +39,8 @@ struct AppFeature: Reducer {
         await send(.userEnableContentBlocker(isEnabled))
       }
 
-    case .userEnableContentBlocker(let bool):
+    case let .userEnableContentBlocker(isEnabled):
+      state.isEnabledContentBlocker = isEnabled
       return .none
     }
   }
@@ -48,16 +51,20 @@ struct AppView: View {
   @Environment(\.scenePhase) private var scenePhase
 
   var body: some View {
-    Text("Blahker")
-      .onChange(of: scenePhase) { phase in
-        switch phase {
-        case .active:
-          store.send(.scenePhaseBecomeActive)
-        case .background, .inactive:
-          break
-        @unknown default:
-          break
+    WithViewStore(store, observe: { $0.isEnabledContentBlocker }) { viewStore in
+      let isEnabledContentBlocker = viewStore.state
+
+      Text("Content Blocker is \(isEnabledContentBlocker ? "enabled" : "disabled")")
+        .onChange(of: scenePhase) { phase in
+          switch phase {
+          case .active:
+            store.send(.scenePhaseBecomeActive)
+          case .background, .inactive:
+            break
+          @unknown default:
+            break
+          }
         }
-      }
+    }
   }
 }
