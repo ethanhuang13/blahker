@@ -22,7 +22,7 @@ struct AppFeature: Reducer {
     case userEnableContentBlocker(Bool)
   }
 
-  @Dependency(\.safariService) var safariService
+  @Dependency(\.contentBlockerService) var safariService
 
   func reduce(into state: inout State, action: Action) -> Effect<Action> {
     switch action {

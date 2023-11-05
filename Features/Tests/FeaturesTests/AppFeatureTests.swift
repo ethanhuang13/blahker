@@ -9,7 +9,7 @@ final class AppFeatureTests: XCTestCase {
       initialState: AppFeature.State(),
       reducer: { AppFeature() }
     ) {
-      $0.safariService.checkUserEnabledContentBlocker = { _ in false }
+      $0.contentBlockerService.checkUserEnabledContentBlocker = { _ in false }
     }
 
     await store.send(.scenePhaseBecomeActive)
@@ -22,7 +22,7 @@ final class AppFeatureTests: XCTestCase {
       initialState: AppFeature.State(),
       reducer: { AppFeature() }
     ) {
-      $0.safariService.checkUserEnabledContentBlocker = { _ in true }
+      $0.contentBlockerService.checkUserEnabledContentBlocker = { _ in true }
     }
 
     await store.send(.scenePhaseBecomeActive)
@@ -35,14 +35,14 @@ final class AppFeatureTests: XCTestCase {
       initialState: AppFeature.State(),
       reducer: { AppFeature() }
     ) {
-      $0.safariService.checkUserEnabledContentBlocker = { _ in false }
+      $0.contentBlockerService.checkUserEnabledContentBlocker = { _ in false }
     }
 
     await store.send(.scenePhaseBecomeActive)
     await store.receive(.checkUserEnabledContentBlocker)
     await store.receive(.userEnableContentBlocker(false))
 
-    store.dependencies.safariService.checkUserEnabledContentBlocker = { _ in true }
+    store.dependencies.contentBlockerService.checkUserEnabledContentBlocker = { _ in true }
     await store.send(.scenePhaseBecomeActive)
     await store.receive(.checkUserEnabledContentBlocker)
     await store.receive(.userEnableContentBlocker(true))
