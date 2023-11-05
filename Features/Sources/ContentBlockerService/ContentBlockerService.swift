@@ -5,9 +5,9 @@
 //  Created by Ethan Huang on 2023/11/5.
 //
 
-// import SafariServices
 import Dependencies
 import Foundation
+import SafariServices
 
 public struct ContentBlockerService {
   public var checkUserEnabledContentBlocker: (String) async -> Bool
@@ -16,9 +16,19 @@ public struct ContentBlockerService {
 extension ContentBlockerService: DependencyKey {
   public static var liveValue = ContentBlockerService(
     checkUserEnabledContentBlocker: { bundleID in
-//      SFContentBlockerManager.getStateOfContentBlocker(withIdentifier: contentBlockerExtensionIdentifier, completionHandler: { (state, error)
-//      }
-      true
+      await withCheckedContinuation { continuation in
+        SFContentBlockerManager.getStateOfContentBlocker(withIdentifier: bundleID) { state, error in
+          if let error {
+            // log
+          }
+
+          if let state {
+            continuation.resume(returning: state.isEnabled)
+          } else {
+            continuation.resume(returning: false)
+          }
+        }
+      }
     }
   )
 }
