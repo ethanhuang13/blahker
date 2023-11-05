@@ -1,0 +1,50 @@
+{
+  "configurations" : [
+    {
+      "id" : "76D5F85A-4D39-4922-A4A4-8F349DB32A02",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : {
+      "targets" : [
+        {
+          "containerPath" : "container:Features",
+          "identifier" : "Features",
+          "name" : "Features"
+        },
+        {
+          "containerPath" : "container:Features",
+          "identifier" : "FeaturesTests",
+          "name" : "FeaturesTests"
+        }
+      ]
+    },
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:Blahker.xcodeproj",
+      "identifier" : "6C8359651DE312FD0033A1BC",
+      "name" : "Blahker"
+    }
+  },
+  "testTargets" : [
+    {
+      "enabled" : false,
+      "target" : {
+        "containerPath" : "container:Blahker.xcodeproj",
+        "identifier" : "6C8359791DE312FE0033A1BC",
+        "name" : "BlahkerTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:Features",
+        "identifier" : "FeaturesTests",
+        "name" : "FeaturesTests"
+      }
+    }
+  ],
+  "version" : 1
+}

@@ -117,6 +117,7 @@
 		6C88778423445ED700A02EBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6C88778523445ED700A02EBC /* ContentBlockerMac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ContentBlockerMac.entitlements; sourceTree = "<group>"; };
 		6CA0D6582AF3F3B2008FA25E /* Features */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Features; sourceTree = "<group>"; };
+		6CA0D65B2AF770DD008FA25E /* Test Plan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Test Plan.xctestplan"; sourceTree = "<group>"; };
 		6CB80FEB1DE731770041AF1E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
 		6CC9F0C31DE31340004142AC /* ContentBlocker.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ContentBlocker.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CF743F41DF2D9C6008CA1CC /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
@@ -220,6 +221,7 @@
 		6C8359681DE312FD0033A1BC /* Blahker */ = {
 			isa = PBXGroup;
 			children = (
+				6CA0D65B2AF770DD008FA25E /* Test Plan.xctestplan */,
 				6C8359691DE312FD0033A1BC /* AppDelegate.swift */,
 				6C83596B1DE312FD0033A1BC /* SetupViewController.swift */,
 				6CF743F41DF2D9C6008CA1CC /* AboutViewController.swift */,
