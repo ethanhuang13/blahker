@@ -21,12 +21,7 @@ extension ContentBlockerService: DependencyKey {
           if let error {
             // log
           }
-
-          if let state {
-            continuation.resume(returning: state.isEnabled)
-          } else {
-            continuation.resume(returning: false)
-          }
+          continuation.resume(returning: state?.isEnabled ?? false)
         }
       }
     }
