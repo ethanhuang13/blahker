@@ -5,28 +5,77 @@
 //  Created by Ethan Huang on 2023/11/22.
 //
 
+import ComposableArchitecture
 import SwiftUI
 
-struct HomeView: View {
-  var body: some View {
-    NavigationStack {
-      VStack {
-        setupDescription
-        Spacer()
-        dontTapMeButton
+struct HomeFeature: Reducer {
+  struct State: Equatable {
+    var isEnabledContentBlocker = false
+  }
+
+  enum Action: Equatable {
+    case scenePhaseBecomeActive
+    case checkUserEnabledContentBlocker
+    case userEnableContentBlocker(Bool)
+  }
+
+  @Dependency(\.contentBlockerService) var contentBlockerService
+
+  func reduce(into state: inout State, action: Action) -> Effect<Action> {
+    switch action {
+    case .scenePhaseBecomeActive:
+      return .send(.checkUserEnabledContentBlocker)
+
+    case .checkUserEnabledContentBlocker:
+      return .run { send in
+        let extensionID = "com.elaborapp.Blahker.ContentBlocker"
+        let isEnabled = await contentBlockerService.checkUserEnabledContentBlocker(extensionID)
+        await send(.userEnableContentBlocker(isEnabled))
       }
-      .navigationTitle("Blahker")
-      .navigationBarTitleDisplayMode(.inline)
-      .toolbar {
-        ToolbarItem(placement: .topBarLeading) {
-          refreshButton
-        }
-        ToolbarItem(placement: .topBarTrailing) {
-          aboutButton
-        }
-      }
+
+    case let .userEnableContentBlocker(isEnabled):
+      state.isEnabledContentBlocker = isEnabled
+      return .none
     }
-    .preferredColorScheme(.dark)
+  }
+}
+
+struct HomeView: View {
+  let store: StoreOf<HomeFeature>
+
+  @Environment(\.scenePhase) private var scenePhase
+
+  var body: some View {
+    WithViewStore(store, observe: { $0 }) { viewStore in
+      NavigationStack {
+        VStack {
+          setupDescription
+          Spacer()
+          dontTapMeButton
+        }
+        .navigationTitle("Blahker")
+        .navigationBarTitleDisplayMode(.inline)
+        .toolbar {
+          ToolbarItem(placement: .topBarLeading) {
+            refreshButton
+          }
+          ToolbarItem(placement: .topBarTrailing) {
+            aboutButton
+          }
+        }
+        .onChange(of: scenePhase) { phase in
+          switch phase {
+          case .active:
+            store.send(.scenePhaseBecomeActive)
+          case .background, .inactive:
+            break
+          @unknown default:
+            break
+          }
+        }
+      }
+      .preferredColorScheme(.dark)
+    }
   }
 
   @MainActor
@@ -87,5 +136,8 @@ struct HomeView: View {
 }
 
 #Preview {
-  HomeView()
+  HomeView(store: .init(
+    initialState: HomeFeature.State(),
+    reducer: { HomeFeature() }
+  ))
 }

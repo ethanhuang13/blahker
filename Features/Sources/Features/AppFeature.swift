@@ -16,31 +16,24 @@ struct BlahkerApp: App {
 
 struct AppFeature: Reducer {
   struct State: Equatable {
-    var isEnabledContentBlocker = false
+    var home: HomeFeature.State = .init()
   }
 
   enum Action: Equatable {
-    case scenePhaseBecomeActive
-    case checkUserEnabledContentBlocker
-    case userEnableContentBlocker(Bool)
+    case home(HomeFeature.Action)
   }
 
-  @Dependency(\.contentBlockerService) var contentBlockerService
+  var body: some ReducerOf<Self> {
+    Scope(state: \.home, action: /Action.home) {
+      HomeFeature()
+    }
 
-  func reduce(into state: inout State, action: Action) -> Effect<Action> {
+    Reduce(core)
+  }
+
+  func core(into state: inout State, action: Action) -> Effect<Action> {
     switch action {
-    case .scenePhaseBecomeActive:
-      return .send(.checkUserEnabledContentBlocker)
-
-    case .checkUserEnabledContentBlocker:
-      return .run { send in
-        let extensionID = "com.elaborapp.Blahker.ContentBlocker"
-        let isEnabled = await contentBlockerService.checkUserEnabledContentBlocker(extensionID)
-        await send(.userEnableContentBlocker(isEnabled))
-      }
-
-    case let .userEnableContentBlocker(isEnabled):
-      state.isEnabledContentBlocker = isEnabled
+    case .home:
       return .none
     }
   }
@@ -48,23 +41,8 @@ struct AppFeature: Reducer {
 
 struct AppView: View {
   let store: StoreOf<AppFeature>
-  @Environment(\.scenePhase) private var scenePhase
 
   var body: some View {
-    WithViewStore(store, observe: { $0.isEnabledContentBlocker }) { viewStore in
-      let isEnabledContentBlocker = viewStore.state
-
-      Text("Content Blocker is \(isEnabledContentBlocker ? "enabled" : "disabled")")
-        .onChange(of: scenePhase) { phase in
-          switch phase {
-          case .active:
-            store.send(.scenePhaseBecomeActive)
-          case .background, .inactive:
-            break
-          @unknown default:
-            break
-          }
-        }
-    }
+    HomeView(store: store.scope(state: \.home, action: { .home($0) }))
   }
 }
