@@ -8,7 +8,8 @@
 import ComposableArchitecture
 import SwiftUI
 
-struct HomeFeature: Reducer {
+@Reducer
+struct HomeFeature {
   struct State: Equatable {
     var isEnabledContentBlocker = false
   }
