@@ -15,26 +15,38 @@ struct HomeFeature: Reducer {
 
   enum Action: Equatable {
     case scenePhaseBecomeActive
-    case checkUserEnabledContentBlocker
     case userEnableContentBlocker(Bool)
+    case tapDontTapButton
+    case tapRefreshButton
+    case tapAboutButton
   }
 
   @Dependency(\.contentBlockerService) var contentBlockerService
 
   func reduce(into state: inout State, action: Action) -> Effect<Action> {
-    switch action {
-    case .scenePhaseBecomeActive:
-      return .send(.checkUserEnabledContentBlocker)
-
-    case .checkUserEnabledContentBlocker:
-      return .run { send in
+    var checkUserEnabledContentBlocker: Effect<Action> {
+      .run { send in
         let extensionID = "com.elaborapp.Blahker.ContentBlocker"
         let isEnabled = await contentBlockerService.checkUserEnabledContentBlocker(extensionID)
         await send(.userEnableContentBlocker(isEnabled))
       }
+    }
+
+    switch action {
+    case .scenePhaseBecomeActive:
+      return checkUserEnabledContentBlocker
 
     case let .userEnableContentBlocker(isEnabled):
       state.isEnabledContentBlocker = isEnabled
+      return .none
+
+    case .tapDontTapButton:
+      return .none
+
+    case .tapRefreshButton:
+      return checkUserEnabledContentBlocker
+
+    case .tapAboutButton:
       return .none
     }
   }
@@ -96,7 +108,7 @@ struct HomeView: View {
   private var dontTapMeButton: some View {
     Button(
       action: {
-        // TODO: send action
+        store.send(.tapDontTapButton)
       },
       label: {
         Text("拜託別按我")
@@ -111,7 +123,7 @@ struct HomeView: View {
   private var refreshButton: some View {
     Button(
       action: {
-        // TODO: send action
+        store.send(.tapRefreshButton)
       },
       label: {
         Image(systemName: "arrow.clockwise")
@@ -125,7 +137,7 @@ struct HomeView: View {
   private var aboutButton: some View {
     Button(
       action: {
-        // TODO: send action
+        store.send(.tapAboutButton)
       },
       label: {
         Text("關於")

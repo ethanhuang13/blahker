@@ -13,7 +13,6 @@ final class HomeFeatureTests: XCTestCase {
     }
 
     await store.send(.scenePhaseBecomeActive)
-    await store.receive(.checkUserEnabledContentBlocker)
     await store.receive(.userEnableContentBlocker(false))
   }
 
@@ -26,7 +25,6 @@ final class HomeFeatureTests: XCTestCase {
     }
 
     await store.send(.scenePhaseBecomeActive)
-    await store.receive(.checkUserEnabledContentBlocker)
     await store.receive(.userEnableContentBlocker(true)) {
       $0.isEnabledContentBlocker = true
     }
@@ -41,12 +39,10 @@ final class HomeFeatureTests: XCTestCase {
     }
 
     await store.send(.scenePhaseBecomeActive)
-    await store.receive(.checkUserEnabledContentBlocker)
     await store.receive(.userEnableContentBlocker(false))
 
     store.dependencies.contentBlockerService.checkUserEnabledContentBlocker = { _ in true }
     await store.send(.scenePhaseBecomeActive)
-    await store.receive(.checkUserEnabledContentBlocker)
     await store.receive(.userEnableContentBlocker(true)) {
       $0.isEnabledContentBlocker = true
     }
