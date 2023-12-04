@@ -32,8 +32,14 @@ struct HomeFeature {
   }
 
   @Dependency(\.contentBlockerService) var contentBlockerService
+  @Dependency(\.openURL) var openURL
 
-  func reduce(into state: inout State, action: Action) -> Effect<Action> {
+  var body: some ReducerOf<Self> {
+    Reduce(core)
+      .ifLet(\.$alert, action: \.alert)
+  }
+
+  func core(into state: inout State, action: Action) -> Effect<Action> {
     var checkUserEnabledContentBlocker: Effect<Action> {
       .run { send in
         let extensionID = "com.elaborapp.Blahker.ContentBlocker"
@@ -52,7 +58,10 @@ struct HomeFeature {
       case .largeDonation:
         return .none
       case .rate5Star:
-        return .none
+        return .run { send in
+          let url = URL(string: "https://apps.apple.com/tw/app/blahker-巴拉剋/id1182699267")!
+          await openURL(url)
+        }
       }
 
     case .alert(.dismiss):
