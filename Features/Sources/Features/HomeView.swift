@@ -12,14 +12,23 @@ import SwiftUI
 struct HomeFeature {
   struct State: Equatable {
     var isEnabledContentBlocker = false
+    @PresentationState var alert: AlertState<Action.Alert>?
   }
 
   enum Action: Equatable {
+    case alert(PresentationAction<Alert>)
     case scenePhaseBecomeActive
     case userEnableContentBlocker(Bool)
-    case tapDontTapButton
+    case tapDontTapMeButton
     case tapRefreshButton
     case tapAboutButton
+
+    enum Alert {
+      case smallDonation
+      case mediumDonation
+      case largeDonation
+      case rate5Star
+    }
   }
 
   @Dependency(\.contentBlockerService) var contentBlockerService
@@ -34,6 +43,21 @@ struct HomeFeature {
     }
 
     switch action {
+    case let .alert(.presented(alert)):
+      switch alert {
+      case .smallDonation:
+        return .none
+      case .mediumDonation:
+        return .none
+      case .largeDonation:
+        return .none
+      case .rate5Star:
+        return .none
+      }
+
+    case .alert(.dismiss):
+      return .none
+
     case .scenePhaseBecomeActive:
       return checkUserEnabledContentBlocker
 
@@ -41,7 +65,43 @@ struct HomeFeature {
       state.isEnabledContentBlocker = isEnabled
       return .none
 
-    case .tapDontTapButton:
+    case .tapDontTapMeButton:
+      state.alert = AlertState(
+        title: TextState("支持開發者"),
+        message: TextState("Blahker 的維護包含不斷更新擋廣告清單。如果有你的支持一定會更好～"),
+        buttons: [
+          ButtonState(
+            action: .smallDonation,
+            label: {
+              TextState("打賞小小費")
+            }
+          ),
+          ButtonState(
+            action: .mediumDonation,
+            label: {
+              TextState("打賞小費")
+            }
+          ),
+          ButtonState(
+            action: .largeDonation,
+            label: {
+              TextState("破費")
+            }
+          ),
+          ButtonState(
+            action: .rate5Star,
+            label: {
+              TextState("我不出錢，給個五星評分總行了吧")
+            }
+          ),
+          ButtonState(
+            role: .cancel,
+                      label: {
+            TextState("算了吧，不值得")
+          })
+        ]
+      )
+
       return .none
 
     case .tapRefreshButton:
@@ -109,7 +169,7 @@ struct HomeView: View {
   private var dontTapMeButton: some View {
     Button(
       action: {
-        store.send(.tapDontTapButton)
+        store.send(.tapDontTapMeButton)
       },
       label: {
         Text("拜託別按我")
@@ -117,6 +177,7 @@ struct HomeView: View {
     )
     .foregroundStyle(Color.white)
     .font(.title)
+    .alert(store: store.scope(state: \.$alert, action: \.alert))
   }
 
   @MainActor
