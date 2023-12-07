@@ -24,6 +24,7 @@ struct HomeFeature {
     case tapAboutButton
 
     enum Alert {
+      case okToReloadContentBlocker
       case smallDonation
       case mediumDonation
       case largeDonation
@@ -48,9 +49,31 @@ struct HomeFeature {
       }
     }
 
+    let pleaseEnableContentBlockerAlert = AlertState<HomeFeature.Action.Alert>(
+      title: TextState("請開啟內容阻擋器"),
+      message: TextState("請打開「設定」 > 「Safari」 > 「內容阻擋器」，並啟用 Blahker"),
+      buttons: [
+        ButtonState(
+          action: .okToReloadContentBlocker,
+          label: {
+            TextState("確定")
+          }
+        ),
+        ButtonState(
+          role: .cancel,
+          label: {
+            TextState("取消")
+          }
+        )
+      ]
+    )
+
     switch action {
     case let .alert(.presented(alert)):
       switch alert {
+      case .okToReloadContentBlocker:
+        state.alert = pleaseEnableContentBlockerAlert
+        return .none
       case .smallDonation:
         return .none
       case .mediumDonation:
@@ -72,6 +95,12 @@ struct HomeFeature {
 
     case let .userEnableContentBlocker(isEnabled):
       state.isEnabledContentBlocker = isEnabled
+
+      if isEnabled {
+      } else {
+        state.alert = pleaseEnableContentBlockerAlert
+      }
+
       return .none
 
     case .tapDontTapMeButton:
