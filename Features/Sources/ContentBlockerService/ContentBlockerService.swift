@@ -11,6 +11,7 @@ import SafariServices
 
 public struct ContentBlockerService {
   public var checkUserEnabledContentBlocker: (String) async -> Bool
+  public var reloadContentBlocker: (String) async throws -> Void
 }
 
 extension ContentBlockerService: DependencyKey {
@@ -24,13 +25,25 @@ extension ContentBlockerService: DependencyKey {
           continuation.resume(returning: state?.isEnabled ?? false)
         }
       }
+    },
+    reloadContentBlocker: { bundleID in
+      try await withCheckedThrowingContinuation { continuation in
+        SFContentBlockerManager.reloadContentBlocker(withIdentifier: bundleID, completionHandler: { error in
+          if let error {
+            continuation.resume(throwing: error)
+          } else {
+            continuation.resume()
+          }
+        })
+      }
     }
   )
 }
 
 extension ContentBlockerService: TestDependencyKey {
   public static var testValue = ContentBlockerService(
-    checkUserEnabledContentBlocker: unimplemented("checkUserEnabledContentBlocker")
+    checkUserEnabledContentBlocker: unimplemented("checkUserEnabledContentBlocker"),
+    reloadContentBlocker: unimplemented("reloadContentBlocker")
   )
 }
 
