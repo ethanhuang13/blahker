@@ -4,25 +4,6 @@ import XCTest
 
 @MainActor
 final class HomeFeatureTests: XCTestCase {
-  static let pleaseEnableContentBlockerAlert = AlertState<HomeFeature.Action.Alert>(
-    title: TextState("請開啟內容阻擋器"),
-    message: TextState("請打開「設定」 > 「Safari」 > 「內容阻擋器」，並啟用 Blahker"),
-    buttons: [
-      ButtonState(
-        action: .okToReloadContentBlocker,
-        label: {
-          TextState("確定")
-        }
-      ),
-      ButtonState(
-        role: .cancel,
-        label: {
-          TextState("取消")
-        }
-      )
-    ]
-  )
-
   func testAppBecomeActive_userHaventEnableContentBlocker() async throws {
     let store = TestStore(
       initialState: HomeFeature.State(),
@@ -33,7 +14,7 @@ final class HomeFeatureTests: XCTestCase {
 
     await store.send(.scenePhaseBecomeActive)
     await store.receive(.userEnableContentBlocker(false)) {
-      $0.alert = Self.pleaseEnableContentBlockerAlert
+      $0.alert = .pleaseEnableContentBlocker
     }
   }
 
@@ -61,7 +42,7 @@ final class HomeFeatureTests: XCTestCase {
 
     await store.send(.scenePhaseBecomeActive)
     await store.receive(.userEnableContentBlocker(false)) {
-      $0.alert = Self.pleaseEnableContentBlockerAlert
+      $0.alert = .pleaseEnableContentBlocker
     }
 
     store.dependencies.contentBlockerService.checkUserEnabledContentBlocker = { _ in true }
@@ -81,14 +62,14 @@ final class HomeFeatureTests: XCTestCase {
 
     await store.send(.tapRefreshButton)
     await store.receive(.userEnableContentBlocker(false)) {
-      $0.alert = Self.pleaseEnableContentBlockerAlert
+      $0.alert = .pleaseEnableContentBlocker
     }
 
     await store.send(.alert(.presented(.okToReloadContentBlocker))) {
       $0.alert = nil
     }
     await store.receive(.userEnableContentBlocker(false)) {
-      $0.alert = Self.pleaseEnableContentBlockerAlert
+      $0.alert = .pleaseEnableContentBlocker
     }
 
     // User enable content blocker in system Settings
