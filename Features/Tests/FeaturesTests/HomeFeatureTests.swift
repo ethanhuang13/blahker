@@ -29,6 +29,7 @@ final class HomeFeatureTests: XCTestCase {
     await store.send(.scenePhaseBecomeActive)
     await store.receive(.userEnableContentBlocker(true)) {
       $0.isEnabledContentBlocker = true
+      $0.alert = .updateSuccess
     }
   }
 
@@ -49,6 +50,7 @@ final class HomeFeatureTests: XCTestCase {
     await store.send(.scenePhaseBecomeActive)
     await store.receive(.userEnableContentBlocker(true)) {
       $0.isEnabledContentBlocker = true
+      $0.alert = .updateSuccess
     }
   }
 
@@ -79,6 +81,7 @@ final class HomeFeatureTests: XCTestCase {
     }
     await store.receive(.userEnableContentBlocker(true)) {
       $0.isEnabledContentBlocker = true
+      $0.alert = .updateSuccess
     }
   }
 

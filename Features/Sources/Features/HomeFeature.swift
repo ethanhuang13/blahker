@@ -77,6 +77,7 @@ struct HomeFeature {
       state.isEnabledContentBlocker = isEnabled
 
       if isEnabled {
+        state.alert = .updateSuccess
       } else {
         state.alert = .pleaseEnableContentBlocker
       }

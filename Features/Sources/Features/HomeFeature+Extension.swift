@@ -31,6 +31,17 @@ extension AlertState<HomeFeature.Action.Alert> {
   }
 
   static var updateSuccess: Self {
-    AlertState(title: TextState("更新成功"), message: TextState("已下載最新擋廣告網站清單"))
+    AlertState(
+      title: TextState("更新成功"),
+      message: TextState("已下載最新擋廣告網站清單"),
+      buttons: [
+        ButtonState(
+          role: .cancel,
+          label: {
+            TextState("確定")
+          }
+        ),
+      ]
+    )
   }
 }
