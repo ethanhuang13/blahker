@@ -72,8 +72,7 @@ struct HomeFeature {
     case let .alert(.presented(alert)):
       switch alert {
       case .okToReloadContentBlocker:
-        state.alert = pleaseEnableContentBlockerAlert
-        return .none
+        return checkUserEnabledContentBlocker
       case .smallDonation:
         return .none
       case .mediumDonation:

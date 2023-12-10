@@ -71,7 +71,7 @@ final class HomeFeatureTests: XCTestCase {
     }
   }
 
-  func testTapRefreshButton_userHaventEnableContentBlocker() async throws {
+  func testTapRefreshButton_userHaventEnableContentBlocker_laterEnabled() async throws {
     let store = TestStore(
       initialState: HomeFeature.State(),
       reducer: { HomeFeature() }
@@ -84,7 +84,21 @@ final class HomeFeatureTests: XCTestCase {
       $0.alert = Self.pleaseEnableContentBlockerAlert
     }
 
-    await store.send(.alert(.presented(.okToReloadContentBlocker)))
+    await store.send(.alert(.presented(.okToReloadContentBlocker))) {
+      $0.alert = nil
+    }
+    await store.receive(.userEnableContentBlocker(false)) {
+      $0.alert = Self.pleaseEnableContentBlockerAlert
+    }
+
+    // User enable content blocker in system Settings
+    store.dependencies.contentBlockerService.checkUserEnabledContentBlocker = { _ in true }
+    await store.send(.alert(.presented(.okToReloadContentBlocker))) {
+      $0.alert = nil
+    }
+    await store.receive(.userEnableContentBlocker(true)) {
+      $0.isEnabledContentBlocker = true
+    }
   }
 
   func testAlert_rate5Star_openAppStoreURL() async throws {
