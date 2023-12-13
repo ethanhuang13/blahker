@@ -49,6 +49,11 @@ struct HomeFeature {
         let isEnabled = await contentBlockerService.checkUserEnabledContentBlocker(extensionID)
         await send(.userEnableContentBlocker(isEnabled))
       }
+      .cancellable(id: CancelID.checkUserEnabledContentBlocker, cancelInFlight: true)
+    }
+
+    enum CancelID {
+      case checkUserEnabledContentBlocker
     }
 
     switch action {

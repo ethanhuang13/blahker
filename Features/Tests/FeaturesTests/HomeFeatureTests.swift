@@ -23,10 +23,19 @@ final class HomeFeatureTests: XCTestCase {
       initialState: HomeFeature.State(appLaunchCheck: true, isEnabledContentBlocker: false),
       reducer: { HomeFeature() }
     ) {
-      $0.contentBlockerService.checkUserEnabledContentBlocker = { _ in true }
+      $0.contentBlockerService.checkUserEnabledContentBlocker = { _ in
+        do {
+          try await Task.sleep(for: .seconds(1))
+        } catch {
+          // cancellation error
+          print(error.localizedDescription)
+        }
+        return true
+      }
     }
 
     await store.send(.appDidFinishLaunching)
+    await store.send(.scenePhaseBecomeActive) // Cancel appDidFinishLaunching's effect
     await store.receive(.userEnableContentBlocker(true)) {
       $0.isEnabledContentBlocker = true
       $0.appLaunchCheck = false

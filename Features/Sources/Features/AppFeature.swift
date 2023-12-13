@@ -4,13 +4,24 @@ import SwiftUI
 
 @main
 struct BlahkerApp: App {
+  @UIApplicationDelegateAdaptor var appDelegate: AppDelegate
+
   var body: some Scene {
     WindowGroup {
-      AppView(store: Store(
-        initialState: AppFeature.State(),
-        reducer: { AppFeature() }
-      ))
+      AppView(store: appDelegate.store)
     }
+  }
+}
+
+class AppDelegate: NSObject, UIApplicationDelegate {
+  let store: StoreOf<AppFeature> = Store(
+    initialState: AppFeature.State(),
+    reducer: { AppFeature() }
+  )
+
+  func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+    store.send(.home(.appDidFinishLaunching))
+    return true
   }
 }
 
