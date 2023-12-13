@@ -20,17 +20,14 @@ final class HomeFeatureTests: XCTestCase {
 
   func testAppBecomeActive_userAlreadyEnableContentBlocker() async throws {
     let store = TestStore(
-      initialState: HomeFeature.State(),
+      initialState: HomeFeature.State(isEnabledContentBlocker: true),
       reducer: { HomeFeature() }
     ) {
       $0.contentBlockerService.checkUserEnabledContentBlocker = { _ in true }
     }
 
     await store.send(.scenePhaseBecomeActive)
-    await store.receive(.userEnableContentBlocker(true)) {
-      $0.isEnabledContentBlocker = true
-      $0.alert = .updateSuccess
-    }
+    await store.receive(.userEnableContentBlocker(true))
   }
 
   func testAppBecomeActive_userHaventEnableContentBlocker_laterEnabled() async throws {

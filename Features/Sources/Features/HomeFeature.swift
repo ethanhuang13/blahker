@@ -74,13 +74,14 @@ struct HomeFeature {
       return checkUserEnabledContentBlocker
 
     case let .userEnableContentBlocker(isEnabled):
-      state.isEnabledContentBlocker = isEnabled
-
       if isEnabled {
-        state.alert = .updateSuccess
+        if state.isEnabledContentBlocker == false {
+          state.alert = .updateSuccess
+        }
       } else {
         state.alert = .pleaseEnableContentBlocker
       }
+      state.isEnabledContentBlocker = isEnabled
 
       return .none
 
