@@ -6,7 +6,7 @@ import XCTest
 final class HomeFeatureTests: XCTestCase {
   func testAppBecomeActive_userHaventEnableContentBlocker() async throws {
     let store = TestStore(
-      initialState: HomeFeature.State(),
+      initialState: HomeFeature.State(appLaunchCheck: false),
       reducer: { HomeFeature() }
     ) {
       $0.contentBlockerService.checkUserEnabledContentBlocker = { _ in false }
@@ -18,9 +18,24 @@ final class HomeFeatureTests: XCTestCase {
     }
   }
 
+  func testAppLaunch_userAlreadyEnableContentBlocker() async throws {
+    let store = TestStore(
+      initialState: HomeFeature.State(appLaunchCheck: true, isEnabledContentBlocker: false),
+      reducer: { HomeFeature() }
+    ) {
+      $0.contentBlockerService.checkUserEnabledContentBlocker = { _ in true }
+    }
+
+    await store.send(.appDidFinishLaunching)
+    await store.receive(.userEnableContentBlocker(true)) {
+      $0.isEnabledContentBlocker = true
+      $0.appLaunchCheck = false
+    }
+  }
+
   func testAppBecomeActive_userAlreadyEnableContentBlocker() async throws {
     let store = TestStore(
-      initialState: HomeFeature.State(isEnabledContentBlocker: true),
+      initialState: HomeFeature.State(appLaunchCheck: false, isEnabledContentBlocker: true),
       reducer: { HomeFeature() }
     ) {
       $0.contentBlockerService.checkUserEnabledContentBlocker = { _ in true }
@@ -32,7 +47,7 @@ final class HomeFeatureTests: XCTestCase {
 
   func testAppBecomeActive_userHaventEnableContentBlocker_laterEnabled() async throws {
     let store = TestStore(
-      initialState: HomeFeature.State(),
+      initialState: HomeFeature.State(appLaunchCheck: false),
       reducer: { HomeFeature() }
     ) {
       $0.contentBlockerService.checkUserEnabledContentBlocker = { _ in false }
@@ -53,7 +68,7 @@ final class HomeFeatureTests: XCTestCase {
 
   func testTapRefreshButton_userHaventEnableContentBlocker_laterEnabled() async throws {
     let store = TestStore(
-      initialState: HomeFeature.State(),
+      initialState: HomeFeature.State(appLaunchCheck: false),
       reducer: { HomeFeature() }
     ) {
       $0.contentBlockerService.checkUserEnabledContentBlocker = { _ in false }

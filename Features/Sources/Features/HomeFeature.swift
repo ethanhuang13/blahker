@@ -11,12 +11,14 @@ import Foundation
 @Reducer
 struct HomeFeature {
   struct State: Equatable {
+    var appLaunchCheck = true
     var isEnabledContentBlocker = false
     @PresentationState var alert: AlertState<Action.Alert>?
   }
 
   enum Action: Equatable {
     case alert(PresentationAction<Alert>)
+    case appDidFinishLaunching
     case scenePhaseBecomeActive
     case userEnableContentBlocker(Bool)
     case tapDontTapMeButton
@@ -70,18 +72,24 @@ struct HomeFeature {
     case .alert(.dismiss):
       return .none
 
+    case .appDidFinishLaunching:
+      return checkUserEnabledContentBlocker
+
     case .scenePhaseBecomeActive:
       return checkUserEnabledContentBlocker
 
     case let .userEnableContentBlocker(isEnabled):
-      if isEnabled {
-        if state.isEnabledContentBlocker == false {
-          state.alert = .updateSuccess
-        }
-      } else {
+      switch (isEnabled, state.appLaunchCheck, state.isEnabledContentBlocker) {
+      case (false, _, _):
         state.alert = .pleaseEnableContentBlocker
+      case (true, false, false):
+        state.alert = .updateSuccess
+      case (true, _, _):
+        break
       }
+
       state.isEnabledContentBlocker = isEnabled
+      state.appLaunchCheck = false
 
       return .none
 
