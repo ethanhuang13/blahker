@@ -84,14 +84,14 @@ final class HomeFeatureTests: XCTestCase {
     }
 
     await store.send(.tapRefreshButton)
-    await store.receive(.userEnableContentBlocker(false)) {
+    await store.receive(.manuallyCheckUserEnableContentBlocker(false)) {
       $0.alert = .pleaseEnableContentBlocker
     }
 
     await store.send(.alert(.presented(.okToReloadContentBlocker))) {
       $0.alert = nil
     }
-    await store.receive(.userEnableContentBlocker(false)) {
+    await store.receive(.manuallyCheckUserEnableContentBlocker(false)) {
       $0.alert = .pleaseEnableContentBlocker
     }
 
@@ -100,8 +100,24 @@ final class HomeFeatureTests: XCTestCase {
     await store.send(.alert(.presented(.okToReloadContentBlocker))) {
       $0.alert = nil
     }
-    await store.receive(.userEnableContentBlocker(true)) {
+    await store.receive(.manuallyCheckUserEnableContentBlocker(true)) {
       $0.isEnabledContentBlocker = true
+      $0.alert = .updateSuccess
+    }
+  }
+
+  func testTapRefreshButton_userAlreadyEnableContentBlocker() async throws {
+    var initialState = HomeFeature.State(appLaunchCheck: false)
+    initialState.isEnabledContentBlocker = true
+    let store = TestStore(
+      initialState: initialState,
+      reducer: { HomeFeature() }
+    ) {
+      $0.contentBlockerService.checkUserEnabledContentBlocker = { _ in true }
+    }
+
+    await store.send(.tapRefreshButton)
+    await store.receive(.manuallyCheckUserEnableContentBlocker(true)) {
       $0.alert = .updateSuccess
     }
   }

@@ -21,6 +21,7 @@ struct HomeFeature {
     case appDidFinishLaunching
     case scenePhaseBecomeActive
     case userEnableContentBlocker(Bool)
+    case manuallyCheckUserEnableContentBlocker(Bool)
     case tapDontTapMeButton
     case tapRefreshButton
     case tapAboutButton
@@ -43,11 +44,13 @@ struct HomeFeature {
   }
 
   func core(into state: inout State, action: Action) -> Effect<Action> {
-    var checkUserEnabledContentBlocker: Effect<Action> {
+    func checkUserEnabledContentBlocker(manually: Bool) -> Effect<Action> {
       .run { send in
         let extensionID = "com.elaborapp.Blahker.ContentBlocker"
         let isEnabled = await contentBlockerService.checkUserEnabledContentBlocker(extensionID)
-        await send(.userEnableContentBlocker(isEnabled))
+        await send(manually
+          ? .manuallyCheckUserEnableContentBlocker(isEnabled)
+          : .userEnableContentBlocker(isEnabled))
       }
       .cancellable(id: CancelID.checkUserEnabledContentBlocker, cancelInFlight: true)
     }
@@ -60,7 +63,7 @@ struct HomeFeature {
     case let .alert(.presented(alert)):
       switch alert {
       case .okToReloadContentBlocker:
-        return checkUserEnabledContentBlocker
+        return checkUserEnabledContentBlocker(manually: true)
       case .smallDonation:
         return .none
       case .mediumDonation:
@@ -78,10 +81,10 @@ struct HomeFeature {
       return .none
 
     case .appDidFinishLaunching:
-      return checkUserEnabledContentBlocker
+      return checkUserEnabledContentBlocker(manually: false)
 
     case .scenePhaseBecomeActive:
-      return checkUserEnabledContentBlocker
+      return checkUserEnabledContentBlocker(manually: false)
 
     case let .userEnableContentBlocker(isEnabled):
       switch (isEnabled, state.appLaunchCheck, state.isEnabledContentBlocker) {
@@ -96,6 +99,11 @@ struct HomeFeature {
       state.isEnabledContentBlocker = isEnabled
       state.appLaunchCheck = false
 
+      return .none
+
+    case let .manuallyCheckUserEnableContentBlocker(isEnabled):
+      state.alert = isEnabled ? .updateSuccess : .pleaseEnableContentBlocker
+      state.isEnabledContentBlocker = isEnabled
       return .none
 
     case .tapDontTapMeButton:
@@ -139,7 +147,7 @@ struct HomeFeature {
       return .none
 
     case .tapRefreshButton:
-      return checkUserEnabledContentBlocker
+      return checkUserEnabledContentBlocker(manually: true)
 
     case .tapAboutButton:
       return .none

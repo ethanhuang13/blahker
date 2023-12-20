@@ -1,7 +1,6 @@
 # TODO
 
 - HomeFeature
-  - Tap refresh button behavior
   - Donation StoreKit dependencies
 - AboutFeature / AboutView
   - BlockerListFeature / BlockerListView
