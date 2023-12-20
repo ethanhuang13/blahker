@@ -14,10 +14,12 @@ struct HomeFeature {
     var appLaunchCheck = true
     var isEnabledContentBlocker = false
     @PresentationState var alert: AlertState<Action.Alert>?
+    var path = StackState<Path.State>()
   }
 
   enum Action: Equatable {
     case alert(PresentationAction<Alert>)
+    case path(StackAction<Path.State, Path.Action>)
     case appDidFinishLaunching
     case scenePhaseBecomeActive
     case userEnableContentBlocker(Bool)
@@ -78,6 +80,9 @@ struct HomeFeature {
       }
 
     case .alert(.dismiss):
+      return .none
+
+    case .path:
       return .none
 
     case .appDidFinishLaunching:
@@ -150,6 +155,8 @@ struct HomeFeature {
       return checkUserEnabledContentBlocker(manually: true)
 
     case .tapAboutButton:
+      state.path.removeAll()
+      state.path.append(.about(.init()))
       return .none
     }
   }

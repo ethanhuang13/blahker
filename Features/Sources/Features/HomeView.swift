@@ -14,8 +14,9 @@ struct HomeView: View {
   @Environment(\.scenePhase) private var scenePhase
 
   var body: some View {
-    WithViewStore(store, observe: { $0 }) { viewStore in
-      NavigationStack {
+    NavigationStackStore(
+      store.scope(state: \.path, action: \.path),
+      root: {
         VStack {
           setupDescription
           Spacer()
@@ -41,9 +42,27 @@ struct HomeView: View {
             break
           }
         }
+      },
+      destination: { state in
+        switch state {
+        case .about:
+          CaseLet(
+            /HomeFeature.Path.State.about,
+            action: HomeFeature.Path.Action.about
+          ) {
+            AboutView(store: $0)
+          }
+        case .blockerList:
+          CaseLet(
+            /HomeFeature.Path.State.blockerList,
+            action: HomeFeature.Path.Action.blockerList
+          ) {
+            BlockerListView(store: $0)
+          }
+        }
       }
-      .preferredColorScheme(.dark)
-    }
+    )
+    .preferredColorScheme(.dark)
   }
 
   @MainActor
