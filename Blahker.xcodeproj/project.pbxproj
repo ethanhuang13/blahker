@@ -89,6 +89,7 @@
 
 /* Begin PBXFileReference section */
 		6C04CC2A1DEF4967006B23D4 /* BlockerListLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockerListLoader.swift; sourceTree = "<group>"; };
+		6C10815E2B33497D00EA2815 /* TODO.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = TODO.md; sourceTree = "<group>"; };
 		6C12CBF51DF34B35003E129D /* PurchaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurchaseManager.swift; sourceTree = "<group>"; };
 		6C1E61F81DF405F9002BA1B5 /* BlockerListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockerListViewController.swift; sourceTree = "<group>"; };
 		6C4721832116CF560031A64E /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
@@ -193,6 +194,7 @@
 			children = (
 				6CA0D6582AF3F3B2008FA25E /* Features */,
 				6C4721852116CF570031A64E /* README.md */,
+				6C10815E2B33497D00EA2815 /* TODO.md */,
 				6C4721832116CF560031A64E /* CHANGELOG.md */,
 				6C4721842116CF560031A64E /* CONTRIBUTING.md */,
 				6C50E20D2116AFC600A8B495 /* Shared */,
