@@ -42,6 +42,9 @@ struct HomeFeature {
 
   var body: some ReducerOf<Self> {
     Reduce(core)
+      .forEach(\.path, action: \.path) {
+        Path()
+      }
       .ifLet(\.$alert, action: \.alert)
   }
 
@@ -74,12 +77,15 @@ struct HomeFeature {
         return .none
       case .rate5Star:
         return .run { send in
-          let url = URL(string: "https://apps.apple.com/tw/app/blahker-巴拉剋/id1182699267")!
-          await openURL(url)
+          await openURL(.appStore)
         }
       }
 
     case .alert(.dismiss):
+      return .none
+
+    case .path(.element(id: _, action: .about(.tapBlockerListCell))):
+      state.path.append(.blockerList(.init()))
       return .none
 
     case .path:
@@ -155,7 +161,6 @@ struct HomeFeature {
       return checkUserEnabledContentBlocker(manually: true)
 
     case .tapAboutButton:
-      state.path.removeAll()
       state.path.append(.about(.init()))
       return .none
     }

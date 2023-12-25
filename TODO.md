@@ -6,8 +6,6 @@
   - BlockerListFeature / BlockerListView
   - Report issue (MFMailComposeViewController)
   - Rate app
-  - Share
   - About
-    - Link to GitHub
     - Version number
 
