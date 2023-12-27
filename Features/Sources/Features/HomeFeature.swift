@@ -118,43 +118,7 @@ struct HomeFeature {
       return .none
 
     case .tapDontTapMeButton:
-      state.alert = AlertState(
-        title: TextState("支持開發者"),
-        message: TextState("Blahker 的維護包含不斷更新擋廣告清單。如果有你的支持一定會更好～"),
-        buttons: [
-          ButtonState(
-            action: .smallDonation,
-            label: {
-              TextState("打賞小小費")
-            }
-          ),
-          ButtonState(
-            action: .mediumDonation,
-            label: {
-              TextState("打賞小費")
-            }
-          ),
-          ButtonState(
-            action: .largeDonation,
-            label: {
-              TextState("破費")
-            }
-          ),
-          ButtonState(
-            action: .rate5Star,
-            label: {
-              TextState("我不出錢，給個五星評分總行了吧")
-            }
-          ),
-          ButtonState(
-            role: .cancel,
-            label: {
-              TextState("算了吧，不值得")
-            }
-          )
-        ]
-      )
-
+      state.alert = .donation
       return .none
 
     case .tapRefreshButton:
