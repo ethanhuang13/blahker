@@ -63,6 +63,7 @@ struct HomeView: View {
       }
     )
     .preferredColorScheme(.dark)
+    .tint(.white)
   }
 
   @MainActor
@@ -89,7 +90,6 @@ struct HomeView: View {
         Text("拜託別按我")
       }
     )
-    .foregroundStyle(Color.white)
     .font(.title)
     .alert(store: store.scope(state: \.$alert, action: \.alert))
   }
@@ -105,7 +105,6 @@ struct HomeView: View {
         Image(systemName: "arrow.clockwise")
       }
     )
-    .buttonStyle(.plain)
   }
 
   @MainActor
@@ -119,7 +118,6 @@ struct HomeView: View {
         Text("關於")
       }
     )
-    .buttonStyle(.plain)
   }
 }
 
