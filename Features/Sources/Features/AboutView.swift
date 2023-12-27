@@ -26,6 +26,7 @@ struct AboutView: View {
     }
     .navigationTitle(Text("關於"))
     .navigationBarTitleDisplayMode(.inline)
+    .alert(store: store.scope(state: \.$alert, action: \.alert))
   }
 
   @MainActor
