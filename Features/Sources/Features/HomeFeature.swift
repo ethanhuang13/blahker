@@ -51,7 +51,7 @@ struct HomeFeature {
   }
 
   func core(into state: inout State, action: Action) -> Effect<Action> {
-    func checkUserEnabledContentBlocker(manually: Bool) -> Effect<Action> {
+    func checkUserEnabledContentBlockerAndReload(manually: Bool) -> Effect<Action> {
       state.isCheckingBlockerList = true
       return .run { send in
         let bundleID = "com.elaborapp.Blahker.ContentBlocker"
@@ -76,7 +76,7 @@ struct HomeFeature {
     case let .alert(.presented(alert)):
       switch alert {
       case .okToReloadContentBlocker:
-        return checkUserEnabledContentBlocker(manually: true)
+        return checkUserEnabledContentBlockerAndReload(manually: true)
       case .smallDonation:
         return .none
       case .mediumDonation:
@@ -100,10 +100,10 @@ struct HomeFeature {
       return .none
 
     case .appDidFinishLaunching:
-      return checkUserEnabledContentBlocker(manually: false)
+      return checkUserEnabledContentBlockerAndReload(manually: false)
 
     case .scenePhaseBecomeActive:
-      return checkUserEnabledContentBlocker(manually: false)
+      return checkUserEnabledContentBlockerAndReload(manually: false)
 
     case let .userEnableContentBlocker(isEnabled):
       switch (isEnabled, state.appLaunchCheck, state.isEnabledContentBlocker) {
@@ -132,7 +132,7 @@ struct HomeFeature {
       return .none
 
     case .tapRefreshButton:
-      return checkUserEnabledContentBlocker(manually: true)
+      return checkUserEnabledContentBlockerAndReload(manually: true)
 
     case .tapAboutButton:
       state.path.append(.about(.init()))
