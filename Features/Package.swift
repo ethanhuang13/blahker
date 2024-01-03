@@ -9,6 +9,7 @@ let package = Package(
   products: [
     // Products define the executables and libraries a package produces, making them visible to other packages.
     .library(name: "Features", targets: ["Features"]),
+    .library(name: "Models", targets: ["Models"]),
     .library(name: "ContentBlockerService", targets: ["ContentBlockerService"])
   ],
   dependencies: [
@@ -20,11 +21,14 @@ let package = Package(
     // Targets can depend on other targets in this package and products from dependencies.
     .target(
       name: "Features",
-      dependencies: [.contentBlockerService, .tca]
+      dependencies: [.models, .contentBlockerService, .tca]
     ),
     .testTarget(
       name: "FeaturesTests",
       dependencies: ["Features", .tca]
+    ),
+    .target(
+      name: "Models"
     ),
     .target(
       name: "ContentBlockerService",
@@ -35,6 +39,7 @@ let package = Package(
 
 // First-party
 extension Target.Dependency {
+  static let models: Self = "Models"
   static let contentBlockerService: Self = "ContentBlockerService"
 }
 
