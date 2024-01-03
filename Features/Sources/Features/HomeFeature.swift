@@ -54,8 +54,13 @@ struct HomeFeature {
     func checkUserEnabledContentBlocker(manually: Bool) -> Effect<Action> {
       state.isCheckingBlockerList = true
       return .run { send in
-        let extensionID = "com.elaborapp.Blahker.ContentBlocker"
-        let isEnabled = await contentBlockerService.checkUserEnabledContentBlocker(extensionID)
+        let bundleID = "com.elaborapp.Blahker.ContentBlocker"
+        let isEnabled = await contentBlockerService.checkUserEnabledContentBlocker(bundleID)
+
+        if isEnabled {
+          try await contentBlockerService.reloadContentBlocker(bundleID)
+        }
+
         await send(manually
           ? .manuallyCheckUserEnableContentBlocker(isEnabled)
           : .userEnableContentBlocker(isEnabled))
@@ -79,7 +84,7 @@ struct HomeFeature {
       case .largeDonation:
         return .none
       case .rate5Star:
-        return .run { send in
+        return .run { _ in
           await openURL(.appStore)
         }
       }
