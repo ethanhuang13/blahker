@@ -97,14 +97,19 @@ struct HomeView: View {
   @MainActor
   @ViewBuilder
   private var refreshButton: some View {
-    Button(
-      action: {
-        store.send(.tapRefreshButton)
-      },
-      label: {
-        Image(systemName: "arrow.clockwise")
-      }
-    )
+    WithViewStore(store, observe: \.isCheckingBlockerList) { viewStore in
+      let isCheckingBlockerList = viewStore.state
+
+      Button(
+        action: {
+          store.send(.tapRefreshButton)
+        },
+        label: {
+          Image(systemName: "arrow.clockwise")
+        }
+      )
+      .disabled(isCheckingBlockerList)
+    }
   }
 
   @MainActor
