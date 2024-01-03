@@ -12,11 +12,11 @@ import SafariServices
 
 @DependencyClient
 public struct ContentBlockerService {
-  public var checkUserEnabledContentBlocker: (String) async -> Bool = { _ in
+  public var checkUserEnabledContentBlocker: (_ bundleID: String) async -> Bool = { _ in
     unimplemented("checkUserEnabledContentBlocker")
   }
 
-  public var reloadContentBlocker: (String) async throws -> Void
+  public var reloadContentBlocker: (_ bundleID: String) async throws -> Void
 }
 
 extension ContentBlockerService: DependencyKey {
