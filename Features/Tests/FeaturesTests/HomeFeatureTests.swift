@@ -92,7 +92,7 @@ final class HomeFeatureTests: XCTestCase {
     }
 
     store.dependencies.contentBlockerService.checkUserEnabledContentBlocker = { _ in true }
-    await store.send(.scenePhaseBecomeActive){
+    await store.send(.scenePhaseBecomeActive) {
       $0.isCheckingBlockerList = true
     }
     await store.receive(.userEnableContentBlocker(true)) {
@@ -118,7 +118,7 @@ final class HomeFeatureTests: XCTestCase {
     await store.send(.tapRefreshButton) {
       $0.isCheckingBlockerList = true
     }
-    await store.receive(.manuallyCheckUserEnableContentBlocker(false)) {
+    await store.receive(\.manuallyCheckUserEnableContentBlocker, false) {
       $0.isCheckingBlockerList = false
       $0.alert = .pleaseEnableContentBlocker
     }

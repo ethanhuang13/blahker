@@ -19,7 +19,7 @@ final class AboutFeatureTests: XCTestCase {
       $0.mailComposeClient.canSendMail = { false }
     }
 
-    await store.send(.tapReportCell) 
+    await store.send(.tapReportCell)
     await store.receive(.presentPleaseEnableiOSMailAlert) {
       $0.alert = .pleaseEnableiOSMail
     }
