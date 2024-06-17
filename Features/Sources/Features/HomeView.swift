@@ -9,61 +9,57 @@ import ComposableArchitecture
 import SwiftUI
 
 struct HomeView: View {
-  let store: StoreOf<HomeFeature>
+  @Perception.Bindable var store: StoreOf<HomeFeature>
 
   @Environment(\.scenePhase) private var scenePhase
 
   var body: some View {
-    NavigationStackStore(
-      store.scope(state: \.path, action: \.path),
-      root: {
-        VStack {
-          setupDescription
-          Spacer()
-          dontTapMeButton
-        }
-        .navigationTitle("Blahker")
-        .navigationBarTitleDisplayMode(.inline)
-        .toolbar {
-          ToolbarItem(placement: .topBarLeading) {
-            refreshButton
+    WithPerceptionTracking {
+      NavigationStack(
+        path: $store.scope(state: \.path, action: \.path),
+        root: {
+          VStack {
+            setupDescription
+            Spacer()
+            dontTapMeButton
           }
-          ToolbarItem(placement: .topBarTrailing) {
-            aboutButton
+          .navigationTitle("Blahker")
+          .navigationBarTitleDisplayMode(.inline)
+          .toolbar {
+            ToolbarItem(placement: .topBarLeading) {
+              refreshButton
+            }
+            ToolbarItem(placement: .topBarTrailing) {
+              aboutButton
+            }
           }
-        }
-        .onChange(of: scenePhase) { phase in
-          switch phase {
-          case .active:
-            store.send(.scenePhaseBecomeActive)
-          case .background, .inactive:
-            break
-          @unknown default:
-            break
+          .onChange(of: scenePhase) { phase in
+            switch phase {
+            case .active:
+              store.send(.scenePhaseBecomeActive)
+            case .background, .inactive:
+              break
+            @unknown default:
+              break
+            }
           }
-        }
-      },
-      destination: { state in
-        switch state {
-        case .about:
-          CaseLet(
-            /HomeFeature.Path.State.about,
-            action: HomeFeature.Path.Action.about
-          ) {
-            AboutView(store: $0)
-          }
-        case .blockerList:
-          CaseLet(
-            /HomeFeature.Path.State.blockerList,
-            action: HomeFeature.Path.Action.blockerList
-          ) {
-            BlockerListView(store: $0)
+        },
+        destination: { store in
+          switch store.state {
+          case .about:
+            if let store = store.scope(state: \.about, action: \.about) {
+              AboutView(store: store)
+            }
+          case .blockerList:
+            if let store = store.scope(state: \.blockerList, action: \.blockerList) {
+              BlockerListView(store: store)
+            }
           }
         }
-      }
-    )
-    .preferredColorScheme(.dark)
-    .tint(.white)
+      )
+      .preferredColorScheme(.dark)
+      .tint(.white)
+    }
   }
 
   @MainActor
@@ -91,15 +87,13 @@ struct HomeView: View {
       }
     )
     .font(.title)
-    .alert(store: store.scope(state: \.$alert, action: \.alert))
+    .alert($store.scope(state: \.alert, action: \.alert))
   }
 
   @MainActor
   @ViewBuilder
   private var refreshButton: some View {
-    WithViewStore(store, observe: \.isCheckingBlockerList) { viewStore in
-      let isCheckingBlockerList = viewStore.state
-
+    WithPerceptionTracking {
       Button(
         action: {
           store.send(.tapRefreshButton)
@@ -108,7 +102,7 @@ struct HomeView: View {
           Image(systemName: "arrow.clockwise")
         }
       )
-      .disabled(isCheckingBlockerList)
+      .disabled(store.isCheckingBlockerList)
     }
   }
 

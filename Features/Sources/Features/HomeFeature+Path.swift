@@ -11,6 +11,7 @@ import Foundation
 extension HomeFeature {
   @Reducer
   struct Path {
+    @ObservableState
     enum State: Equatable {
       case about(AboutFeature.State)
       case blockerList(BlockerListFeature.State)

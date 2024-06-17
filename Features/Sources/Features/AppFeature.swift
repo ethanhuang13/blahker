@@ -27,6 +27,7 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 
 @Reducer
 struct AppFeature {
+  @ObservableState
   struct State: Equatable {
     var home: HomeFeature.State = .init()
   }
@@ -55,6 +56,8 @@ struct AppView: View {
   let store: StoreOf<AppFeature>
 
   var body: some View {
-    HomeView(store: store.scope(state: \.home, action: \.home))
+    WithPerceptionTracking {
+      HomeView(store: store.scope(state: \.home, action: \.home))
+    }
   }
 }

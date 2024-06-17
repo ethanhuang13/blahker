@@ -11,6 +11,7 @@ import Models
 
 @Reducer
 struct BlockerListFeature {
+  @ObservableState
   struct State: Equatable {
     var ruleItems: [RuleItem] = []
   }

@@ -10,12 +10,13 @@ import Foundation
 
 @Reducer
 struct HomeFeature {
+  @ObservableState
   struct State: Equatable {
     var appLaunchCheck = true
     var isEnabledContentBlocker = false
     var isCheckingBlockerList = false
 
-    @PresentationState var alert: AlertState<Action.Alert>?
+    @Presents var alert: AlertState<Action.Alert>?
     var path = StackState<Path.State>()
   }
 

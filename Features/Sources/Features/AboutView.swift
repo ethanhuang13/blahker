@@ -10,23 +10,25 @@ import Foundation
 import SwiftUI
 
 struct AboutView: View {
-  let store: StoreOf<AboutFeature>
+  @Perception.Bindable var store: StoreOf<AboutFeature>
 
   var body: some View {
-    List {
-      Section {
-        blockerListCell
-        reportCell
+    WithPerceptionTracking {
+      List {
+        Section {
+          blockerListCell
+          reportCell
+        }
+        Section {
+          rateCell
+          shareCell
+          aboutCell
+        }
       }
-      Section {
-        rateCell
-        shareCell
-        aboutCell
-      }
+      .navigationTitle(Text("關於"))
+      .navigationBarTitleDisplayMode(.inline)
+      .alert($store.scope(state: \.alert, action: \.alert))
     }
-    .navigationTitle(Text("關於"))
-    .navigationBarTitleDisplayMode(.inline)
-    .alert(store: store.scope(state: \.$alert, action: \.alert))
   }
 
   @MainActor

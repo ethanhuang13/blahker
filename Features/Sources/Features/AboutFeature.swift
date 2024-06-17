@@ -10,8 +10,9 @@ import Foundation
 
 @Reducer
 struct AboutFeature {
+  @ObservableState
   struct State: Equatable {
-    @PresentationState var alert: AlertState<Action.Alert>?
+    @Presents var alert: AlertState<Action.Alert>?
   }
 
   enum Action: Equatable {

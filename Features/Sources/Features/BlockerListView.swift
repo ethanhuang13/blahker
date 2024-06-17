@@ -13,11 +13,9 @@ struct BlockerListView: View {
   let store: StoreOf<BlockerListFeature>
 
   var body: some View {
-    WithViewStore(store, observe: \.ruleItems) { viewStore in
-      let ruleItems = viewStore.state
-
+    WithPerceptionTracking {
       List {
-        ForEach(ruleItems) { ruleItem in
+        ForEach(store.ruleItems) { ruleItem in
           VStack(alignment: .leading) {
             Text(ruleItem.title)
               .font(.headline)
