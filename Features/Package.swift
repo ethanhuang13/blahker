@@ -13,16 +13,15 @@ let package = Package(
     .library(name: "ContentBlockerService", targets: ["ContentBlockerService"])
   ],
   dependencies: [
-    .package(url: "https://github.com/pointfreeco/swift-composable-architecture", exact: "1.11.2"),
+    .package(url: "https://github.com/pointfreeco/swift-composable-architecture", exact: "1.12.1"),
     .package(url: "https://github.com/pointfreeco/swift-dependencies", from: "1.1.1"),
-    .package(url: "https://github.com/pointfreeco/xctest-dynamic-overlay", from: "1.2.2"),
   ],
   targets: [
     // Targets are the basic building blocks of a package, defining a module or a test suite.
     // Targets can depend on other targets in this package and products from dependencies.
     .target(
       name: "Features",
-      dependencies: [.models, .contentBlockerService, .tca, .xcTestDynamicOverlay]
+      dependencies: [.models, .contentBlockerService, .tca]
     ),
     .testTarget(
       name: "FeaturesTests",
@@ -49,5 +48,4 @@ extension Target.Dependency {
   static let tca = Self.product(name: "ComposableArchitecture", package: "swift-composable-architecture")
   static let dependencies = Self.product(name: "Dependencies", package: "swift-dependencies")
   static let dependenciesMacro = Self.product(name: "DependenciesMacros", package: "swift-dependencies")
-  static let xcTestDynamicOverlay = Self.product(name: "XCTestDynamicOverlay", package: "xctest-dynamic-overlay")
 }
