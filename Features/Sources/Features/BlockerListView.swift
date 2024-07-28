@@ -29,6 +29,9 @@ struct BlockerListView: View {
       }
       .navigationTitle(Text("已阻擋的蓋版廣告網站"))
       .navigationBarTitleDisplayMode(.inline)
+      .task {
+        await store.send(.task).finish()
+      }
     }
   }
 }
