@@ -18,7 +18,7 @@ final class HomeFeatureTests: XCTestCase {
     await store.send(.scenePhaseBecomeActive) {
       $0.isCheckingBlockerList = true
     }
-    await store.receive(.userEnableContentBlocker(false)) {
+    await store.receive(\.userEnableContentBlocker, false) {
       $0.isCheckingBlockerList = false
       $0.alert = .pleaseEnableContentBlocker
     }
@@ -48,7 +48,7 @@ final class HomeFeatureTests: XCTestCase {
       $0.isCheckingBlockerList = true
     }
     await store.send(.scenePhaseBecomeActive) // Cancel appDidFinishLaunching's effect
-    await store.receive(.userEnableContentBlocker(true)) {
+    await store.receive(\.userEnableContentBlocker, true) {
       $0.isCheckingBlockerList = false
       $0.isEnabledContentBlocker = true
       $0.appLaunchCheck = false
@@ -123,7 +123,7 @@ final class HomeFeatureTests: XCTestCase {
       $0.alert = .pleaseEnableContentBlocker
     }
 
-    await store.send(.alert(.presented(.okToReloadContentBlocker))) {
+    await store.send(\.alert.presented.okToReloadContentBlocker) {
       $0.isCheckingBlockerList = true
       $0.alert = nil
     }
@@ -137,7 +137,7 @@ final class HomeFeatureTests: XCTestCase {
       isCheckingBlockerList += 1
       return true
     }
-    await store.send(.alert(.presented(.okToReloadContentBlocker))) {
+    await store.send(\.alert.presented.okToReloadContentBlocker) {
       $0.isCheckingBlockerList = true
       $0.alert = nil
     }
@@ -223,7 +223,7 @@ final class HomeFeatureTests: XCTestCase {
       )
     }
 
-    await store.send(.alert(.presented(.rate5Star))) {
+    await store.send(\.alert.presented.rate5Star) {
       $0.alert = nil
     }
 

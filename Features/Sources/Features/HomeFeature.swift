@@ -31,6 +31,7 @@ struct HomeFeature {
     case tapRefreshButton
     case tapAboutButton
 
+    @CasePathable
     enum Alert {
       case okToReloadContentBlocker
       case smallDonation
