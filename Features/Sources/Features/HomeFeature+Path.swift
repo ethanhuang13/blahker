@@ -9,26 +9,9 @@ import ComposableArchitecture
 import Foundation
 
 extension HomeFeature {
-  @Reducer
-  struct Path {
-    @ObservableState
-    enum State: Equatable {
-      case about(AboutFeature.State)
-      case blockerList(BlockerListFeature.State)
-    }
-
-    enum Action: Equatable {
-      case about(AboutFeature.Action)
-      case blockerList(BlockerListFeature.Action)
-    }
-
-    var body: some ReducerOf<Self> {
-      Scope(state: \.about, action: \.about) {
-        AboutFeature()
-      }
-      Scope(state: \.blockerList, action: \.blockerList) {
-        BlockerListFeature()
-      }
-    }
+  @Reducer(state: .equatable, action: .equatable)
+  enum Path {
+    case about(AboutFeature)
+    case blockerList(BlockerListFeature)
   }
 }

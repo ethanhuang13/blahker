@@ -45,9 +45,7 @@ struct HomeFeature {
 
   var body: some ReducerOf<Self> {
     Reduce(core)
-      .forEach(\.path, action: \.path) {
-        Path()
-      }
+      .forEach(\.path, action: \.path)
       .ifLet(\.$alert, action: \.alert)
   }
 
