@@ -13,7 +13,7 @@ let package = Package(
     .library(name: "ContentBlockerService", targets: ["ContentBlockerService"])
   ],
   dependencies: [
-    .package(url: "https://github.com/pointfreeco/swift-composable-architecture", exact: "1.13.1"),
+    .package(url: "https://github.com/pointfreeco/swift-composable-architecture", exact: "1.14.0"),
     .package(url: "https://github.com/pointfreeco/swift-dependencies", from: "1.4.0"),
   ],
   targets: [
