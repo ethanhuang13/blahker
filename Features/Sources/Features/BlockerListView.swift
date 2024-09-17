@@ -28,6 +28,9 @@ struct BlockerListView: View {
           }
         }
       }
+      .refreshable {
+        store.send(.reload)
+      }
       .navigationTitle(Text("已阻擋的蓋版廣告網站"))
       .navigationBarTitleDisplayMode(.inline)
       .task {

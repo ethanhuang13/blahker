@@ -18,17 +18,24 @@ struct BlockerListFeature {
 
   enum Action: Equatable {
     case task
+    case reload
     case receiveRuleItems([RuleItem])
   }
 
   func reduce(into state: inout State, action: Action) -> Effect<Action> {
-    switch action {
-    case .task:
-      return .run { send in
+    let fetchBlockerList: Effect<Action> =
+      .run { send in
         @Dependency(\.contentBlockerService) var contentBlockerService
         let ruleItems = try await contentBlockerService.fetchBlockerList()
         await send(.receiveRuleItems(ruleItems))
       }
+
+    switch action {
+    case .task:
+      return fetchBlockerList
+
+    case .reload:
+      return fetchBlockerList
 
     case let .receiveRuleItems(ruleItems):
       state.ruleItems = ruleItems
