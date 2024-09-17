@@ -25,21 +25,14 @@ struct BlockerListFeature {
     switch action {
     case .task:
       return .run { send in
-        @Dependency(\.urlSession) var urlSession
-        let (data, _) = try await urlSession.data(from: URL(string: "https://raw.githubusercontent.com/ethanhuang13/blahker/master/Blahker.safariextension/blockerList.json")!)
-        let rules = try JSONDecoder().decode([Rule].self, from: data)
-        await send(.receiveRuleItems([]))
+        @Dependency(\.contentBlockerService) var contentBlockerService
+        let ruleItems = try await contentBlockerService.fetchBlockerList()
+        await send(.receiveRuleItems(ruleItems))
       }
+
     case let .receiveRuleItems(ruleItems):
       state.ruleItems = ruleItems
       return .none
     }
   }
-}
-
-struct RuleItem: Equatable, Identifiable, Decodable {
-  let id = UUID()
-
-  var title: String
-  var description: String
 }

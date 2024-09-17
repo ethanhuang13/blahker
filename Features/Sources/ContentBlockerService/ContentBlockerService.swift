@@ -8,6 +8,7 @@
 import Dependencies
 import DependenciesMacros
 import Foundation
+import Models
 import SafariServices
 
 @DependencyClient
@@ -17,6 +18,8 @@ public struct ContentBlockerService {
   }
 
   public var reloadContentBlocker: (_ bundleID: String) async throws -> Void
+
+  public var fetchBlockerList: () async throws -> [RuleItem]
 }
 
 extension ContentBlockerService: DependencyKey {
@@ -41,6 +44,44 @@ extension ContentBlockerService: DependencyKey {
           }
         })
       }
+    },
+    fetchBlockerList: {
+      // urlSession fetch file
+      // decode [Rule]
+      // convert to [RuleItem]
+      // sort
+      // return
+      let urlSession = URLSession.shared
+      let url = URL(string: "https://raw.githubusercontent.com/ethanhuang13/blahker/master/Blahker.safariextension/blockerList.json")!
+
+      let (data, _) = try await urlSession.data(from: url)
+      let rules = try JSONDecoder().decode([Rule].self, from: data)
+
+      var rulesDict = [String: [String]]()
+
+      for rule in rules {
+        if let domains = rule.trigger.ifDomain,
+           let selector = rule.action.selector {
+          for domain in domains {
+            var selectors = rulesDict[domain] ?? []
+            selectors.append(selector)
+            rulesDict[domain] = selectors
+          }
+        } else if let selector = rule.action.selector {
+          var selectors = rulesDict["Any"] ?? []
+          selectors.append(selector)
+          rulesDict["Any"] = selectors
+        }
+      }
+
+      var ruleItems = [RuleItem]()
+      for (domain, selectors) in rulesDict {
+        let ruleItem = RuleItem(domain: domain, selectors: selectors)
+        ruleItems.append(ruleItem)
+      }
+
+      return ruleItems
+        .sorted(using: [KeyPathComparator(\.domain)])
     }
   )
 }

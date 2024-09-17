@@ -8,6 +8,7 @@
 import ComposableArchitecture
 import Foundation
 import SwiftUI
+import Models
 
 struct BlockerListView: View {
   let store: StoreOf<BlockerListFeature>
@@ -17,10 +18,10 @@ struct BlockerListView: View {
       List {
         ForEach(store.ruleItems) { ruleItem in
           VStack(alignment: .leading) {
-            Text(ruleItem.title)
+            Text(ruleItem.domain)
               .font(.headline)
               .lineLimit(1)
-            Text(ruleItem.description)
+            Text(ruleItem.selectors.joined(separator: ", "))
               .font(.subheadline)
               .lineLimit(3)
               .foregroundStyle(.secondary)
@@ -41,7 +42,7 @@ struct BlockerListView: View {
     BlockerListView(
       store: .init(
         initialState: BlockerListFeature.State(
-          ruleItems: [.init(title: "*4gamers.com.tw", description: ".iframe-ads-link")]
+          ruleItems: [.init(domain: "*4gamers.com.tw", selectors: [".iframe-ads-link"])]
         ),
         reducer: { BlockerListFeature() }
       )
